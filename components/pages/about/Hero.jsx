@@ -24,11 +24,13 @@ export default function Hero() {
         <div className="row justify-center">
           <div className="col-12">
             <div className="pageHeader__content">
-              <h1 className="pageHeader__title">About Us</h1>
+              <h1 className="pageHeader__title text-dark">About Us</h1>
 
               <p className="pageHeader__text">
-                A tropical paradise made for animal lovers replete with monkey
-                caves, dog foundations, and dolphins in the wild.
+                At <strong>Parivar Sathi</strong>, we help people who are
+                silently struggling with fertility concerns and don’t know where
+                to begin. We're not a hospital, clinic, or NGO—but we operate
+                with the compassion and community spirit of one.
               </p>
             </div>
           </div>

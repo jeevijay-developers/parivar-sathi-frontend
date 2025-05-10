@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export default function FeturesTwo() {
+export default function FeaturesTwo() {
   return (
     <section className="relative">
       <div className="relative xl:unset container">
@@ -27,21 +27,21 @@ export default function FeturesTwo() {
               >
                 We Make
                 <br className="md:d-none" />
-                World Travel Easy
+                Fertility Guidance Easy
               </h2>
 
               <p data-aos="fade-up" data-aos-delay="" className="mt-10">
-                Traveling under your own power and at your own pace, you'll
-                connect more meaningfully with your destination and have more
-                fun!
+                At Parivar Sathi, we provide compassionate and ethical guidance
+                to help you understand your fertility options and connect you to
+                the right support.
               </p>
               <button
                 data-aos="fade-right"
                 data-aos-delay=""
                 className="button -md -dark-1 bg-accent-1 text-white mt-60 md:mt-30"
               >
-                <Link href={"/tour-list-1"}>
-                  Explore Our Tours
+                <Link href={"/opd-camps"}>
+                  Explore Our OPD Camps
                   <i className="icon-arrow-top-right ml-10"></i>
                 </Link>
               </button>

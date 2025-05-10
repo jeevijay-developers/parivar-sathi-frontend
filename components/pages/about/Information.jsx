@@ -7,25 +7,30 @@ export default function Information() {
         <div className="row y-gap-20 justify-between">
           <div className="col-lg-6">
             <h2 className="text-30 fw-700">
-              Hello. Our agency has been present for over 29 years in the
-              market. We make the most of all our customers.
+              We’re not a hospital. Not a clinic. Not an NGO.
+              <br />
+              But we care like one.
             </h2>
           </div>
 
           <div className="col-lg-5">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Parivar Sathi was created to support people quietly facing
+              fertility concerns and unsure of where to begin. We guide you with
+              empathy, not pressure.
               <br />
               <br />
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              Our mission is to help you understand your options, connect you to
+              trusted support, and make informed decisions—based on your needs,
+              your location, and your budget.
+              <br />
+              <br />
+              We believe in: Respect over judgment, Information over pressure,
+              and Partnership over promotion.
             </p>
 
             <button className="button -md -dark-1 bg-accent-1 text-white mt-30">
-              Learn More
+              Talk to a Counselor
             </button>
           </div>
         </div>

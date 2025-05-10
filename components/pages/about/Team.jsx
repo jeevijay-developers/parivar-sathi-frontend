@@ -8,7 +8,7 @@ export default function Team() {
       <div className="container">
         <div className="row">
           <div className="col-auto">
-            <h2 className="text-30">Meet The Team</h2>
+            <h2 className="text-30">Meet Our Team</h2>
           </div>
         </div>
 

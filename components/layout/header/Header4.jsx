@@ -88,11 +88,11 @@ export default function Header4() {
               <a href="#">FAQ&apos;s</a>
             </div>
             <div className="text-white ml-20">
-              <a href="#">About us</a>
+              <a href="about">About us</a>
             </div>
-            <div className="text-white ml-20">
+            {/* <div className="text-white ml-20">
               <a href="#">Join us</a>
-            </div>
+            </div> */}
 
             {/* <Link href="/help-center" className="text-white ml-20">
               Help
