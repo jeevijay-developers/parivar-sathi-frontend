@@ -1,6 +1,15 @@
+"use client";
 import React from "react";
 
 export default function Information() {
+  const handleWhatsAppClick = () => {
+    const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+    const message = encodeURIComponent(
+      "Hi Parivar Sathi, I have some questions about fertility support. Can you help?"
+    );
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+  };
+
   return (
     <section className="layout-pt-lg">
       <div className="container">
@@ -29,7 +38,10 @@ export default function Information() {
               and Partnership over promotion.
             </p>
 
-            <button className=" mt-3 button -dark-1 p-3 bg-accent-3-v rounded-200 text-white">
+            <button
+              onClick={handleWhatsAppClick}
+              className="mt-3 button -dark-1 p-3 bg-accent-3-v rounded-200 text-white"
+            >
               Talk to a Counselor
             </button>
           </div>

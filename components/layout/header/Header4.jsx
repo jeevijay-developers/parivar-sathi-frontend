@@ -85,7 +85,7 @@ export default function Header4() {
               <Currency />
             </div> */}
             <div className="text-white ml-20">
-              <a href="#">FAQ&apos;s</a>
+              <a href="help-center">FAQ&apos;s</a>
             </div>
             <div className="text-white ml-20">
               <a href="about">About us</a>

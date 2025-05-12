@@ -30,12 +30,12 @@ export default function Hero() {
                 Lorem ipsum is placeholder text commonly used in site.
               </p>
 
-              <div className="pageHeader__search">
+              {/* <div className="pageHeader__search">
                 <input type="text" placeholder="Search for a topic" />
                 <button>
                   <i className="icon-search text-15 text-white"></i>
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

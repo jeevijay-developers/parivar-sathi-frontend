@@ -34,7 +34,13 @@ export default function Hero5() {
       document.removeEventListener("click", handleClick);
     };
   }, []);
-
+  const handleWhatsAppClick = () => {
+    const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+    const message = encodeURIComponent(
+      "Hi Parivar Sathi, I have some questions about fertility support. Can you help?"
+    );
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+  };
   return (
     <section className="hero -type-5">
       <div className="hero__bg">
@@ -111,7 +117,7 @@ export default function Hero5() {
                   <button
                     data-aos="fade-up"
                     data-aos-delay="300"
-                    onClick={() => router.push("/tour-list-3")}
+                    onClick={handleWhatsAppClick}
                     className="button p-3 -dark-1 bg-accent-2 rounded-200 text-white gap-3"
                   >
                     <FaUserDoctor />

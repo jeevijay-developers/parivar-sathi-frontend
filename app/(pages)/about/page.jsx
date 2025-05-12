@@ -31,7 +31,7 @@ export default function page() {
         </div>
         {/* <TestimonialOne /> */}
         {/* <BannerOne /> */}
-        {/* <Team /> */}
+        <Team />
         {/* <BrandsOne /> */}
         <FooterOne />
       </main>
