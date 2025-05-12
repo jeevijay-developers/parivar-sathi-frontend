@@ -66,14 +66,14 @@ export const tourData = [
 export const tourDataTwo = [
   {
     id: 9,
-    imageSrc: "/img/tourCards/3/1.jpg",
+    imageSrc: "/img/tourCards/3/1.png",
     badgeText: "20 % OFF",
     location: "Paris, France",
     title:
       "Phi Phi Islands Adventure Day Trip with Seaview Lunch by V. Marine Tour",
     rating: 4.8,
     ratingCount: 269,
-    duration: `2 Days 1 Nights`,
+    date: `2 Sep 2024`,
     description:
       "The Phi Phi archipelago is a must-visit while in Phuket, and this speedboat trip.",
     price: 114.0,
@@ -92,14 +92,14 @@ export const tourDataTwo = [
   },
   {
     id: 10,
-    imageSrc: "/img/tourCards/3/2.jpg",
+    imageSrc: "/img/tourCards/3/2.png",
     badgeText: "",
     location: "Paris, France",
     title:
       "Phi Phi Islands Adventure Day Trip with Seaview Lunch by V. Marine Tour",
     rating: 4.8,
     ratingCount: 269,
-    duration: `2 Days 1 Nights`,
+    date: `3 Sep 2024`,
     description:
       "The Phi Phi archipelago is a must-visit while in Phuket, and this speedboat trip.",
     price: 114.0,
@@ -118,14 +118,14 @@ export const tourDataTwo = [
   },
   {
     id: 11,
-    imageSrc: "/img/tourCards/3/3.jpg",
+    imageSrc: "/img/tourCards/3/3.png",
     featured: true,
     location: "Paris, France",
     title:
       "Phi Phi Islands Adventure Day Trip with Seaview Lunch by V. Marine Tour",
     rating: 4.8,
     ratingCount: 269,
-    duration: `2 Days 1 Nights`,
+    date: `4 Sep 2024`,
     description:
       "The Phi Phi archipelago is a must-visit while in Phuket, and this speedboat trip.",
     price: 114.0,
@@ -144,14 +144,14 @@ export const tourDataTwo = [
   },
   {
     id: 12,
-    imageSrc: "/img/tourCards/3/4.jpg",
+    imageSrc: "/img/tourCards/3/4.png",
     badgeText: "",
     location: "Paris, France",
     title:
       "Phi Phi Islands Adventure Day Trip with Seaview Lunch by V. Marine Tour",
     rating: 4.8,
     ratingCount: 269,
-    duration: `2 Days 1 Nights`,
+    date: `5 Sep 2024`,
     description:
       "The Phi Phi archipelago is a must-visit while in Phuket, and this speedboat trip.",
     price: 114.0,
@@ -170,14 +170,14 @@ export const tourDataTwo = [
   },
   {
     id: 13,
-    imageSrc: "/img/tourCards/3/5.jpg",
+    imageSrc: "/img/tourCards/3/5.png",
     badgeText: "",
     location: "Paris, France",
     title:
       "Phi Phi Islands Adventure Day Trip with Seaview Lunch by V. Marine Tour",
     rating: 4.8,
     ratingCount: 269,
-    duration: `2 Days 1 Nights`,
+    date: `6 Sep 2024`,
     description:
       "The Phi Phi archipelago is a must-visit while in Phuket, and this speedboat trip.",
     price: 114.0,
@@ -196,14 +196,14 @@ export const tourDataTwo = [
   },
   {
     id: 14,
-    imageSrc: "/img/tourCards/3/6.jpg",
+    imageSrc: "/img/tourCards/3/6.png",
     badgeText: "",
     location: "Paris, France",
     title:
       "Phi Phi Islands Adventure Day Trip with Seaview Lunch by V. Marine Tour",
     rating: 4.8,
     ratingCount: 269,
-    duration: `2 Days 1 Nights`,
+    date: `7 Sep 2024`,
     description:
       "The Phi Phi archipelago is a must-visit while in Phuket, and this speedboat trip.",
     price: 114.0,
@@ -222,10 +222,11 @@ export const tourDataTwo = [
   },
 ];
 
+
 export const tourDataThree = [
   {
     id: 15,
-    imageSrc: "/img/tourCards/1/1.jpg",
+    imageSrc: "/img/tourCards/1/1.png",
     location: "Paris, France",
     title: "Centipede Tour - Guided Arizona Desert Tour by ATV",
     rating: 5,
@@ -239,7 +240,7 @@ export const tourDataThree = [
   },
   {
     id: 16,
-    imageSrc: "/img/tourCards/1/2.jpg",
+    imageSrc: "/img/tourCards/1/2.png",
     location: "New York, USA",
     title: "Molokini and Turtle Town Snorkeling Adventure Aboard",
     rating: 5,
@@ -253,7 +254,7 @@ export const tourDataThree = [
   },
   {
     id: 17,
-    imageSrc: "/img/tourCards/1/3.jpg",
+    imageSrc: "/img/tourCards/1/3.png",
     location: "London, UK",
     title: "Westminster Walking Tour & Westminster Abbey Entry",
     rating: 5,
@@ -267,7 +268,7 @@ export const tourDataThree = [
   },
   {
     id: 18,
-    imageSrc: "/img/tourCards/1/4.jpg",
+    imageSrc: "/img/tourCards/1/4.png",
     location: "Paris, France",
     title: "Space Center Houston Admission Ticket",
     rating: 5,
@@ -281,7 +282,7 @@ export const tourDataThree = [
   },
   {
     id: 19,
-    imageSrc: "/img/tourCards/1/5.jpg",
+    imageSrc: "/img/tourCards/1/5.png",
     location: "New York, USA",
     title: "Clear Kayak Tour of Shell Key Preserve and Tampa Bay Area",
     rating: 5,
@@ -295,7 +296,7 @@ export const tourDataThree = [
   },
   {
     id: 20,
-    imageSrc: "/img/tourCards/1/6.jpg",
+    imageSrc: "/img/tourCards/1/6.png",
     location: "London, UK",
     title: "History and Hauntings of Salem Guided Walking Tour",
     rating: 5,
@@ -309,7 +310,7 @@ export const tourDataThree = [
   },
   {
     id: 21,
-    imageSrc: "/img/tourCards/1/7.jpg",
+    imageSrc: "/img/tourCards/1/7.png",
     location: "Paris, France",
     title: "All Inclusive Ultimate Circle Island Day Tour with Lunch",
     rating: 5,
@@ -321,7 +322,7 @@ export const tourDataThree = [
   },
   {
     id: 22,
-    imageSrc: "/img/tourCards/1/8.jpg",
+    imageSrc: "/img/tourCards/1/8.png",
     location: "New York, USA",
     title:
       "Mauna Kea Summit Sunset and Stars Free Astro Photos Hilo Kona Waikoloa Pick Up",
@@ -334,7 +335,7 @@ export const tourDataThree = [
   },
   {
     id: 23,
-    imageSrc: "/img/tourCards/1/9.jpg",
+    imageSrc: "/img/tourCards/1/9.png",
     location: "London, UK",
     title: "Starlight with Sea Cave Kayaking and Loy Krathong Floating",
     rating: 5,
@@ -346,7 +347,7 @@ export const tourDataThree = [
   },
   {
     id: 24,
-    imageSrc: "/img/tourCards/1/10.jpg",
+    imageSrc: "/img/tourCards/1/10.png",
     location: "Paris, France",
     title: "Full-Day Phi Phi Islands, Maiton island Trip by Speed Catamaran",
     rating: 5,
@@ -358,7 +359,7 @@ export const tourDataThree = [
   },
   {
     id: 25,
-    imageSrc: "/img/tourCards/1/11.jpg",
+    imageSrc: "/img/tourCards/1/11.png",
     location: "New York, USA",
     title: "Phi Phi Islands Day Tour from Phuket",
     rating: 5,
@@ -370,7 +371,7 @@ export const tourDataThree = [
   },
   {
     id: 26,
-    imageSrc: "/img/tourCards/1/12.jpg",
+    imageSrc: "/img/tourCards/1/12.png",
     location: "London, UK",
     title: "Karon View Point, Big Buddha & Wat Chalong",
     rating: 5,

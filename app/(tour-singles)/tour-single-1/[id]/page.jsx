@@ -1,5 +1,6 @@
 import FooterOne from "@/components/layout/footers/FooterOne";
 import Header1 from "@/components/layout/header/Header1";
+import Header4 from "@/components/layout/header/Header4";
 import PageHeader from "@/components/tourSingle/PageHeader";
 import TourSlider from "@/components/tourSingle/TourSlider";
 import SingleOne from "@/components/tourSingle/pages/SingleOne";
@@ -19,7 +20,7 @@ export default function page({ params }) {
   return (
     <>
       <main>
-        <Header1 />
+        <Header4 />
         <PageHeader />
 
         <SingleOne tour={tour} />

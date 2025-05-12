@@ -688,27 +688,27 @@ button:focus {
 }
 
 .button.-outline-accent-1 {
-  border-color: var(--color-accent-1);
+  border-color: var(--color-green-3);
 }
 
 .button.-outline-accent-1:hover {
-  background-color: var(--color-accent-1) !important;
+  background-color: var(--color-green-3) !important;
   border-color: transparent;
   color: white !important;
 }
 
 .button.-accent-1-dark:hover {
-  border-color: var(--color-accent-1-dark);
-  background-color: var(--color-accent-1-dark) !important;
+  border-color: var(--color-green-3);
+  background-color: var(--color-green-3) !important;
   color: white !important;
 }
 
 .button.-outline-accent-1-dark {
-  border-color: var(--color-accent-1-dark);
+  border-color: var(--color-green-3);
 }
 
 .button.-outline-accent-1-dark:hover {
-  background-color: var(--color-accent-1-dark) !important;
+  background-color: var(--color-green-3) !important;
   border-color: transparent;
   color: white !important;
 }
@@ -10774,11 +10774,11 @@ h6 {
 }
 
 .text-accent-1 {
-  color: var(--color-accent-1);
+  color: var(--color-green-3);
 }
 
 .text-accent-1-dark {
-  color: var(--color-accent-1-dark);
+  color: var(--color-green-3);
 }
 
 .text-accent-2 {
