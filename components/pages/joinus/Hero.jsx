@@ -24,10 +24,18 @@ export default function Hero() {
         <div className="row justify-center">
           <div className="col-12">
             <div className="pageHeader__content">
-              <h1 className="pageHeader__title text-dark">About Us</h1>
+              <h1 className="pageHeader__title text-dark">Join Us</h1>
+              {/* <p className="pageHeader__text">
+                At <strong>Parivar Sathi</strong>, we help people who are
+                silently struggling with fertility concerns and don’t know where
+                to begin. We're not a hospital, clinic, or NGO—but we operate
+                with the compassion and community spirit of one.
+              </p> */}
               <p className="pageHeader__text">
-                We guide people with fertility questions—ethically,
-                respectfully, and without pressure.
+                If you are passionate about making a difference in the lives of
+                those facing fertility challenges, we invite you to join our
+                team. Together, we can provide the support and guidance needed
+                to navigate this journey with care and understanding.
               </p>
             </div>
           </div>

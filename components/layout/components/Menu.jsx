@@ -19,7 +19,7 @@ export default function Menu() {
                   ? "activeMenu"
                   : ""
               }
-              href="#"
+              href="/"
             >
               Home
             </a>
@@ -34,7 +34,7 @@ export default function Menu() {
           </div>
 
           <div className="desktopNav__item">
-            <a href="#">Join us</a>
+            <a href="joinus">Join us</a>
           </div>
 
           <div className="desktopNav__item">
