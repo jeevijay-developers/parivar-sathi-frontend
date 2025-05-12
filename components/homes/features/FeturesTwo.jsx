@@ -38,7 +38,7 @@ export default function FeaturesTwo() {
               <button
                 data-aos="fade-right"
                 data-aos-delay=""
-                className="button -md -dark-1 bg-accent-1 text-white mt-60 md:mt-30"
+                className="button -md -dark-1 bg-accent-3-v text-white mt-60 md:mt-30"
               >
                 <Link href={"/opd-camps"}>
                   Explore Our OPD Camps

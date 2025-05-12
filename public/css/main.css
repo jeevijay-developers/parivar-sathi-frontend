@@ -103,8 +103,9 @@
   --color-soft-mint: #A8E6CF;
   --color-peach: #FFD3B6;
   --color-off-white: #FAF9F6;
+  --color-mint: #98FF98;  
 
-  
+
   --color-white: #ffffff;
   --color-black: #000000;
   --color-border: #dddddd;
@@ -10615,6 +10616,21 @@ h6 {
 
 .bg-accent-3-v {
   background-color: var(  --color-green-3) !important;
+}
+
+.bg-soft-mint {
+  background-color: var(--color-soft-mint) !important;
+}
+
+.bg-peach {
+  background-color: var(--color-peach) !important;
+}
+
+.bg-off-white {
+  background-color: var(--color-off-white) !important;
+}
+.bg-mint {
+  background-color: var(--color-mint) !important;
 }
 
 .bg-dark-1 {

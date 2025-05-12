@@ -29,7 +29,7 @@ export default function Information() {
               and Partnership over promotion.
             </p>
 
-            <button className="button -md -dark-1 bg-accent-1 text-white mt-30">
+            <button className=" mt-3 button -dark-1 p-3 bg-accent-3-v rounded-200 text-white">
               Talk to a Counselor
             </button>
           </div>
