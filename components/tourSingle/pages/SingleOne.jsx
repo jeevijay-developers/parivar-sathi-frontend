@@ -27,13 +27,13 @@ export default function SingleOne({ tour }) {
         <div className="container">
           <div className="row y-gap-30 justify-between">
             <div className="col-lg-8">
-              <div className="row y-gap-20 justify-between items-center layout-pb-md">
+              {/* <div className="row y-gap-20 justify-between items-center layout-pb-md">
                 <OthersInformation />
-              </div>
+              </div> */}
 
               <Overview />
 
-              <div className="line mt-60 mb-60"></div>
+              {/* <div className="line mt-60 mb-60"></div>
 
               <h2 className="text-30">What's included</h2>
 
@@ -77,14 +77,14 @@ export default function SingleOne({ tour }) {
                 See more reviews
                 <i className="icon-arrow-top-right text-16 ml-10"></i>
               </button>
-              <CommentBox />
+              <CommentBox /> */}
             </div>
 
-            <div className="col-lg-4">
+            {/* <div className="col-lg-4">
               <div className="d-flex justify-end js-pin-content">
                 <TourSingleSidebar />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

@@ -5853,7 +5853,10 @@ h6 {
   border: 1px solid var(--border, #e7e6e6);
   padding: 20px;
   transition: 0.2s;
+  max-width: 700px; /* or whatever width you prefer */
+  margin: 0 auto; /* center it */
 }
+
 
 @media (max-width: 1199px) {
   .tourCard.-type-2 {
