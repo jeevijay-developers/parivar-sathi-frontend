@@ -38,7 +38,7 @@ export default function Menu() {
           </div>
 
           <div className="desktopNav__item">
-            <a href="#">
+            <a href="register-opd-camp">
               Request for OPD camp
               {/* <i className="icon-chevron-down"></i> */}
             </a>

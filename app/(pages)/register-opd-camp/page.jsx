@@ -4,18 +4,18 @@ import BrandsOne from "@/components/homes/brands/BrandsOne";
 import FeaturesOne from "@/components/homes/features/FeaturesOne";
 import FeturesTwo from "@/components/homes/features/FeturesTwo";
 import TestimonialOne from "@/components/homes/testimonials/TestimonialOne";
-import FooterOne from "@/components/layout/footers/FooterOne";
+import FooterThree from "@/components/layout/footers/FooterThree";
 
 import Header4 from "@/components/layout/header/Header4";
 import Banner from "@/components/pages/about/Banner";
-import Hero from "@/components/pages/joinus/Hero";
-import JoinUsForm from "@/components/pages/joinus/JoinUsForm";
+import Hero from "@/components/pages/RegisterOpdCamp/Hero";
+import RegisterOpdCampForm from "@/components/pages/RegisterOpdCamp/RegisterOpdCampForm";
 import Information from "@/components/pages/about/Information";
 import Team from "@/components/pages/about/Team";
 import React from "react";
 
 export const metadata = {
-  title: "About ",
+  title: "Register OPD Camp",
   description: "Parivar Sathi ",
 };
 
@@ -25,12 +25,8 @@ export default function page() {
       <main>
         <Header4 />
         <Hero />
-        <JoinUsForm />
-        {/* <TestimonialOne /> */}
-        {/* <BannerOne /> */}
-        {/* <Team /> */}
-        {/* <BrandsOne /> */}
-        <FooterOne />
+        <RegisterOpdCampForm />
+        <FooterThree />
       </main>
     </>
   );
