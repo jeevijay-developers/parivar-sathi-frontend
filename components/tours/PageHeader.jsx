@@ -12,18 +12,18 @@ export default function PageHeader() {
               </span>
               <span>{">"}</span>
               <span className="breadcrumbs__item">
-                <a href="#">Tours</a>
+                <a href="#">OPD Camps</a>
               </span>
               <span>{">"}</span>
               <span className="breadcrumbs__item">
-                <a href="#">Phuket</a>
+                <a href="#">Previous Camps</a>
               </span>
             </div>
           </div>
 
           <div className="col-auto">
             <div className="pageHeader__subtitle">
-              THE 10 BEST Phuket Tours & Excursions
+              Previous OPD Camps Held Across Cities
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@ export default function PageHeader() {
         <div className="row pt-30">
           <div className="col-auto">
             <h1 className="pageHeader__title">
-              Explore all things to do in Phuket
+              View Details of Our Previous OPD Camps
             </h1>
           </div>
         </div>
