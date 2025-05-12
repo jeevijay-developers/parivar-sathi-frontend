@@ -35,10 +35,13 @@ export default function TestimonialsFour() {
   return (
     <section className="layout-pt-xl layout-pb-xl bg-light-3">
       <div className="container">
-        <div className="row justify-center text-center">
-          <div className="col-auto">
-            <h2 data-aos="fade-up" data-aos-delay="" className="text-30">
-              Customer Reviews
+        <div className="flex justify-center text-center my-8">
+          <div>
+            <h2
+              data-aos="fade-up"
+              className="text-3xl font-semibold text-gray-800"
+            >
+              What Our Customers Say
             </h2>
           </div>
         </div>

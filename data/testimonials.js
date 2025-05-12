@@ -71,44 +71,45 @@ export const testimonialsThree = [
   {
     id: 1,
     imgSrc: "/img/avatars/2/1.jpg",
-    name: "Ali Tufan",
-    role: "Product Manager, Apple Inc.",
+    name: "Neha Sharma",
+    role: "Gorakhpur, Uttar Pradesh",
     comment:
-      "The tours in this website are great. I had been really enjoy with my family! The team is very professional and taking care of the customers. Will surely recommend to my freind to join this company!",
+      "I was confused and anxious about fertility options. Parivar Sathi didn’t sell me anything—they just helped me understand my next steps. It changed everything.",
   },
   {
     id: 2,
     imgSrc: "/img/avatars/2/2.jpg",
-    name: "Ali Tufan",
-    role: "Product Manager, Apple Inc.",
+    name: "Ravi Patel",
+    role: "Vadodara, Gujarat",
     comment:
-      "The tours in this website are great. I had been really enjoy with my family! The team is very professional and taking care of the customers. Will surely recommend to my freind to join this company!",
+      "Their OPD camp in my city made it so easy to talk to someone without judgment. I felt heard for the first time. Thank you for being there.",
   },
   {
     id: 3,
     imgSrc: "/img/avatars/2/3.jpg",
-    name: "Ali Tufan",
-    role: "Product Manager, Apple Inc.",
+    name: "Aarti Mehta",
+    role: "Nashik, Maharashtra",
     comment:
-      "The tours in this website are great. I had been really enjoy with my family! The team is very professional and taking care of the customers. Will surely recommend to my freind to join this company!",
+      "Parivar Sathi’s counselor explained all my options patiently. I wasn’t pressured, just supported. I finally found a doctor I trust.",
   },
   {
     id: 4,
     imgSrc: "/img/avatars/2/4.jpg",
-    name: "Ali Tufan",
-    role: "Product Manager, Apple Inc.",
+    name: "Manoj Yadav",
+    role: "Raipur, Chhattisgarh",
     comment:
-      "The tours in this website are great. I had been really enjoy with my family! The team is very professional and taking care of the customers. Will surely recommend to my freind to join this company!",
+      "Thanks to their guidance, I could access discounted tests and meet ethical doctors. They make fertility help actually accessible.",
   },
   {
     id: 5,
     imgSrc: "/img/avatars/2/5.jpg",
-    name: "Ali Tufan",
-    role: "Product Manager, Apple Inc.",
+    name: "Pooja Desai",
+    role: "Surat, Gujarat",
     comment:
-      "The tours in this website are great. I had been really enjoy with my family! The team is very professional and taking care of the customers. Will surely recommend to my freind to join this company!",
+      "I didn’t even know where to start. Parivar Sathi listened, explained everything clearly, and connected me to the right clinic near me.",
   },
 ];
+
 
 export const testimonialsFive = [
   {

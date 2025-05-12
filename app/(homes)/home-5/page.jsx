@@ -29,8 +29,8 @@ export default function page() {
         <BannerEight />
         <DestinationsFive />
         <TestimonialsFour />
-        <ArticlesOne />
-        <Banner9 />
+        {/* <ArticlesOne /> */}
+        {/* <Banner9 /> */}
         <FooterThree />
       </main>
     </>
