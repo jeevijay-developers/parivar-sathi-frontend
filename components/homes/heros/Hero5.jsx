@@ -128,7 +128,7 @@ export default function Hero5() {
                   <button
                     data-aos="fade-up"
                     data-aos-delay="300"
-                    onClick={() => router.push("/tour-list-3")}
+                    onClick={() => router.push("/register-opd-camp")}
                     className="button -dark-1 p-3 bg-accent-3-v rounded-200 text-white"
                   >
                     <LiaCashRegisterSolid />
