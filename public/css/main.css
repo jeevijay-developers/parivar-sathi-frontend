@@ -13679,12 +13679,12 @@ table.table-4.-border-bottom tbody > tr {
 }
 
 .toTopButton svg {
-  fill: var(--color-accent-1);
+  fill: var(--color-green-3);
   transition: 0.2s;
 }
 
 .toTopButton:hover {
-  background-color: var(--color-accent-1);
+  background-color: var(--color-green-3);
 }
 
 .toTopButton:hover svg {
@@ -13695,6 +13695,8 @@ table.table-4.-border-bottom tbody > tr {
   opacity: 0;
   pointer-events: none;
 }
+
+
 
 .text-overflow {
   overflow: hidden;

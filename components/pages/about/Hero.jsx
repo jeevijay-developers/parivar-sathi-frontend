@@ -25,10 +25,7 @@ export default function Hero() {
           <div className="col-12">
             <div className="pageHeader__content">
               <h1 className="pageHeader__title text-dark">About Us</h1>
-              <p className="pageHeader__text">
-                We guide people with fertility questions—ethically,
-                respectfully, and without pressure.
-              </p>
+              <p className="pageHeader__text">A Companion, Not a Clinic</p>
             </div>
           </div>
         </div>

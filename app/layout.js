@@ -4,6 +4,7 @@ import "../public/css/style.css";
 import { DM_Sans } from "next/font/google";
 import ScrollTopBehaviour from "@/components/common/ScrollTopBehavier";
 import Wrapper from "@/components/layout/Wrapper";
+import WhatsAppFloatingButton from "@/components/common/WhatsAppFloatingButton";
 const dmsans = DM_Sans({
   weight: ["400", "500", "700"],
   style: ["normal", "italic"],
@@ -21,7 +22,8 @@ export default function RootLayout({ children }) {
       <head></head>
       <body className={dmsans.className}>
         <Wrapper>{children}</Wrapper>
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
+        <WhatsAppFloatingButton />
         <ScrollTopBehaviour />
       </body>
     </html>

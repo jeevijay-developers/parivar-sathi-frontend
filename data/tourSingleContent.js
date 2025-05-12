@@ -77,26 +77,32 @@ export const roadmapData2 = [
 
 export const faqData = [
   {
-    question: "Can I get the refund?",
+    question: "What is Parivar Sathi?",
     answer:
-      "Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat cancellation policy: For a full refund, cancel at least 24 hours in advance of the start date of the experience. Discover and book Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat",
+      "Parivar Sathi is a people-first fertility guidance platform. We’re not a hospital or clinic—we simply help you understand your options and connect you to ethical providers.",
   },
   {
-    question: "Can I change the travel date?",
+    question: "Do I have to pay for your help?",
     answer:
-      "Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat cancellation policy: For a full refund, cancel at least 24 hours in advance of the start date of the experience. Discover and book Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat",
+      "No, our counseling and referral services are completely free for individuals seeking fertility support.",
   },
   {
-    question: "When and where does the tour end?",
+    question: "Are you a fertility clinic?",
     answer:
-      "Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat cancellation policy: For a full refund, cancel at least 24 hours in advance of the start date of the experience. Discover and book Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat",
+      "No. We guide you based on your needs and then refer you to experienced, ethical doctors or clinics if needed.",
   },
   {
-    question: "Do you arrange airport transfers?",
+    question: "What happens after counseling?",
     answer:
-      "Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat cancellation policy: For a full refund, cancel at least 24 hours in advance of the start date of the experience. Discover and book Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat",
+      "After understanding your situation, our counselor will share suitable next steps and refer you to a trusted clinic if needed—always with your consent.",
+  },
+  {
+    question: "Can I choose which doctor I want to go to?",
+    answer:
+      "Yes. We help you make informed decisions, but the final choice is always yours.",
   },
 ];
+
 
 export const overallRatingData = [
   {
