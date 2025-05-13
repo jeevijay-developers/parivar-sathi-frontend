@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsAppFloatingButton = () => {
   const handleClick = () => {
-    const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+    const phoneNumber = process.env.NEXT_PUBLIC_COUNSELLOR_WHATSAPP_NUMBER;
     const message = encodeURIComponent(
       "Hi Parivar Sathi, I have some questions about fertility support. Can you help?"
     );
@@ -14,15 +14,15 @@ const WhatsAppFloatingButton = () => {
   return (
     <div
       className="toTopButton "
-      style={{
-        // backgroundColor: "#25D366", 
-   
-      }}
+      style={
+        {
+          // backgroundColor: "#25D366",
+        }
+      }
     >
       <button
         className="btn btn-success rounded-circle p-3"
         onClick={handleClick}
-    
       >
         {" "}
         <FaWhatsapp size={24} color="white" />

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Information() {
   const handleWhatsAppClick = () => {
-    const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+    const phoneNumber = process.env.NEXT_PUBLIC_COUNSELLOR_WHATSAPP_NUMBER;
     const message = encodeURIComponent(
       "Hi Parivar Sathi, I have some questions about fertility support. Can you help?"
     );

@@ -1,4 +1,6 @@
 "use client";
+import { FaDownload } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function ContactForm() {
   return (
@@ -54,6 +56,7 @@ export default function ContactForm() {
                     required
                   ></textarea>
                 </div>
+                {/* Primary Submit Button */}
                 <div className="col-12">
                   <button
                     type="submit"
@@ -61,6 +64,29 @@ export default function ContactForm() {
                   >
                     Apply to Partner with Us
                   </button>
+                </div>
+                {/* Extra Buttons */}
+
+                <div className="col-6 mt-20 ">
+                  <a
+                    href="/clinic-partnership-kit.pdf"
+                    className="button -md -dark-1 bg-green-2 text-white col-12"
+                    download
+                  >
+                    Download Clinic Partnership Kit
+                    {/* <FaDownload />   */}
+                  </a>
+                </div>
+                <div className="col-6 mt-20">
+                  <a
+                    href={`https://wa.me/${process.env.NEXT_PUBLIC_PARTNERSHIP_TEAM_WHATSAPP_NUMBER}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button -md -dark-1 bg-green-2 text-white col-12"
+                  >
+                    {/* <FaWhatsapp /> */}
+                    Talk to Our Partnership Team
+                  </a>
                 </div>
               </form>
             </div>
