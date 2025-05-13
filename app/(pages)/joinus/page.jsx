@@ -13,6 +13,7 @@ import JoinUsForm from "@/components/pages/joinus/JoinUsForm";
 import Information from "@/components/pages/about/Information";
 import Team from "@/components/pages/about/Team";
 import React from "react";
+import FooterThree from "@/components/layout/footers/FooterThree";
 
 export const metadata = {
   title: "About ",
@@ -30,7 +31,7 @@ export default function page() {
         {/* <BannerOne /> */}
         {/* <Team /> */}
         {/* <BrandsOne /> */}
-        <FooterOne />
+        <FooterThree />
       </main>
     </>
   );

@@ -98,11 +98,11 @@ export default function FooterThree() {
               </div>
             </div>
 
-            <div className="col-auto">
+            {/* <div className="col-auto">
               <div className="footer__images d-flex items-center x-gap-10">
                 <Paymentcards />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

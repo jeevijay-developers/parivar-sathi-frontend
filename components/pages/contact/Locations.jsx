@@ -1,27 +1,27 @@
 const locations = [
   {
     id: 1,
-    title: "North America",
-    address: "1 Dundas St W Suite 2500 Toronto ON M5G 1Z3, Canada",
-    contact: "1-800-453-6744 canada@tourz.com",
+    title: "North India",
+    address: "A-25, Connaught Place, New Delhi - 110001",
+    contact: "+91-11-4000-1234 north@parivarsathi.in",
   },
   {
     id: 2,
-    title: "Australia",
-    address: "123 Smith St, Melbourne, VIC 3000, Australia",
-    contact: "61-800-123-456 australia@tourz.com",
+    title: "West India",
+    address: "5th Floor, Phoenix Marketcity, Kurla, Mumbai - 400070",
+    contact: "+91-22-5000-5678 west@parivarsathi.in",
   },
   {
     id: 3,
-    title: "Europe",
-    address: "45 Rue du Faubourg Saint-Antoine, 75011 Paris, France",
-    contact: "33-800-987-654 europe@tourz.com",
+    title: "South India",
+    address: "No. 18, MG Road, Bengaluru - 560001",
+    contact: "+91-80-6000-7890 south@parivarsathi.in",
   },
   {
     id: 4,
-    title: "Asia",
-    address: "Tokyo, Japan",
-    contact: "81-800-567-890 asia@tourz.com",
+    title: "East India",
+    address: "Salt Lake Sector V, Kolkata - 700091",
+    contact: "+91-33-7000-3456 east@parivarsathi.in",
   },
 ];
 
