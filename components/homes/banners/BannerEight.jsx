@@ -48,7 +48,7 @@ export default function BannerEight() {
               </h2>
 
               {/* <p data-aos="fade-up" data-aos-delay="" className="mt-10"> */}
-              <div className="d-flex justify-between items-center border-1-top text-13 text-dark-1 pt-10 mt-10">
+              {/* <div className="d-flex justify-between items-center border-1-top text-13 text-dark-1 pt-10 mt-10">
                 <div className="d-flex items-center">
                   <i className="icon-calendar text-16 mr-5"></i>
                   "12/12/2025"
@@ -58,7 +58,7 @@ export default function BannerEight() {
                   <i className="icon-clock text-16 mr-5"></i>
                   <span className="text-16 fw-500">"12:20 PM"</span>
                 </div>
-              </div>
+              </div> */}
               {/* </p> */}
 
               <div

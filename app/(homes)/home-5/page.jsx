@@ -1,4 +1,7 @@
 import ArticlesOne from "@/components/homes/articles/ArticlesOne";
+import Banner10 from "@/components/homes/banners/Banner10";
+import Banner11 from "@/components/homes/banners/Banner11";
+import Banner12 from "@/components/homes/banners/Banner12";
 import Banner9 from "@/components/homes/banners/Banner9";
 import BannerEight from "@/components/homes/banners/BannerEight";
 import BrandsThree from "@/components/homes/brands/BrandsThree";
@@ -27,6 +30,7 @@ export default function page() {
         <TourTypesTwo />
         <FeaturedTrips />
         <BannerEight />
+        <Banner12 />
         <DestinationsFive />
         <TestimonialsFour />
         {/* <ArticlesOne /> */}
