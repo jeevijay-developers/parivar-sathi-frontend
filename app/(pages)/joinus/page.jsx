@@ -16,7 +16,7 @@ import React from "react";
 import FooterThree from "@/components/layout/footers/FooterThree";
 
 export const metadata = {
-  title: "About ",
+  title: "Join US ",
   description: "Parivar Sathi ",
 };
 

@@ -67,7 +67,7 @@ export default function BannerEight() {
                 className="mt-30 md:mt-20"
               >
                 <button className="button -md -dark-1 bg-accent-2 text-white">
-                  <Link href="/tour-list-1">
+                  <Link href="/">
                     Rigister
                     <i className="icon-arrow-top-right ml-10 text-16"></i>
                   </Link>
