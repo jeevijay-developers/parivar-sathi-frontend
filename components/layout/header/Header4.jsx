@@ -84,11 +84,11 @@ export default function Header4() {
             {/* <div className="ml-30 dnStiky ">
               <Currency />
             </div> */}
-            <div className="text-white ml-20">
-              <a href="help-center">FAQ&apos;s</a>
+            <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
+              <a href="/help-center">FAQ&apos;s</a>
             </div>
-            <div className="text-white ml-20">
-              <a href="about">About us</a>
+            <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
+              <a href="/about">About us</a>
             </div>
             {/* <div className="text-white ml-20">
               <a href="#">Join us</a>

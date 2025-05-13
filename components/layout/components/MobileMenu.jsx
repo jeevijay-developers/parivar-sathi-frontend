@@ -57,7 +57,7 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
                     className={
                       elm.submenu.some(
                         (elm) =>
-                          elm.href.split("/")[1] == pathname?.split("/")[1],
+                          elm.href.split("/")[1] == pathname?.split("/")[1]
                       )
                         ? "activeMenu"
                         : ""
@@ -112,7 +112,7 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
 
           <div className="text-20 lh-12 fw-500 mt-20">
             <div>Speak to our expert at</div>
-            <div className="text-accent-1">1-800-453-6744</div>
+            <div className="text-accent-1">+91 XXXXX XXXXX</div>
           </div>
 
           <div className="d-flex items-center x-gap-10 pt-30">
