@@ -34,11 +34,11 @@ export default function Menu() {
           </div>
 
           <div className="desktopNav__item">
-            <a href="joinus">Join us</a>
+            <a href="/joinus">Join us</a>
           </div>
 
           <div className="desktopNav__item">
-            <a href="register-opd-camp">
+            <a href="/register-opd-camp">
               Request for OPD camp
               {/* <i className="icon-chevron-down"></i> */}
             </a>
