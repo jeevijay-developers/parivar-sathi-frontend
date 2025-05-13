@@ -46,6 +46,9 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
             className="menuNav js-navList -is-active"
             style={{ maxHeight: "calc(100vh - 262px)", overflowY: "auto" }}
           >
+            <li className="menuNav__item">
+              <Link href="/">Home</Link>
+            </li>
             {menuData.map((elm, i) => (
               <li key={i} className="menuNav__item -has-submenu js-has-submenu">
                 <a
