@@ -6,7 +6,23 @@ export default function ContactForm() {
       <div className="container">
         <div className="row justify-center">
           <div className="col-lg-8">
-            <h2 className="text-30 fw-700 text-center mb-30">join Us Form</h2>
+            <h2 className="text-30 fw-700 text-center mb-30">
+              Partnership Form
+            </h2>
+
+            {/* Added Section: Why Clinics & Labs Work With Us */}
+            <div className="mb-30">
+              <p className="text-16">
+                Parivar Sathi partners with clinics and labs that want to grow
+                ethically. Here’s why they choose to work with us:
+              </p>
+              <ul className="mt-10 text-16 list-disc list-inside">
+                <li>Filtered, educated clients who are ready for next steps</li>
+                <li>Discount system managed via our referral ID system</li>
+                <li>Monthly reporting & reconciliation</li>
+                <li>No pushy sales, just quiet support</li>
+              </ul>
+            </div>
 
             <div className="contactForm">
               <form
@@ -33,7 +49,7 @@ export default function ContactForm() {
                 </div>
                 <div className="col-12">
                   <textarea
-                    placeholder=" motivation for joining?"
+                    placeholder="Motivation for joining?"
                     rows="6"
                     required
                   ></textarea>
@@ -43,7 +59,7 @@ export default function ContactForm() {
                     type="submit"
                     className="button -md -dark-1 bg-accent-3-v text-white col-12"
                   >
-                    Send Message
+                    Apply to Partner with Us
                   </button>
                 </div>
               </form>

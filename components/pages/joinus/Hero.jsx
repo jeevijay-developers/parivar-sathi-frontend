@@ -24,7 +24,10 @@ export default function Hero() {
         <div className="row justify-center">
           <div className="col-12">
             <div className="pageHeader__content">
-              <h1 className="pageHeader__title text-dark">Join Us</h1>
+              <h1 className="pageHeader__title text-dark">
+                {" "}
+                Partner with Us to Reach More People Ethically
+              </h1>
               {/* <p className="pageHeader__text">
                 At <strong>Parivar Sathi</strong>, we help people who are
                 silently struggling with fertility concerns and don’t know where
@@ -32,10 +35,10 @@ export default function Hero() {
                 with the compassion and community spirit of one.
               </p> */}
               <p className="pageHeader__text">
-                If you are passionate about making a difference in the lives of
-                those facing fertility challenges, we invite you to join our
-                team. Together, we can provide the support and guidance needed
-                to navigate this journey with care and understanding.
+                Parivar Sathi is a lead-generation and referral platform that
+                brings pre-counseled, informed clients to your clinic. We handle
+                awareness, engagement, and trust-building—so you can focus on
+                care.
               </p>
             </div>
           </div>

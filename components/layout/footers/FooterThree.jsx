@@ -47,6 +47,16 @@ export default function FooterThree() {
                   <a className="d-block" href="#">
                     +91 XXXXX XXXXX
                   </a>
+                  <a
+                    href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-20 fw-500 d-inline-block"
+                  >
+                    <span className="text-black">Talk to us on WhatsApp:</span>
+                    &nbsp;
+                    <span className="text-accent-2">+91 XXXXX XXXXX</span>
+                  </a>
                 </div>
               </div>
 
