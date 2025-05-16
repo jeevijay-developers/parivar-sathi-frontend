@@ -5,8 +5,9 @@ import BlogSingle from "@/components/blogs/BlogSingle";
 import { blogs } from "@/data/blogs";
 
 export const metadata = {
-  title: "Blog-single || ViaTour - Travel & Tour React NextJS Template",
-  description: "ViaTour - Travel & Tour React NextJS Template",
+  title: "Parivar Sathi",
+  description:
+    "Parivar Sathi was created for people who are silently struggling with fertility concerns and don’t know where to begin. We’re not a hospital, clinic, or NGO. But we operate with the compassion and community spirit of one.",
 };
 
 export default function page({ params }) {
