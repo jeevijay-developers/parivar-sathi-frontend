@@ -17,7 +17,7 @@ export default function Banner12() {
       <div className="container">
         <div className="cta__content">
           <div className="row justify-between">
-            <div className="col-xl-7 col-lg-8">
+            <div className="col-xl-4 w-100">
               <h2 data-aos="fade-up" className="text-24 lh-13 break-words">
                 Are You Trying to Conceive?
               </h2>
@@ -55,14 +55,16 @@ export default function Banner12() {
               </button>
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-lg-6 ">
               <div className="cta__image">
+                <div >
                 <Image
                   src="/img/cta/11/1.jpg"
-                  width={730}
-                  height={375}
+                  width={880}
+                  height={450}
                   alt="Couple seeking support"
                 />
+                </div>
                 <Image
                   src="/img/cta/11/shape.svg"
                   width="21"
