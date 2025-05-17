@@ -1,16 +1,35 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { axiosInstance } from "@/app/lib/axiousInstance";
+import { useEffect, useState } from "react";
+
 
 export default function BannerEight() {
+  const [opdCamp, setOpdCamp] = useState({});
+
+  useEffect(() =>{
+    const fetchOpdCamp = async () => {
+      try {
+        const response = await axiosInstance.get("/opds/opdcampsfour");
+        setOpdCamp(response.data[0]);
+        console.log(response.data[0]);
+      } catch (error) {
+        console.error("Error fetching OPD camp:", error);
+      }
+    };
+  
+    fetchOpdCamp();
+  }, []);
   return (
     <section className="cta -type-2">
       <div className="cta__bg">
         <Image src="/img/cta/7/bg.png" width={1093} height={600} alt="image" />
 
         <div className="cta__image">
-          <Image
-            src="/img/tourCards/1/5.jpg"
+          <img
+            src={opdCamp.image}
             width={750}
             height={600}
             alt="image"
@@ -39,12 +58,13 @@ export default function BannerEight() {
                 data-aos-delay=""
                 className="text-40 md:text-30  lh-13"
               >
-                Rigister to our next{" "}
+                Register to our next{" "}
                 <span className="text-accent-2">OPD Camp</span> in{" "}
                 <br className="lg:d-none" />
-                Kota rajasthan
+                {opdCamp.location}
                 <br className="lg:d-none" />
-                Destination
+                Destination on <br className="lg:d-none" />
+                <span className="text-accent-2">{new Date(opdCamp.date).toLocaleDateString()}</span>
               </h2>
 
               {/* <p data-aos="fade-up" data-aos-delay="" className="mt-10"> */}
@@ -66,12 +86,12 @@ export default function BannerEight() {
                 data-aos-delay=""
                 className="mt-30 md:mt-20"
               >
-                <button className="button -md -dark-1 bg-accent-2 text-white">
+                {/* <button className="button -md -dark-1 bg-accent-2 text-white">
                   <Link href="/">
-                    Rigister
+                    Register
                     <i className="icon-arrow-top-right ml-10 text-16"></i>
                   </Link>
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import ScrollToTop from "@/components/common/ScrollToTop";
 import "../public/css/style.css";
+import "../public/css/blog-section.css";
 
 import { DM_Sans } from "next/font/google";
 import ScrollTopBehaviour from "@/components/common/ScrollTopBehavier";
