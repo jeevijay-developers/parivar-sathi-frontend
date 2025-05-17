@@ -102,7 +102,7 @@ export default function FeaturedTrips() {
                               {new Date(camp.date).toLocaleDateString()}
                             </div>
 
-                            <div>
+                            <div className="d-flex items-center">
                               <i className="icon-clock text-16 mr-5"></i>
                               <span className="text-16 fw-500">{camp.time}</span>
                             </div>
