@@ -33,7 +33,8 @@ export default function TourTypesTwo() {
           className="row y-gap-20 pt-40"
         >
           {destinationsNine.map((elm, i) => (
-            <div key={i} className="col-xl-2 col-md-4 col-6">
+            
+            <div key={i} className="col-xl-4 col-md-4 col-6">
               <div
                 // href={"/tour-list-1"}
                 className="featureCard -type-5 -hover-accent-2"
