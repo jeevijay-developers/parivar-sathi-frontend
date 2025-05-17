@@ -15,7 +15,7 @@ import FeaturedTrips from "@/components/homes/tours/FeaturedTrips";
 import FooterThree from "@/components/layout/footers/FooterThree";
 import Header4 from "@/components/layout/header/Header4";
 import React from "react";
-
+import BlogSectionHomePage from "@/components/blogs/BlogSectionHomePage";
 export const metadata = {
   title: "Home-5 || ViaTour - Travel & Tour React NextJS Template",
   description: "ViaTour - Travel & Tour React NextJS Template",
@@ -33,6 +33,7 @@ export default function page() {
         <BannerEight />
         <Banner12 />
         <DestinationsFive />
+        <BlogSectionHomePage />
         <FAQTeaser/>
         <TestimonialsFour />
         {/* <ArticlesOne /> */}
