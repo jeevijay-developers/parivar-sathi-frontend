@@ -369,40 +369,22 @@ export const destinationsEight = [
 export const destinationsNine = [
   {
     id: 1,
-    title: "Free Counseling",
+    title: "We are not a hospital. Not a clinic. Not an NGO",
     iconSrc: "/img/icons/4/1.svg",
     detail: "Talk privately with our trained counselor",
   },
   {
     id: 2,
-    title: "Attend OPD Camp",
+    title: "We work like an NGO—people-first, community-focused, and ethical",
     iconSrc: "/img/icons/4/2.svg",
     detail: "Join a nearby OPD camp in your city",
   },
   {
     id: 3,
-    title: "Fertility Signals 101",
+    title: "We help you understand your options and connect you to the right support",
     iconSrc: "/img/icons/4/7.svg",
     detail: "Learn what’s normal and when to seek help",
-  },
-  {
-    id: 4,
-    title: "Trusted Clinic Referrals",
-    iconSrc: "/img/icons/4/4.svg",
-    detail: "Only ethical clinics that put people first",
-  },
-  {
-    id: 5,
-    title: "Discounted Tests",
-    iconSrc: "/img/icons/4/5.svg",
-    detail: "Coupons for fertility-related diagnostics",
-  },
-  {
-    id: 6,
-    title: "WhatsApp Support",
-    iconSrc: "/img/icons/4/6.svg",
-    detail: "Easy, judgment-free support on WhatsApp",
-  },
+  }
 ];
 
 export const destinationCards = [
