@@ -1,0 +1,14 @@
+.form-check{
+    display: flex !important;   
+    align-items: center !important;
+}
+.form-check-input{
+    width: 15px !important;
+    height: 15px !important;
+    margin-right: 10px !important;
+}
+.consent-checkbox{
+    width: 25px !important;
+    height: 25px !important;
+    outline: none !important;
+}
