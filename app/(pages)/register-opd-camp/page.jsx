@@ -1,3 +1,4 @@
+"use client";
 // import BrandsOne from "@/components/homes/brands/BrandsOne";
 import FooterThree from "@/components/layout/footers/FooterThree";
 
@@ -11,7 +12,6 @@ export const metadata = {
   description: "Parivar Sathi ",
 };
 
-"use client";
 
 export default function page() {
   return (
