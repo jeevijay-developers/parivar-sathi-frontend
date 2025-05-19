@@ -70,7 +70,7 @@ export const testimonialsTwo = [
 export const testimonialsThree = [
   {
     id: 1,
-    imgSrc: "/img/avatars/2/1.jpg",
+    imgSrc: "/img/avatars/2/1.png",
     name: "Neha Sharma",
     role: "Gorakhpur, Uttar Pradesh",
     comment:
@@ -78,7 +78,7 @@ export const testimonialsThree = [
   },
   {
     id: 2,
-    imgSrc: "/img/avatars/2/2.jpg",
+    imgSrc: "/img/avatars/2/4.png",
     name: "Ravi Patel",
     role: "Vadodara, Gujarat",
     comment:
@@ -86,7 +86,7 @@ export const testimonialsThree = [
   },
   {
     id: 3,
-    imgSrc: "/img/avatars/2/3.jpg",
+    imgSrc: "/img/avatars/2/2.png",
     name: "Aarti Mehta",
     role: "Nashik, Maharashtra",
     comment:
@@ -94,7 +94,7 @@ export const testimonialsThree = [
   },
   {
     id: 4,
-    imgSrc: "/img/avatars/2/4.jpg",
+    imgSrc: "/img/avatars/2/5.jpeg",
     name: "Manoj Yadav",
     role: "Raipur, Chhattisgarh",
     comment:
@@ -102,7 +102,7 @@ export const testimonialsThree = [
   },
   {
     id: 5,
-    imgSrc: "/img/avatars/2/5.jpg",
+    imgSrc: "/img/avatars/2/3.png",
     name: "Pooja Desai",
     role: "Surat, Gujarat",
     comment:

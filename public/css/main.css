@@ -5228,17 +5228,17 @@ h6 {
   height: 80px;
 }
 
-.featureCard.-type-5.-hover-accent-1 {
+/* .featureCard.-type-5.-hover-accent-1 {
   background-color: white;
-}
+} */
 
-.featureCard.-type-5.-hover-accent-1 .featureCard__icon {
+/* .featureCard.-type-5.-hover-accent-1 .featureCard__icon {
   background-color: #fef7f4;
-}
+} */
 
-.featureCard.-type-5.-hover-accent-1:hover {
+/* .featureCard.-type-5.-hover-accent-1:hover {
   background-color: var(--color-accent-1);
-}
+} */
 
 .featureCard.-type-5.-hover-accent-1:hover > * {
   color: white !important;
