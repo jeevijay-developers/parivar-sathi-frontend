@@ -1,3 +1,4 @@
+"use client";
 // import BrandsOne from "@/components/homes/brands/BrandsOne";
 import FooterThree from "@/components/layout/footers/FooterThree";
 
@@ -10,6 +11,7 @@ export const metadata = {
   title: "Register OPD Camp",
   description: "Parivar Sathi ",
 };
+
 
 export default function page() {
   return (
