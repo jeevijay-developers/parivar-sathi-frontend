@@ -6,6 +6,7 @@ import { DM_Sans } from "next/font/google";
 import ScrollTopBehaviour from "@/components/common/ScrollTopBehavier";
 import Wrapper from "@/components/layout/Wrapper";
 import WhatsAppFloatingButton from "@/components/common/WhatsAppFloatingButton";
+import { ToastContainer } from "react-toastify";
 const dmsans = DM_Sans({
   weight: ["400", "500", "700"],
   style: ["normal", "italic"],
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
         {/* <ScrollToTop /> */}
         <WhatsAppFloatingButton />
         <ScrollTopBehaviour />
+        <ToastContainer />
       </body>
     </html>
   );

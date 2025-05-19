@@ -27,6 +27,7 @@
     "react-modal-video": "^2.0.1",
     "react-multi-date-picker": "^4.4.1",
     "react-quill": "^2.0.0",
+    "react-toastify": "^11.0.5",
     "recharts": "^2.9.3",
     "swiper": "^11.0.3"
   }
