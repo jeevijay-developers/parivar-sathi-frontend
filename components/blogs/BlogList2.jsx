@@ -14,14 +14,14 @@ export default function BlogList2() {
               {blogs.slice(0, 3).map((elm, i) => (
                 <div key={i} className="col-12">
                   <Link
-                    href={`blog-single/${elm.id}`}
+                    href={`blog-single/${elm?.id}`}
                     className="blogCard -type-1"
                   >
                     <div className="blogCard__image ratio ratio-41:30">
                       <Image
                         width={616}
                         height={451}
-                        src={elm.image}
+                        src={elm?.image}
                         alt="image"
                         className="img-ratio rounded-12"
                       />
@@ -29,15 +29,15 @@ export default function BlogList2() {
 
                     <div className="blogCard__content mt-30">
                       <div className="d-flex x-gap-10 text-14">
-                        <div className="lh-13">{elm.date}</div>
-                        <div className="lh-13">By {elm.author}</div>
+                        <div className="lh-13">{elm?.date}</div>
+                        <div className="lh-13">By {elm?.author}</div>
                       </div>
 
                       <h3 className="blogCard__title text-30 lh-15 mt-10">
-                        {elm.title}
+                        {elm?.title}
                       </h3>
 
-                      <p className="mt-10">{elm.desc}</p>
+                      <p className="mt-10">{elm?.desc}</p>
 
                       <button className="fw-500 mt-10">
                         <span className="mr-10">Read More</span>

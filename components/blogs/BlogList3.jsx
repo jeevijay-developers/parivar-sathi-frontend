@@ -18,7 +18,7 @@ export default function BlogList3() {
                       <Image
                         width={616}
                         height={451}
-                        src={elm.image}
+                        src={elm?.image}
                         alt="image"
                       />
                     </div>
