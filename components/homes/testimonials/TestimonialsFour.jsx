@@ -33,7 +33,7 @@ export default function TestimonialsFour() {
     }
   };
   return (
-    <section className="layout-pt-xl layout-pb-xl bg-light-3">
+    <section className="layout-pt-xl layout-pb-xl">
       <div className="container">
         <div className="flex justify-center text-center my-8">
           <div>

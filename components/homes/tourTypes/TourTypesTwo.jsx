@@ -1,7 +1,7 @@
 import { destinationsNine } from "@/data/destinations";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import HowWeHelp from "../Section/HowWeHelp";
 
 export default function TourTypesTwo() {
   return (
@@ -10,7 +10,7 @@ export default function TourTypesTwo() {
         <div className="row y-gap-10 justify-between items-end">
           <div className="col-auto">
             <h2 data-aos="fade-up" data-aos-delay="" className="text-30">
-              Who We Are & How We Help
+              Who We Are ?
             </h2>
           </div>
 
@@ -40,7 +40,7 @@ export default function TourTypesTwo() {
                 className="featureCard -type-5 -hover-accent-2"
               >
                 <div className="featureCard__icon">
-                  <Image width="40" height="40" src={elm.iconSrc} alt="image" />
+                  <Image width={i === 1 || i === 2 ? "53" : "40"} height="40" src={elm.iconSrc} alt="image" />
                 </div>
 
                 <h4 className="text-18 fw-500 mt-20">{elm.title}</h4>
@@ -50,6 +50,7 @@ export default function TourTypesTwo() {
           ))}
         </div>
       </div>
+      <HowWeHelp />
     </section>
   );
 }

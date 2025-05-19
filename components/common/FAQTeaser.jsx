@@ -6,7 +6,7 @@ import React from "react";
 export default function FAQTeaser() {
   const router = useRouter();
   return (
-    <section className="relative layout-pt-lg ">
+    <section className="relative layout-pt-sm layout-pb-sm ">
       <div className="sectionBg -mx-30 bg-accent-1-05 rounded-24"></div>
 
       <div className="container">
