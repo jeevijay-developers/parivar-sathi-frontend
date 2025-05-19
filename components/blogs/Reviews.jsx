@@ -40,7 +40,7 @@ export default function Reviews() {
           <p className="mt-10">{elm.desc}</p>
 
           <div className="row x-gap-20 y-gap-20 pt-20">
-            {elm.images.map((elm2, i2) => (
+            {elm?.images.map((elm2, i2) => (
               <div key={i2} className="col-auto">
                 <div className="size-130">
                   <Image
