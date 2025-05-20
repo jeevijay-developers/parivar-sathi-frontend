@@ -40,7 +40,7 @@ export default function Favorites() {
                           <Image
                             width={421}
                             height={301}
-                            src={elm.imageSrc}
+                            src={elm?.imageSrc}
                             alt="image"
                             className="img-ratio rounded-12"
                           />

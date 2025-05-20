@@ -47,7 +47,7 @@ export default function ArticlesOne() {
                   <Image
                     width={616}
                     height={451}
-                    src={elm.image}
+                    src={elm?.image}
                     alt="image"
                     className="img-ratio rounded-12"
                   />

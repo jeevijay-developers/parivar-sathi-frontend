@@ -39,7 +39,7 @@ export default function Destinations7() {
                 className="featureCard -type-8 -hover-image-scale"
               >
                 <div className="featureCard__image -hover-image-scale__image">
-                  <Image width={285} height={226} src={elm.image} alt="image" />
+                  <Image width={285} height={226} src={elm?.image} alt="image" />
                 </div>
 
                 <div className="featureCard__badge">

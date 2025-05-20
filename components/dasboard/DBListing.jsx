@@ -36,7 +36,7 @@ export default function DBListing() {
                           <Image
                             width={421}
                             height={301}
-                            src={elm.imageSrc}
+                            src={elm?.imageSrc}
                             alt="image"
                             className="size-200 w-1/1 object-cover rounded-12"
                           />

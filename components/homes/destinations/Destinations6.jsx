@@ -42,7 +42,7 @@ export default function Destinations6() {
                   <Image
                     width={351}
                     height={451}
-                    src={elm.image}
+                    src={elm?.image}
                     alt="image"
                     className="img-ratio rounded-12"
                   />
