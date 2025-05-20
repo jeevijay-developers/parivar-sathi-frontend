@@ -1,9 +1,10 @@
 'use client';
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './ClinicPartnershipForm.css';
 import { axiosInstance } from '@/app/lib/axiousInstance';
 import { toast } from 'react-toastify';
+import Header4 from '@/components/layout/header/Header4';
 
 const ClinicPartnershipForm = () => {
   const [formData, setFormData] = useState({
@@ -144,6 +145,7 @@ const ClinicPartnershipForm = () => {
 
   return (
     <div className="clinic-partnership-container">
+      <Header4 />
       <div className="form-header">
         <div className="logo-container">
           <h1>
@@ -568,7 +570,7 @@ const ClinicPartnershipForm = () => {
               <label htmlFor="brochureFile" className="form-label">Upload Brochure or License (JPEG, JPG, PNG)</label>
               <input
                 type="file"
-                className="form-control"
+                className="form-control file-upload"
                 id="brochureFile"
                 onChange={handleFileChange}
                 accept=".jpg,.jpeg,.png"
@@ -614,9 +616,4 @@ const ClinicPartnershipForm = () => {
     </div>
   );
 };
-
-<style>
-
-</style>
-
 export default ClinicPartnershipForm;

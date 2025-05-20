@@ -56,12 +56,12 @@ export default function BannerEight() {
               <h2
                 data-aos="fade-up"
                 data-aos-delay=""
-                className="text-40 md:text-30  lh-13"
+                className="text-40 text-accent-3 md:text-30  lh-13"
               >
                 Register to our next{" "}
-                <span className="text-accent-2">OPD Camp</span> in{" "}
+                OPD Camp in{" "}
                 <br className="lg:d-none" />
-                {opdCamp?.location}
+                <span className="text-accent-2">{opdCamp?.location} </span>
                 <br className="lg:d-none" />
                 Destination on <br className="lg:d-none" />
                 <span className="text-accent-2">{new Date(opdCamp?.date).toLocaleDateString()}</span>

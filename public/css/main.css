@@ -77,7 +77,9 @@
 .ratio-41\:45::before {
   padding-bottom: 109.7561%;
 }
-
+h1{
+  font-family: "Lato", sans-serif;
+}
 :root {
   /* --font-primary: "DM sans", sans-serif; */
 }
@@ -111,7 +113,7 @@
   --color-border: #dddddd;
   --color-accent-1: #eb662b;
   --color-accent-1-dark: #ce5a25;
-  --color-accent-2: #4a43c4;
+  --color-accent-2: #0d0d0d;
   --color-dark-1: #05073c;
   --color-blue-1: #1967d2;
   --color-red-1: #d93025;
@@ -130,8 +132,9 @@
   --color-light-6: #e7e6e6;
   --color-light-7: #c6c6d2;
   --color-green-1: #eff7f1;
-  --color-green-2: #63b06f;
-  --color-green-3: #34a853;
+  --color-green-2: #343434;
+  --color-green-3: #212121;
+  --color-gray-3: #696969;
   --color-info-1: #cde9f6;
   --color-info-2: #4780aa;
   --color-warning-1: #f7f3d7;
@@ -227,6 +230,10 @@
 [data-anim-child*="delay-2"] {
   transition-delay: 0.2s;
   animation-delay: 0.2s;
+}
+
+a:hover{
+  color: #c0c0c0
 }
 
 [data-anim*="delay-2"]::after,
@@ -10621,6 +10628,7 @@ h6 {
   background-color: var(  --color-green-3) !important;
 }
 
+
 .bg-soft-mint {
   background-color: var(--color-soft-mint) !important;
 }
@@ -10753,7 +10761,7 @@ h6 {
 }
 
 .bg-accent-1-05 {
-  background-color: rgba(235, 102, 43, 0.05);
+  background-color: rgba(23, 23, 23, 1);
 }
 
 .bg-accent-2-05 {
@@ -10786,6 +10794,11 @@ h6 {
 
 .text-accent-2 {
   color: var(--color-accent-2);
+  font-weight: 600;
+}
+
+.text-accent-3{
+  color: var(--color-gray-3);
 }
 
 .text-dark-1 {

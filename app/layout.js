@@ -21,7 +21,12 @@ if (typeof window !== "undefined") {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className={dmsans.className}>
         <Wrapper>{children}</Wrapper>
         {/* <ScrollToTop /> */}

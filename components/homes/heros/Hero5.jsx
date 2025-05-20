@@ -57,7 +57,7 @@ export default function Hero5() {
           width="40"
           height="760"
           src="/img/hero/5/shape.svg"
-          style={{ height: "100%", width: "auto" }}
+          style={{ height: "100%", width: "fit-content" }}
           alt="image"
         />
         <Image width={716} height={760} src="/img/hero/5/3.jpeg" alt="image" />
@@ -86,7 +86,7 @@ export default function Hero5() {
                 data-aos-delay="300"
                 className="hero__title"
               >
-                Parivar Sathi guides you
+                <span className="text-gradient">Parivar Sathi</span> guides you
                 <br className="md:d-none" />
                 <span className="text-accent-2">with care</span>
               </h1>
@@ -118,7 +118,7 @@ export default function Hero5() {
                     data-aos="fade-up"
                     data-aos-delay="300"
                     onClick={handleWhatsAppClick}
-                    className="button p-3 -dark-1 bg-accent-2 rounded-200 text-white gap-3"
+                    className="button p-3 -dark-1 bg-accent-2 -hover-button rounded-200 text-white gap-3"
                   >
                     <FaUserDoctor />
                     <p className="text-white ms-2">Talk to counselor</p>

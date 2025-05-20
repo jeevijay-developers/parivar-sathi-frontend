@@ -13,7 +13,7 @@ export default function Banner12() {
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
   return (
-    <section className="cta -type-4 mt-50">
+    <section className="cta -type-4 layout-pt-lg layout-pb-lg">
       <div className="container">
         <div className="cta__content">
           <div className="row justify-between">

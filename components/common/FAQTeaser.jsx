@@ -15,14 +15,14 @@ export default function FAQTeaser() {
             <h2
               data-aos="fade-up"
               data-aos-delay=""
-              className="text-30 md:text-24 fw-700"
+              className="text-30 text-white md:text-24 fw-700"
             >
               Have questions?
             </h2>
             <p
               data-aos="fade-up"
               data-aos-delay="100"
-              className="mt-10 text-16 md:text-14"
+              className="mt-10 text-white text-16 md:text-14"
             >
               See how Parivar Sathi works for you.
             </p>
@@ -37,7 +37,7 @@ export default function FAQTeaser() {
           <div className="col-auto">
             <button
               onClick={() => router.push("/help-center")}
-              className="button -dark-1 bg-accent-2 text-white rounded-200 px-30 py-15"
+              className="button -dark-1 -bg-white-button  text-white rounded-200 px-30 py-15"
             >
               Go to FAQs
             </button>

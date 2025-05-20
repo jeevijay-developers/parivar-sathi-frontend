@@ -80,7 +80,7 @@ export default function TestimonialsFour() {
                   {testimonialsThree.map((elm, i) => (
                     <SwiperSlide key={i}>
                       <div className="testimonials -type-2 text-center">
-                        <div className="testimonials__icon">
+                        {/* <div className="testimonials__icon">
                           <svg
                             width="60"
                             height="43"
@@ -93,9 +93,9 @@ export default function TestimonialsFour() {
                               fill="#4A43C4"
                             />
                           </svg>
-                        </div>
+                        </div> */}
 
-                        <div className="text-20 lh-18 md:text-18 fw-500 mt-60 md:mt-30">
+                        <div className="text-20 lh-18 md:text-18 fw-500 md:mt-30">
                           {elm.comment}
                         </div>
 
