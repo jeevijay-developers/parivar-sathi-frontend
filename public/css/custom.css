@@ -10,9 +10,35 @@
 }
 .swiperPagination1 .swiper-pagination-bullet-active {
     width: 18px !important;
-
-
 }
+
+h1, h2, h3, h4{
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+.-bg-white-button{
+  background-color: #fefefe !important;
+  color: #000 !important;
+  border-radius: 25px !important;
+  padding: 10px 20px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+.text-gradient{
+    background: linear-gradient(to bottom, black, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+div, span{
+    font-family: "lato", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
 .custom-input input{
     width: fit-content !important;
     height: fit-content !important;
