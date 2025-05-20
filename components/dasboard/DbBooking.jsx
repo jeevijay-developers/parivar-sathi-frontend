@@ -74,7 +74,7 @@ export default function DbBooking() {
                                   <Image
                                     width={70}
                                     height={65}
-                                    src={elm.imageUrl}
+                                    src={elm?.imageUrl}
                                     alt="image"
                                   />
                                   <div className="ml-20">{elm.title}</div>

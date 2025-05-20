@@ -29,7 +29,7 @@ export default function BannerEight() {
 
         <div className="cta__image">
           <img
-            src={opdCamp.image}
+            src={opdCamp?.image}
             width={750}
             height={600}
             alt="image"
@@ -61,10 +61,10 @@ export default function BannerEight() {
                 Register to our next{" "}
                 <span className="text-accent-2">OPD Camp</span> in{" "}
                 <br className="lg:d-none" />
-                {opdCamp.location}
+                {opdCamp?.location}
                 <br className="lg:d-none" />
                 Destination on <br className="lg:d-none" />
-                <span className="text-accent-2">{new Date(opdCamp.date).toLocaleDateString()}</span>
+                <span className="text-accent-2">{new Date(opdCamp?.date).toLocaleDateString()}</span>
               </h2>
 
               {/* <p data-aos="fade-up" data-aos-delay="" className="mt-10"> */}
