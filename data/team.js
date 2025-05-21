@@ -3,7 +3,7 @@ export const teamData = [
     id: 1,
     name: "Kaushal Joshi",
     position: "Founder",
-    imgPath: "/img/team/1/1.jpg",
+    imgPath: "/img/team/1/001.jpg",
   },
   {
     id: 2,

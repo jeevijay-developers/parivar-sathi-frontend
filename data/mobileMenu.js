@@ -68,7 +68,7 @@ export const menuData = [
       // { id: 51, label: "Destinations", href: "/destinations" },
       { id: 52, label: "About", href: "/about" },
       { id: 53, label: "Contact", href: "/contact" },
-      { id: 54, label: "Join Us", href: "/joinus" },
+      { id: 54, label: "Join Us", href: "/clinic-partnership" },
       { id: 55, label: "Counselors", href: "/" },
       { id: 56, label: "OPD's", href: "/" },
       { id: 57, label: "Request for OPD Camp", href: "/register-opd-camp" },

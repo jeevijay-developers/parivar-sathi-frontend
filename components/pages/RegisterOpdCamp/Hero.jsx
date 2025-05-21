@@ -8,13 +8,13 @@ export default function Hero() {
         <Image
           width={1800}
           height={500}
-          src="/img/pageHeader/1.jpg"
+          src="/img/pageHeader/opdCamp.jpg"
           alt="image"
         />
         <Image
           width="1800"
           height="40"
-          style={{ height: "auto" }}
+          style={{ height: "auto", width: "100%"}}
           src="/img/hero/1/shape.svg"
           alt="image"
         />
@@ -22,7 +22,7 @@ export default function Hero() {
 
       <div className="container">
         <div className="row justify-center">
-          <div className="col-12">
+          <div className="col-12" style={{position: "relative", top: "10rem" }}>
             <h1 className="pageHeader__title text-dark">
               Find Support Closer to Home
             </h1>

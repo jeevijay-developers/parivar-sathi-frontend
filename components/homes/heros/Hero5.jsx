@@ -47,7 +47,7 @@ export default function Hero5() {
         <Image
           width={1920}
           height={760}
-          src="/img/hero/5/bg.png"
+          src="/img/hero/5/heroBG.jpg"
           alt="background"
         />
       </div>
@@ -84,11 +84,10 @@ export default function Hero5() {
               <h1
                 data-aos="fade-up"
                 data-aos-delay="300"
-                className="hero__title"
+                className="hero__title "
               >
-                <span className="text-gradient">Parivar Sathi</span> guides you
-                <br className="md:d-none" />
-                <span className="text-accent-2">with care</span>
+                <span className="text-accent-2">Parivar Sathi</span> 
+                <span className="guide-font-size"> guides you <br /> with care</span>
               </h1>
 
               <div

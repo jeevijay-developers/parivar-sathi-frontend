@@ -12,7 +12,7 @@ export default function Menu() {
     <>
       <div className="xl:d-none ml-30">
         <div className="desktopNav">
-          <div className="desktopNav__item">
+          <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5 hover">
             <a
               className={
                 pathname?.split("/")[1].split("-")[0] == "home"
@@ -25,19 +25,19 @@ export default function Menu() {
             </a>
           </div>
 
-          <div className="desktopNav__item">
+          {/* <div className="desktopNav__item">
             <Link href="/destinations">Counselors</Link>
-          </div>
+          </div> */}
 
-          <div className="desktopNav__item">
+          {/* <div className="desktopNav__item">
             <Link href="/destinations">OPD&apos;s</Link>
+          </div> */}
+
+          <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5 ">
+            <a href="/clinic-partnership">Join us</a>
           </div>
 
-          <div className="desktopNav__item">
-            <a href="/joinus">Join us</a>
-          </div>
-
-          <div className="desktopNav__item">
+          <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5 ">
             <a href="/register-opd-camp">
               Request for OPD camp
               {/* <i className="icon-chevron-down"></i> */}
