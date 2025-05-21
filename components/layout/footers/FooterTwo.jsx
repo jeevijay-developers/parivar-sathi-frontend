@@ -29,7 +29,7 @@ export default function FooterTwo() {
                   <div className="col-auto">
                     <div className="text-20 fw-500">
                       Speak to our expert at
-                      <span className="">1-800-453-6744</span>
+                      <span className=""> +91 98765 43210</span>
                     </div>
                   </div>
                 </div>
@@ -64,7 +64,7 @@ export default function FooterTwo() {
 
               <FooterLinks />
 
-              <div className="col-lg-3 col-md-6">
+              {/* <div className="col-lg-3 col-md-6">
                 <h4 className="text-20 fw-500">Newsletter</h4>
                 <p className="mt-20">
                   Subscribe to the free newsletter and stay up to date
@@ -88,7 +88,7 @@ export default function FooterTwo() {
                     Android App
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

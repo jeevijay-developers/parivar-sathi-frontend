@@ -13,7 +13,7 @@ const BlogSectionHomePage = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axiosInstance.get("/blogs/AllBlogs");
+        const response = await axiosInstance.get("/blogs/getAllBlogs");
         // Ensure we're setting an array to the state
         const blogsData = Array.isArray(response.data) ? response.data : 
                          response.data.blogs ? response.data.blogs : [];

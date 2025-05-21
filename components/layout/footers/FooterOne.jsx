@@ -29,7 +29,7 @@ export default function FooterOne() {
                   <div className="col-auto">
                     <div className="text-20 fw-500">
                       Speak to our expert at
-                      <span className="text-accent-1">1-800-453-6744</span>
+                      <span className="text-accent-1"> +91 98765 43210</span>
                     </div>
                   </div>
                 </div>
@@ -64,7 +64,7 @@ export default function FooterOne() {
 
               <FooterLinks />
 
-              <div className="col-lg-3 col-md-6">
+              {/* <div className="col-lg-3 col-md-6">
                 <h4 className="text-20 fw-500">Newsletter</h4>
                 <p className="mt-20">
                   Subscribe to the free newsletter and stay up to date
@@ -88,7 +88,7 @@ export default function FooterOne() {
                     Android App
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
