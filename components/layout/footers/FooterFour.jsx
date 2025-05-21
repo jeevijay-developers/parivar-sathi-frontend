@@ -7,7 +7,7 @@ export default function FooterFour() {
   return (
     <footer className="footer -type-1 -light bg-dark-1">
       <div className="footer__main">
-        <div className="container">
+        <div className="container mt-lg-5">
           <div className="footer__info">
             <div className="row y-gap-20 justify-between">
               <div className="col-auto">

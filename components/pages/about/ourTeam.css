@@ -1,0 +1,141 @@
+/* ourTeam.css */
+
+.team-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+/* Section title styling */
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.section-divider {
+  width: 70px;
+  height: 3px;
+  background-color: #0d6efd;
+  margin: 0 auto 30px;
+}
+
+/* Team card styling */
+.team-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.team-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-img {
+  transform: scale(1.05);
+}
+
+.team-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.team-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.team-position {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+/* Carousel controls customization */
+.team-nav-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #0d6efd;
+  border-radius: 50%;
+  opacity: 0.7;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.team-nav-btn:hover {
+  opacity: 1;
+  background-color: #0b5ed7;
+}
+
+.carousel-control-prev {
+  left: -20px;
+}
+
+.carousel-control-next {
+  right: -20px;
+}
+
+/* Custom carousel indicators */
+.team-indicators {
+  bottom: -40px;
+}
+
+.team-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #dee2e6;
+  border: none;
+  margin: 0 5px;
+}
+
+.team-indicators button.active {
+  background-color: #0d6efd;
+  width: 14px;
+  height: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .carousel-control-prev, .carousel-control-next {
+    display: none;
+  }
+  
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .team-section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .team-card {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}

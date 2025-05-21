@@ -10,7 +10,7 @@ export default function FooterSeven() {
       <div className="footer__main">
         <div className="footer__bg bg-accent-1-05 rounded-24"></div>
 
-        <div className="container">
+        <div className="container mt-lg-5">
           <div className="footer__info">
             <div className="row y-gap-20 justify-between">
               <div className="col-auto">
