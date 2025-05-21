@@ -19,7 +19,7 @@ export default function FooterThree() {
                   <div className="col-auto">
                     <div className="text-20 fw-500">
                       Talk to us on WhatsApp:&nbsp;
-                      <span className="text-accent-2">+91 XXXXX XXXXX</span>
+                      <span className="text-accent-2">+91 98765 54321</span>
                     </div>
                   </div>
                 </div>
@@ -41,12 +41,12 @@ export default function FooterThree() {
               <div className="col-lg-4 col-md-6">
                 <h4 className="text-20 fw-500">Contact</h4>
                 <div className="y-gap-10 mt-20">
-                  <a className="d-block" href="#">
+                  <span className="d-block">
                     support@parivarsathi.com
-                  </a>
-                  <a className="d-block" href="#">
-                    +91 XXXXX XXXXX
-                  </a>
+                  </span>
+                  <span className="d-block">
+                    +91 98765 54321
+                  </span>
                   {/* <a
                     href={`https://wa.me/${process.env.NEXT_PUBLIC_COUNSELLOR_WHATSAPP_NUMBER}`}
                     target="_blank"

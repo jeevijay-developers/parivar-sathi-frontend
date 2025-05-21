@@ -8,19 +8,20 @@ export default function Hero() {
         <Image
           width={1800}
           height={500}
-          src="/img/pageHeader/1.jpg"
+          src="/img/pageHeader/pageHeader.jpg"
           alt="image"
+
         />
         <Image
           width="1800"
           height="40"
-          style={{ height: "auto" }}
+          style={{ height: "auto", width: "auto" }}
           src="/img/hero/1/shape.svg"
           alt="image"
         />
       </div>
 
-      <div className="container">
+      {/* <div className="container">
         <div className="row justify-center">
           <div className="col-12">
             <div className="pageHeader__content">
@@ -29,7 +30,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -140,7 +140,12 @@ const ClinicPartnershipForm = () => {
         setLoading(false);
       }
     }
-    fetchData();
+    if (!formData.clinicName || !formData.clinicAddress || !formData.country || !formData.clinicPhone || !formData.clinicEmail || !formData.contactName || !formData.contactPosition || !formData.contactPhone || !formData.contactEmail) {
+      toast.error('Please fill all required fields.');
+      return;
+    }else{
+      fetchData();
+    }
   };
 
   return (

@@ -5,7 +5,7 @@ const sections = [
       { id: 1, text: "About Us", href: "/about" },
       // { id: 2, text: "Tourz Reviews", href: "#" },
       { id: 3, text: "Contact Us", href: "/contact" },
-      { id: 4, text: "Join Us", href: "/joinus" },
+      { id: 4, text: "Join Us", href: "/clinic-partnership" },
       // { id: 5, text: "Data Policy", href: "#" },
       // { id: 6, text: "Cookie Policy", href: "#" },
       // { id: 7, text: "Legal", href: "#" },
