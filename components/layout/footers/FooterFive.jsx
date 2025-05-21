@@ -20,7 +20,7 @@ export default function FooterFive() {
                   <div className="col-auto">
                     <div className="text-20 fw-500">
                       Speak to our expert at
-                      <span className="text-accent-1">1-800-453-6744</span>
+                      <span className="text-accent-1"> +91 98765 43210</span>
                     </div>
                   </div>
                 </div>
