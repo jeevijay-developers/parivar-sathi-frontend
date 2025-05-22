@@ -31,7 +31,7 @@ export default function PageHeader() {
         <div className="row pt-30">
           <div className="col-auto">
             <h1 className="pageHeader__title">
-              View Details of Our Previous OPD Camps
+              Our Previous OPD Camps
             </h1>
           </div>
         </div>

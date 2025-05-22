@@ -6,21 +6,21 @@ export default function Hero1({ blog }) {
     <>
       <section className="hero -type-1 -min-2">
         <div className="hero__bg">
-          <Image width={1800} height={500} src="/img/hero/1.png" alt="image" />
+          {/* <Image width={1800} height={500} src="/img/hero/1.png" alt="image" /> */}
           <Image
             style={{ height: "auto" }}
             width="1800"
             height="40"
-            src="/img/hero/1/shape.svg"
+            src={blog.bannerImage}
             alt="image"
           />
         </div>
 
-        <div className="container">
+        {/* <div className="container">
           <div className="row justify-center">
             <div className="col-xl-12">
               <div className="hero__content">
-                <h1 className="hero__title">
+                <h1 className="hero__title text-black">
                   {blog?.title ? blog?.title : "Your guide to everywhere"}
                 </h1>
 
@@ -33,7 +33,7 @@ export default function Hero1({ blog }) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

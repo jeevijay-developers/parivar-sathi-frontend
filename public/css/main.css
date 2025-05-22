@@ -635,6 +635,9 @@ button:focus {
 .button.-min-260 {
   min-width: 260px;
 }
+.bi-arrow-left, .bi-arrow-up{
+  margin-right: 10px;
+}
 
 .button.-underline:hover {
   text-decoration: underline;
@@ -3265,6 +3268,10 @@ h6 {
   gap: 2px;
 }
 
+.tour-box{
+  width:100%;
+}
+
 @media (max-width: 767px) {
   .footer.-type-1 .footerSocials__icons {
     position: relative;
@@ -3410,7 +3417,7 @@ h6 {
 }
 
 .hero.-type-1.-min-2 {
-  padding-top: 190px;
+  padding-top: 30rem;
   padding-bottom: 200px;
 }
 

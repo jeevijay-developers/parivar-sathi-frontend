@@ -15,7 +15,7 @@ export default function FeaturedTrips() {
       try {
         const response = await axiosInstance.get("/opds/opdcampsfour");
         setOpdCamps(response.data);
-        console.log(response.data);
+        // console.log(response.data);
       } catch (error) {
         console.error("Error fetching OPD camps:", error);
       } finally {

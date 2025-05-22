@@ -1,108 +1,128 @@
-"use client";
-
-import React from "react";
-import { tourDataTwo } from "@/data/tours";
-import Image from "next/image";
-import Link from "next/link";
+'use client';
+import React, { useEffect, useState } from "react";
 import Pagination from "../common/Pagination";
+import { axiosInstance } from "@/app/lib/axiousInstance";
+import Image from "next/image";
 
 export default function TourList1() {
+  const [opdCamps, setOpdCamps] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const ITEMS_PER_PAGE = 4;
+
+  useEffect(() => {
+    const fetchOpdCamps = async () => {
+      try {
+        setLoading(true);
+        const response = await axiosInstance.get("/opds/opdcamps/previous-all");
+        setOpdCamps(response.data);
+      } catch (error) {
+        console.error("Error fetching OPD camps:", error);
+        setError("Failed to load OPD camps. Please try again later.");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchOpdCamps();
+  }, []);
+
+  const totalPages = Math.ceil(opdCamps.length / ITEMS_PER_PAGE);
+  const paginatedData = opdCamps.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
+  );
+
+  if (loading) {
+    return <div className="text-center py-60">Loading...</div>;
+  }
+
+  if (error) {
+    return (
+      <div className="text-center py-60 text-red-500">
+        {error}
+        <button onClick={() => window.location.reload()} className="mt-4 button -accent-1">
+          Retry
+        </button>
+      </div>
+    );
+  }
+
   return (
     <section className="layout-pb-xl">
       <div className="container">
         <div className="row">
-          <div className="col-xl-9 col-lg-8">
+          <div className="col-xl-9 col-lg-8 tour-box">
             <div className="row y-gap-30 pt-30">
-              {tourDataTwo.map((elm, i) => (
-                <div className="col-12" key={i}>
+              {paginatedData.map((camp) => (
+                <div className="col-md-6 col-12" key={camp._id}>
+                  {/* Camp card content here */}
                   <div className="tourCard -type-2">
                     <div className="tourCard__image">
                       <Image
                         width={420}
                         height={390}
-                        src={elm.imageSrc}
-                        alt="image"
+                        src={camp.image || "/images/placeholder-camp.jpg"}
+                        alt={camp.title || "OPD Camp"}
                       />
 
-                      {/* {elm.badgeText && (
-                        <div className="tourCard__badge">
-                          <div className="bg-accent-1 rounded-12 text-white lh-11 text-13 px-15 py-10">
-                            {elm.badgeText}
-                          </div>
-                        </div>
-                      )} */}
-
-                      {/* {elm.featured && (
-                        <div className="tourCard__badge">
-                          <div className="bg-accent-2 rounded-12 text-white lh-11 text-13 px-15 py-10">
-                            FEATURED
-                          </div>
-                        </div>
-                      )} */}
-
-                      {elm.date && (
+                      {camp.date && (
                         <div className="tourCard__badge">
                           <div className="bg-accent-2 rounded-12 text-white lh-11 text-13 px-15 py-10">
                             <div>
                               <div className="d-flex items-center text-14">
-                                <i className="icon-clock mr-10"></i>
-                                {elm.date}
+                                <i className="icon-calendar mr-10"></i>
+                                {new Date(camp.date).toLocaleDateString('en-US', {
+                                  year: 'numeric',
+                                  month: 'short',
+                                  day: 'numeric'
+                                })}
                               </div>
                             </div>
                           </div>
                         </div>
                       )}
-                    </div>
 
+                      {camp.status && (
+                        <div className="tourCard__badge" style={{ top: '60px' }}>
+                          <div className="bg-accent-1 rounded-12 text-white lh-11 text-13 px-15 py-10">
+                            {camp.status.toUpperCase()}
+                          </div>
+                        </div>
+                      )}
+                    </div>
                     <div className="tourCard__content">
                       <div className="tourCard__location">
                         <i className="icon-pin"></i>
-                        {elm.location}
+                        {camp.location || "Location TBD"}
                       </div>
-
                       <h3 className="tourCard__title mt-5">
-                        <span>{elm.title}</span>
+                        <span>{camp.title || "OPD Medical Camp"}</span>
                       </h3>
-
-                      <p className="tourCard__text mt-5">{elm.description}</p>
-                      <Link
-                        href={`/tour-single-1/${elm.id}`}
-                        className="button -outline-accent-1 text-accent-1 inline-flex items-center mt-10 py-4 px-6 text-sm rounded"
-                      >
-                        View Details
-                        <i className="icon-arrow-top-right ml-10"></i>
-                      </Link>
+                      <p className="tourCard__text mt-5">
+                        {camp.description || "Free medical consultation and health checkup services for the community."}
+                      </p>
                     </div>
-
-                    {/* <div className="tourCard__info">
-                      <div>
-                        <div className="d-flex items-center text-14">
-                          <i className="icon-clock mr-10"></i>
-                          {elm.date}
-                        </div>
-                      </div>
-
-                      <button className="button -outline-accent-1 text-accent-1">
-                        <Link href={`/tour-single-1/${elm.id}`}>
-                          View Details
-                          <i className="icon-arrow-top-right ml-10"></i>
-                        </Link>
-                      </button>
-                    </div> */}
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="d-flex justify-center flex-column mt-60">
-              <Pagination />
-              {/* <div className="text-14 text-center mt-20">
-                Showing results 1-30 of 1,415
-              </div> */}
-            </div>
+            {opdCamps.length > ITEMS_PER_PAGE && (
+              <div className="d-flex justify-center flex-column mt-60">
+                <Pagination
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  setPage={setCurrentPage}
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>
     </section>
+
   );
 }

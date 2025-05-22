@@ -15,7 +15,7 @@ export default function DestinationsFive() {
         const response = await axiosInstance.get("/opds/opdcamps/previous-all");
         // Take only the first 5 camps
         setOpdCamps(response.data.slice(0, 5));
-        console.log("Previous camps:", response.data);
+        // console.log("Previous camps:", response.data);
       } catch (error) {
         console.error("Error fetching OPD camps:", error);
       } finally {

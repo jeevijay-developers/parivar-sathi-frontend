@@ -1,119 +1,253 @@
-import React from "react";
-import Reviews from "./Reviews";
-import CommentBox from "./CommentBox";
-import Image from "next/image";
+"use client";
 
-export default function BlogSingle() {
+import React from "react";
+import Image from "next/image";
+// import Reviews from "./Reviews";
+// import CommentBox from "./CommentBox";
+
+export default function BlogSingle({ blog }) {
+  if (!blog) {
+    return (
+      <section className="layout-pt-md layout-pb-xl">
+        <div className="container">
+          <div className="row y-gap-30 justify-center">
+            <div className="col-lg-8">
+              <div className="d-flex justify-center items-center py-60">
+                <div className="text-center">
+                  <div className="text-red-500 text-18 mb-20">
+                    Blog post not found
+                  </div>
+                  <button 
+                    onClick={() => window.history.back()}
+                    className="button -outline-accent-1 text-accent-1"
+                  >
+                    Go Back
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <>
       <section className="layout-pt-md layout-pb-xl">
         <div className="container">
           <div className="row y-gap-30 justify-center">
             <div className="col-lg-8">
-              <h2 className="text-30 md:text-24">The Brazen Head</h2>
-              <p className="mt-20">
-                Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida.
-                Diam phasellus vestibulum lorem sed risus ultricies. Magna sit
-                amet purus gravida quis blandit. Arcu cursus vitae congue
-                mauris. Nunc mattis enim ut tellus elementum sagittis vitae et
-                leo. Semper risus in hendrerit gravida rutrum quisque non. At
-                urna condimentum mattis pellentesque id nibh tortor. A erat nam
-                at lectus urna duis convallis convallis tellus. Sit amet mauris
-                commodo quis imperdiet massa. Vitae congue eu consequat ac
-                felis.
-              </p>
-
-              <ul className="ulList2 mt-20">
-                <li>
-                  Sed viverra ipsum nunc aliquet bibendum enim facilisis
-                  gravida.
-                </li>
-                <li>
-                  At urna condimentum mattis pellentesque id nibh. Laoreet non
-                  curabitur
-                </li>
-                <li>Magna etiam tempor orci eu lobortis elementum.</li>
-                <li>
-                  Bibendum est ultricies integer quis. Semper eget duis at
-                  tellus.
-                </li>
-              </ul>
-
-              <p className="mt-20">
-                Donec purus posuere nullam lacus aliquam egestas arcu. A egestas
-                a, tellus massa, ornare vulputate. Erat enim eget laoreet
-                ullamcorper lectus aliquet nullam tempus id. Dignissim convallis
-                quam aliquam rhoncus, lectus nullam viverra. Bibendum dignissim
-                tortor, phasellus pellentesque commodo, turpis vel eu. Donec
-                consectetur ipsum nibh lobortis elementum mus velit tincidunt
-                elementum. Ridiculus eu convallis eu mattis iaculis et, in
-                dolor. Sem libero, tortor suspendisse et, purus euismod posuere
-                sit. Risus dui ut viverra venenatis ipsum tincidunt non, proin.
-                Euismod pharetra sit ac nisi. Erat lacus, amet quisque urna
-                faucibus. Rhoncus praesent faucibus rhoncus nec adipiscing
-                tristique sed facilisis velit.
-                <br />
-                <br />
-                Neque nulla porta ut urna rutrum. Aliquam cursus arcu tincidunt
-                mus dictum sit euismod cum id. Dictum integer ultricies arcu
-                fermentum fermentum sem consectetur. Consectetur eleifend aenean
-                eu neque euismod amet parturient turpis vitae. Faucibus ipsum
-                felis et duis fames.
-              </p>
-
-              <div className="row y-gap-30 pt-20">
-                <div className="col-md-6">
+              {/* Blog Banner Image */}
+              {/* {blog.bannerImage && (
+                <div className="relative mb-40">
                   <Image
-                    width={410}
-                    height={350}
-                    src="/img/blogSingle/1.png"
-                    alt="image"
-                    className="rounded-8"
+                    width={800}
+                    height={400}
+                    src={blog.bannerImage}
+                    alt={blog.title || "Blog banner"}
+                    className="rounded-12 w-full object-cover"
+                    style={{ height: '400px' }}
                   />
-                  <div className="mt-10">
-                    Donec purus posuere nullam lacus aliquam.
-                  </div>
                 </div>
+              )} */}
 
-                <div className="col-md-6">
-                  <Image
-                    width={410}
-                    height={350}
-                    src="/img/blogSingle/2.png"
-                    alt="image"
-                    className="rounded-8"
-                  />
-                  <div className="mt-10">
-                    Donec purus posuere nullam lacus aliquam.
-                  </div>
+              {/* Blog Header */}
+              <div className="mb-30">
+                <h1 className="text-40 lg:text-30 md:text-24 fw-600 mb-10">
+                  {blog.title || "Untitled Blog Post"}
+                </h1>
+                
+                {blog.desc && (
+                  <p className="text-18 text-dark-3 italic mb-20">
+                    {blog.desc}
+                  </p>
+                )}
+
+                {/* Blog Meta Info */}
+                <div className="d-flex flex-wrap items-center text-14 text-dark-3 gap-20">
+                  {blog.author && (
+                    <div className="d-flex items-center">
+                      <i className="icon-user mr-8"></i>
+                      <span>By {blog.author}</span>
+                    </div>
+                  )}
+                  
+                  {blog.createdAt && (
+                    <div className="d-flex items-center">
+                      <i className="icon-calendar mr-8"></i>
+                      <span>
+                        {new Date(blog.createdAt).toLocaleDateString('en-US', {
+                          year: 'numeric',
+                          month: 'long',
+                          day: 'numeric'
+                        })}
+                      </span>
+                    </div>
+                  )}
+
+                  {blog.category && (
+                    <div className="d-flex items-center">
+                      <i className="icon-tag mr-8"></i>
+                      <span className="bg-accent-1 text-white px-10 py-5 rounded-8 text-12">
+                        {blog.category}
+                      </span>
+                    </div>
+                  )}
                 </div>
               </div>
 
-              <p className="mt-20">
-                Donec purus posuere nullam lacus aliquam egestas arcu. A egestas
-                a, tellus massa, ornare vulputate. Erat enim eget laoreet
-                ullamcorper lectus aliquet nullam tempus id. Dignissim convallis
-                quam aliquam rhoncus, lectus nullam viverra. Bibendum dignissim
-                tortor, phasellus pellentesque commodo, turpis vel eu. Donec
-                consectetur ipsum nibh lobortis elementum mus velit tincidunt
-                elementum. Ridiculus eu convallis eu mattis iaculis et, in
-                dolor. Sem libero, tortor suspendisse et, purus euismod posuere
-                sit. Risus dui ut viverra venenatis ipsum tincidunt non, proin.
-                Euismod pharetra sit ac nisi. Erat lacus, amet quisque urna
-                faucibus. Rhoncus praesent faucibus rhoncus nec adipiscing
-                tristique sed facilisis velit.
-                <br />
-                <br />
-                Neque nulla porta ut urna rutrum. Aliquam cursus arcu tincidunt
-                mus dictum sit euismod cum id. Dictum integer ultricies arcu
-                fermentum fermentum sem consectetur. Consectetur eleifend aenean
-                eu neque euismod amet parturient turpis vitae. Faucibus ipsum
-                felis et duis fames.
-              </p>
+              {/* Blog Content */}
+              <div className="blogContent">
+                {blog.content ? (
+                  <div 
+                    dangerouslySetInnerHTML={{ __html: blog.content }}
+                    className="prose max-w-none"
+                    style={{
+                      lineHeight: '1.7',
+                      fontSize: '16px',
+                      color: '#374151'
+                    }}
+                  />
+                ) : (
+                  <div className="text-16 text-dark-1">
+                    <p>No content available for this blog post.</p>
+                  </div>
+                )}
+              </div>
+
+              {/* Content Images Gallery */}
+              {blog.contentImages && blog.contentImages.length > 0 && (
+                <div className="mt-40">
+                  <h3 className="text-24 fw-600 mb-20">Gallery</h3>
+                  <div className="row y-gap-20">
+                    {blog.contentImages.map((img, idx) => (
+                      <div 
+                        key={idx} 
+                        className={blog.contentImages.length === 1 ? "col-12" : "col-md-6"}
+                      >
+                        <div className="relative overflow-hidden rounded-12">
+                          <Image
+                            width={410}
+                            height={300}
+                            src={img}
+                            alt={`Gallery image ${idx + 1}`}
+                            className="w-full object-cover hover:scale-105 transition-transform duration-300"
+                            style={{ height: '300px' }}
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Tags */}
+              {/* {blog.tags && blog.tags.length > 0 && (
+                <div className="mt-40 pt-30 border-top-light">
+                  <div className="text-16 fw-500 mb-15">Tags:</div>
+                  <div className="d-flex flex-wrap gap-10">
+                    {blog.tags.map((tag, idx) => (
+                      <span 
+                        key={idx}
+                        className="bg-light-1 text-dark-1 px-15 py-8 rounded-8 text-14 hover:bg-accent-1 hover:text-white transition-colors duration-200 cursor-pointer"
+                      >
+                        #{tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )} */}
+
+              {/* Social Share */}
+              {/* <div className="mt-40 pt-30 border-top-light">
+                <div className="text-16 fw-500 mb-15">Share this post:</div>
+                <div className="d-flex flex-wrap items-center gap-15">
+                  <button 
+                    onClick={() => {
+                      const url = encodeURIComponent(window.location.href);
+                      const title = encodeURIComponent(blog.title || '');
+                      window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+                    }}
+                    className="button -outline-accent-1 text-accent-1 px-15 py-8 rounded-8 hover:bg-accent-1 hover:text-white transition-all duration-200"
+                  >
+                    <i className="icon-facebook mr-8"></i>
+                    Facebook
+                  </button>
+                  <button 
+                    onClick={() => {
+                      const url = encodeURIComponent(window.location.href);
+                      const title = encodeURIComponent(blog.title || '');
+                      window.open(`https://twitter.com/intent/tweet?url=${url}&text=${title}`, '_blank');
+                    }}
+                    className="button -outline-accent-1 text-accent-1 px-15 py-8 rounded-8 hover:bg-accent-1 hover:text-white transition-all duration-200"
+                  >
+                    <i className="icon-twitter mr-8"></i>
+                    Twitter
+                  </button>
+                  <button 
+                    onClick={() => {
+                      const url = encodeURIComponent(window.location.href);
+                      const title = encodeURIComponent(blog.title || '');
+                      window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
+                    }}
+                    className="button -outline-accent-1 text-accent-1 px-15 py-8 rounded-8 hover:bg-accent-1 hover:text-white transition-all duration-200"
+                  >
+                    <i className="icon-linkedin mr-8"></i>
+                    LinkedIn
+                  </button>
+                </div>
+              </div> */}
+
+              {/* Navigation */}
+              <div className="mt-40 pt-30 border-top-light">
+                <div className="d-flex justify-between items-center flex-wrap gap-20">
+                  <button
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    className="button -outline-accent-1 text-accent-1 px-20 py-10 rounded-8 hover:bg-accent-1 hover:text-white transition-all duration-200"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
+                    </svg>
+                    Back to Top
+                  </button>
+
+                  {blog.relatedPosts && blog.relatedPosts.length > 0 && (
+                    <div className="text-14 text-dark-3">
+                      {blog.relatedPosts.length} related post{blog.relatedPosts.length !== 1 ? 's' : ''} available
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Reading Progress Indicator */}
+              <div className="mt-40 pt-30 border-top-light">
+                <div className="text-center">
+                  <div className="text-14 text-dark-3 mb-10">
+                    Thank you for reading!
+                  </div>
+                  <div className="d-flex justify-center">
+                    <button
+                      onClick={() => window.history.back()}
+
+                      className="button space-x-5 -outline-accent-1 text-accent-1 px-20 py-10 rounded-8 hover:bg-accent-1 hover:text-white transition-all duration-200"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                      </svg>
+                      Back to Blog
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Reviews and Comments */}
+      {/* <Reviews />
+      <CommentBox /> */}
     </>
   );
 }

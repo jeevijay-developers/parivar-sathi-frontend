@@ -14,7 +14,7 @@ export default function BannerEight() {
       try {
         const response = await axiosInstance.get("/opds/opdcampsfour");
         setOpdCamp(response.data[0]);
-        console.log(response.data[0]);
+        // console.log(response.data[0]);
       } catch (error) {
         console.error("Error fetching OPD camp:", error);
       }
