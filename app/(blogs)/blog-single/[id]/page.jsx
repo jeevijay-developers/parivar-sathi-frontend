@@ -13,7 +13,7 @@ export const metadata = {
 async function getBlogData(id) {
   try {
     const res = await axiosInstance.get(`/blogs/getBlog/${id}`);
-    console.log("Blog data: ", res.data);
+    // console.log("Blog data: ", res.data);
     
     return res.data;
   } catch (err) {
