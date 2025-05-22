@@ -21,7 +21,7 @@ export const teamData = [
     id: 4,
     name: "Mrs. Sharma",
     position: "Customer relationship officer",
-    imgPath: "/img/team/1/2.jpg",
+    imgPath: "/img/team/1/4.png",
   },
   {
     id: 5,
