@@ -131,7 +131,7 @@ export default function DbBooking() {
           </div>
 
           <div className="text-center pt-30">
-            © Copyright Viatours {new Date().getFullYear()}
+            © {new Date().getFullYear()} Parivar Sathi. All rights reserved.
           </div>
         </div>
       </div>

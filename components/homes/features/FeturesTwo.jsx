@@ -7,7 +7,7 @@ export default function FeaturesTwo() {
   return (
     <section className="relative">
       <div className="relative xl:unset container">
-        <div className="layout-pt-xl layout-pb-xl rounded-12">
+        <div className="layout-pt-md layout-pb-lg rounded-12">
           <div className="sectionBg">
             <Image
               width={1290}
@@ -35,7 +35,7 @@ export default function FeaturesTwo() {
                 to help you understand your fertility options and connect you to
                 the right support.
               </p>
-              <button
+              {/* <button
                 data-aos="fade-right"
                 data-aos-delay=""
                 className="button -md -dark-1 bg-accent-3-v text-white mt-60 md:mt-30"
@@ -44,10 +44,10 @@ export default function FeaturesTwo() {
                   Explore Our OPD Camps
                   <i className="icon-arrow-top-right ml-10"></i>
                 </Link>
-              </button>
+              </button> */}
             </div>
 
-            <div className="col-md-6">
+            <div className="col-md-6 ">
               <div
                 data-aos="fade-left"
                 data-aos-delay=""
