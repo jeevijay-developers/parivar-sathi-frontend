@@ -5,6 +5,7 @@ import './ClinicPartnershipForm.css';
 import { axiosInstance } from '@/app/lib/axiousInstance';
 import { toast } from 'react-toastify';
 import Header4 from '@/components/layout/header/Header4';
+import FooterThree from '@/components/layout/footers/FooterThree';
 
 const ClinicPartnershipForm = () => {
   const [formData, setFormData] = useState({
@@ -149,6 +150,7 @@ const ClinicPartnershipForm = () => {
   };
 
   return (
+    <>
     <div className="clinic-partnership-container">
       <Header4 />
       <div className="form-header">
@@ -619,6 +621,8 @@ const ClinicPartnershipForm = () => {
         </div>
       </div>
     </div>
+      <FooterThree />
+    </>
   );
 };
 export default ClinicPartnershipForm;
