@@ -83,12 +83,12 @@ export default function RegisterOpdCampForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    console.log('Form submitted:', formData);
+    // console.log('Form submitted:', formData);
     // Form submission logic would go here
     const fetchData = async () => {
       try{
         const response = await axiosInstance.post('/opd-register', formData);
-        console.log("Form submitted successfully:", response.data);
+        // console.log("Form submitted successfully:", response.data);
         setFormData(response.data);
         toast.success("Registration successful!");
         setFormData({
