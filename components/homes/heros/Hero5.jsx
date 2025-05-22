@@ -105,19 +105,13 @@ export default function Hero5() {
               </div>
               <div
                 // ref={}
-                className="d-flex justify-content-start align-items-start bg-transparent p-2   rounded-200 w-fit gap-3"
-                style={{
-                  width: "fit-content ! important",
-                  gap: "16px ! important",
-                  backgroundColor: "transparent ! important",
-                }}
-              >
+                className="d-flex justify-content-start align-items-start bg-transparent p-2 rounded-200 w-fit btnCouncelour">
                 <div className="searchForm__button">
                   <button
                     data-aos="fade-up"
                     data-aos-delay="300"
                     onClick={handleWhatsAppClick}
-                    className="button p-3 -dark-1 bg-accent-2 -hover-button rounded-200 text-white gap-3"
+                    className="button p-3 -dark-1 bg-accent-2 -hover-button rounded-200 text-white "
                   >
                     <FaUserDoctor />
                     <p className="text-white ms-2">Talk to counselor</p>

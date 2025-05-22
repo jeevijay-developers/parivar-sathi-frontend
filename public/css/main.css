@@ -638,7 +638,9 @@ button:focus {
 .bi-arrow-left, .bi-arrow-up{
   margin-right: 10px;
 }
-
+.btnCouncelour{
+  column-gap: 15px;
+}
 .button.-underline:hover {
   text-decoration: underline;
 }
