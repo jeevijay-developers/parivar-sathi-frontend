@@ -631,7 +631,10 @@ button:focus {
 .button.-h-50 {
   height: 50px;
 }
-
+.allFeatureBoxes{
+  position: relative;
+  bottom:20px;
+}
 .button.-min-260 {
   min-width: 260px;
 }

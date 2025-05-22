@@ -46,12 +46,12 @@ export default function FooterSeven() {
                 <h4 className="text-20 fw-500">Contact</h4>
 
                 <div className="y-gap-10 mt-20">
-                  <a className="d-block" href="#">
+                  <span className="d-block">
                     328 Queensberry Street, North Melbourne VIC3051, Australia.
-                  </a>
-                  <a className="d-block" href="#">
-                    hi@viatours.com
-                  </a>
+                  </span>
+                  <span className="d-block">
+                    support@parivarsathi.com
+                  </span>
                 </div>
               </div>
 
@@ -91,7 +91,7 @@ export default function FooterSeven() {
         <div className="footer__bottom">
           <div className="row y-gap-5 justify-between items-center">
             <div className="col-auto">
-              <div>© Copyright Viatours {new Date().getFullYear()}</div>
+              <div>© {new Date().getFullYear()} Parivar Sathi. All rights reserved.</div>
             </div>
 
             <div className="col-auto">
