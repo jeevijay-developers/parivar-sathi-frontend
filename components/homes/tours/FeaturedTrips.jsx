@@ -16,7 +16,7 @@ export default function FeaturedTrips() {
       try {
         const response = await axiosInstance.get("/opds/opdcampsfour");
         setOpdCamps(response.data);
-        if(opdCamps.length <= 0){
+        if(response.data.length <= 0){
           setNoOpdCamps(true);
         }
         console.log("Upcoming OPD Camps: ",response.data);
