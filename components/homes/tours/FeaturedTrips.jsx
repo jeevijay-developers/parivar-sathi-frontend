@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { useEffect, useState } from "react";
 import { axiosInstance } from "@/app/lib/axiousInstance";
+import Image from "next/image";
 
 export default function FeaturedTrips() {
   const [opdCamps, setOpdCamps] = useState([]);
@@ -84,7 +85,7 @@ export default function FeaturedTrips() {
                       <div className="tourCard -type-1 d-block bg-white">
                         <div className="tourCard__header">
                           <div className="tourCard__image ratio ratio-28:20">
-                            <img
+                            <Image
                               width={421}
                               height={301}
                               src={camp.image}
