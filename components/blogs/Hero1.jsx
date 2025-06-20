@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 export default function Hero1({ blog }) {
+  if (!blog) return null;
   return (
     <>
       <section className="hero -type-1 -min-2">
@@ -11,7 +12,7 @@ export default function Hero1({ blog }) {
             style={{ height: "auto" }}
             width="1800"
             height="40"
-            src={blog.bannerImage}
+            src={blog?.bannerImage}
             alt="image"
           />
         </div>

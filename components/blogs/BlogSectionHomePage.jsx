@@ -86,7 +86,7 @@ const BlogSectionHomePage = () => {
                     >
                       <div className="blogCard__image">
                         <div className="ratio ratio-4:3 rounded-top-12 overflow-hidden">
-                          <img
+                          <Image
                             width={400}
                             height={300}
                             className="img-ratio js-lazy"

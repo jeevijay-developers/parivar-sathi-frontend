@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 // import axios from "axios";
 import "react-quill/dist/quill.snow.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Image from "next/image";
 
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
@@ -61,7 +62,9 @@ export default function CreateBlog() {
             onChange={(e) => setBannerImage(e.target.files[0])}
           />
           {bannerImage && (
-            <img
+            <Image
+              width={200}
+              height={100}
               src={URL.createObjectURL(bannerImage)}
               alt="Banner Preview"
               className="mt-2 img-fluid rounded"
@@ -91,8 +94,10 @@ export default function CreateBlog() {
           </div>
           <div className="d-flex flex-wrap gap-3 mt-2">
             {contentImages.filter(Boolean).map((file, idx) => (
-              <img
-                key={idx}
+              <Image
+              height={200}
+              width={100}
+              key={idx}
                 src={URL.createObjectURL(file)}
                 alt={`Preview ${idx}`}
                 className="rounded"

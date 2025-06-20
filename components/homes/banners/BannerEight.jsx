@@ -28,7 +28,7 @@ export default function BannerEight() {
         <Image src="/img/cta/7/bg.png" width={1093} height={600} alt="image" />
 
         <div className="cta__image">
-          <img
+          <Image
             src={opdCamp?.image || '/img/cta/7/default.jpg'}
             width={750}
             height={600}
