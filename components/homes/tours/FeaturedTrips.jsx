@@ -9,13 +9,17 @@ import { axiosInstance } from "@/app/lib/axiousInstance";
 export default function FeaturedTrips() {
   const [opdCamps, setOpdCamps] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [noOpdCamps, setNoOpdCamps] = useState(false); 
 
   useEffect(() => {
     const fetchOpdCamps = async () => {
       try {
         const response = await axiosInstance.get("/opds/opdcampsfour");
         setOpdCamps(response.data);
-        // console.log(response.data);
+        if(opdCamps.length <= 0){
+          setNoOpdCamps(true);
+        }
+        console.log("Upcoming OPD Camps: ",response.data);
       } catch (error) {
         console.error("Error fetching OPD camps:", error);
       } finally {
@@ -36,7 +40,11 @@ export default function FeaturedTrips() {
             </h2>
           </div>
         </div>
+      
+      {noOpdCamps ? (
+        <div className="py-60 text-center border-1 mt-lg-3" style={{borderRadius:"10px"}}>No Upcoming OPD camps</div>
 
+      ): (
         <div className="relative pt-40 sm:pt-20">
           <div className="overflow-hidden js-section-slider">
             <div data-aos="fade-up" data-aos-delay="" className="">
@@ -66,7 +74,7 @@ export default function FeaturedTrips() {
                     },
                   }}
                 >
-                  {opdCamps.map((camp) => (
+                  {opdCamps?.map((camp) => (
                     <SwiperSlide
                       key={camp._id}
                       style={{
@@ -126,6 +134,7 @@ export default function FeaturedTrips() {
             </button>
           </div>
         </div>
+            )}
       </div>
     </section>
   );
