@@ -6,12 +6,22 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
+
 export default function Menu() {
   const pathname = usePathname();
   return (
     <>
       <div className="xl:d-none ml-30">
         <div className="desktopNav">
+          <div>
+            <Link href="/">
+              <Image
+                src={'/img/logo/logo.svg'}
+                width={100}
+                height={100}
+              />
+            </Link>
+          </div>
           <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5 hover">
             <a
               className={
