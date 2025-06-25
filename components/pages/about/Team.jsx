@@ -14,14 +14,15 @@ export default function Team() {
 
         <div className="row y-gap-30 pt-40 sm:pt-20">
           {teamData.map((elm, i) => (
-            <div key={i} className="col-lg col-md-4 col-sm-6">
-              <div className="ratio ratio-23:26">
+            <div key={i} className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12" style={{flexBasis: '20%', maxWidth: '20%'}}>
+              <div className="ratio ratio-23:26" style={{height: "auto"}}>
                 <Image
                   width={345}
-                  height={395}
+                  height={400}
                   src={elm.imgPath}
                   alt="image"
                   className="img-ratio bg-light-1 rounded-12"
+                  
                 />
               </div>
 
