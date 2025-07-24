@@ -5,13 +5,15 @@ export default function Hero() {
   return (
     <section className="pageHeader -type-1">
       <div className="pageHeader__bg">
+        <div style={{ height: "500px", width: "100%", backgroundColor: "#f0f0f0" }}>
         <Image
           width={1800}
           height={500}
-          src="/img/pageHeader/pageHeader.jpg"
+          src="/img/pageHeader/pageHeader1.png"
           alt="image"
-
-        />
+          style={{ objectFit: "contain", width: "100%", height: "100%", position: "absolute" }}
+          />
+          </div>
         <Image
           width="1800"
           height="40"

@@ -60,7 +60,7 @@ export default function Hero5() {
           style={{ height: "100%", width: "fit-content" }}
           alt="image"
         />
-        <Image width={716} height={760} src="/img/hero/5/3.jpeg" alt="image" />
+        <Image width={716} height={760} src="/img/hero/5/3.jpg" alt="image" />
         <Image
           width="760"
           height="40"
