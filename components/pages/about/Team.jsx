@@ -15,19 +15,23 @@ export default function Team() {
         <div className="row y-gap-30 pt-40 sm:pt-20">
           {teamData.map((elm, i) => (
             <div key={i} className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12" style={{flexBasis: '20%', maxWidth: '20%'}}>
-              <div className="ratio ratio-23:26" style={{height: "auto"}}>
-                <Image
-                  width={345}
-                  height={400}
-                  src={elm.imgPath}
-                  alt="image"
-                  className="img-ratio bg-light-1 rounded-12"
-                  
-                />
-              </div>
+              <div className="d-flex flex-column h-100">
+                <div className="ratio ratio-23:26" style={{height: "280px", overflow: "hidden"}}>
+                  <Image
+                    width={345}
+                    height={400}
+                    src={elm.imgPath}
+                    alt="image"
+                    className="img-ratio bg-light-1 rounded-12"
+                    style={{objectFit: "fit", width: "100%", height: "100%"}}
+                  />
+                </div>
 
-              <h3 className="text-16 fw-500 mt-20">{elm.name}</h3>
-              <p className="text-14 lh-16">{elm.position}</p>
+                <div className="flex-grow-1 d-flex flex-column justify-content-start">
+                  <h3 className="text-16 fw-500 mt-20" style={{minHeight: "24px", lineHeight: "1.2"}}>{elm.name}</h3>
+                  <p className="text-14 lh-16" style={{minHeight: "40px", marginBottom: "0"}}>{elm.position}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
