@@ -2843,11 +2843,13 @@ h6 {
 
 .headerMobile__left {
   display: none;
+  padding: 1rem;
 }
 
 @media (max-width: 991px) {
   .headerMobile__left {
     display: block;
+     
   }
 }
 
@@ -2857,7 +2859,9 @@ h6 {
 
 @media (max-width: 991px) {
   .headerMobile__right {
+    width: 100%;
     display: flex;
+     justify-content: space-between;
   }
 }
 
@@ -3851,6 +3855,10 @@ h6 {
   padding-top: 236px;
   padding-bottom: 202px;
   z-index: 5;
+  
+}
+.hero.-type-5 .hero-bg{
+  background-color: red;
 }
 
 @media (max-width: 991px) {
@@ -3875,6 +3883,8 @@ h6 {
   bottom: 0;
   z-index: -1;
 }
+
+
 
 @media (max-width: 991px) {
   .hero.-type-5 .hero__bg {
@@ -5265,11 +5275,25 @@ h6 {
 }
 
 .featureCard.-type-5.-hover-accent-2:hover {
-  background-color: var(--color-accent-2);
+  background-color: #8E44AD;
 }
 
 .featureCard.-type-5.-hover-accent-2:hover > * {
   color: white !important;
+}
+
+
+ .featureCard.-type-5 {
+  background-color: #fff; /* Optional for contrast */
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+
+  box-shadow: 0 4px 12px rgba(92, 45, 145, 0.15); /* Parivar Purple shadow with transparency */
+
+}
+.featureCard.-type-5 h4{
+  color: #0b0b0b;
 }
 
 .featureCard.-type-6 {
@@ -10634,11 +10658,14 @@ h6 {
 }
 
 .bg-accent-2 {
-  background-color: var(--color-accent-2) !important;
+  background-color: #5C2D91!important;
 }
 
 .bg-accent-3-v {
-  background-color: var(--color-green-3) !important;
+  background-color:   #5C2D91 !important;
+}
+.bg-accent-3-v:hover{
+    background-color:   #8E44AD !important;
 }
 
 .bg-accent-3-v > a{
@@ -10814,7 +10841,7 @@ h6 {
 }
 
 .text-accent-2 {
-  color: var(--color-accent-2);
+  color: #5C2D91;
   font-weight: 600;
 }
 
@@ -14034,3 +14061,34 @@ button.gm-ui-hover-effect::after {
 .h-500 {
   height: 500px;
 }
+
+.call-wa-button{
+  gap:1rem;
+  flex-wrap: wrap;
+}
+.hero5-icon{
+  font-size: 1.25rem;
+}
+.hero5-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+
+.hero-5-buttons{
+  background-color:  #5C2D91;
+}
+
+.hero-5-buttons:hover{
+  background-color:  #8E44AD;
+}
+
+@media(width<500px){
+  .mobile-height-responsive{
+    height : 700px;
+  }
+}
+
+

@@ -369,21 +369,21 @@ export const destinationsEight = [
 export const destinationsNine = [
   {
     id: 1,
-    title: "We are not a hospital. Not a clinic. Not an NGO",
-    iconSrc: "/img/icons/4/1.svg",
-    detail: "Talk privately with our trained counselor",
+    title: "Your Partner in Parenthood",
+    iconSrc: "/img/icons/4/2.svg",
+    detail: "A community outreach initiative by Morskap Healthcare — here to walk beside you on your journey.",
   },
   {
     id: 2,
-    title: "We work like an NGO—people-first, community-focused, and ethical",
-    iconSrc: "/img/icons/4/2.svg",
-    detail: "Join a nearby OPD camp in your city",
+    title: ". Built on Trust and Care",
+    iconSrc: "/img/icons/4/1.svg", 
+    detail: "Every conversation is guided by empathy, clarity, and confidentiality.",
   },
   {
     id: 3,
-    title: "We help you understand your options and connect you to the right support",
+    title: "Support That Matches You",
     iconSrc: "/img/icons/4/7.svg",
-    detail: "Learn what’s normal and when to seek help",
+    detail: "We help you understand your options and connect you to the right care — always based on your needs and comfort.",
   }
 ];
 
