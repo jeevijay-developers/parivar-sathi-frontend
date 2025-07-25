@@ -17,8 +17,8 @@ export default function Menu() {
             <Link href="/">
               <Image
                 src={'/img/logo/logo.svg'}
-                width={60}
-                height={60}
+                width={120}
+                height={120}
               />
             </Link>
           </div>
