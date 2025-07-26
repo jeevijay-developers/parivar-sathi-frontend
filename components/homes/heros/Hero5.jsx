@@ -1,11 +1,8 @@
 "use client";
-import Calender from "@/components/common/dropdownSearch/Calender";
-import Location from "@/components/common/dropdownSearch/Location";
-import TourType from "@/components/common/dropdownSearch/TourType";
+
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { FaUserDoctor } from "react-icons/fa6";
-import { LiaCashRegisterSolid } from "react-icons/lia";
+
 import { FaWhatsapp } from "react-icons/fa";
 import { MdAddCall } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
