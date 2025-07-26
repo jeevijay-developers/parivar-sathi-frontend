@@ -14104,6 +14104,8 @@ button.gm-ui-hover-effect::after {
 }
 }
 
-
+.roundedBox{
+  border-radius: 2rem;
+}
 
 
