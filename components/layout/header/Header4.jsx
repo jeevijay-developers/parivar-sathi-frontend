@@ -41,10 +41,19 @@ export default function Header4() {
         }`}
       >
         <div className="header__container container">
-          <div className="headerMobile__left">
+          <div className="headerMobile__right">
+            <div >
+               <Link href="/">
+              <Image
+                src={'/img/logo/logo.svg'}
+                width={80}
+                height={80}
+              />
+            </Link>
+            </div>
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="header__menuBtn js-menu-button"
+              className="header__menuBtn js-menu-button mt-5"
             >
               <i className="icon-main-menu"></i>
             </button>

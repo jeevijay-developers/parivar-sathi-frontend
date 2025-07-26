@@ -6,6 +6,9 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { FaUserDoctor } from "react-icons/fa6";
 import { LiaCashRegisterSolid } from "react-icons/lia";
+import { FaWhatsapp } from "react-icons/fa";
+import { MdAddCall } from "react-icons/md";
+import { FaMapMarkerAlt } from "react-icons/fa";
 import { useEffect, useState, useRef } from "react";
 
 export default function Hero5() {
@@ -41,8 +44,15 @@ export default function Hero5() {
     );
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
+
+  const handleCallClick = () => {
+    const phoneNumber = "+919230965019";
+    if (typeof window !== 'undefined') {
+      window.location.href = `tel:${phoneNumber}`;
+    }
+  };
   return (
-    <section className="hero -type-5">
+    <section className="hero -type-5  " >
       <div className="hero__bg">
         <Image
           width={1920}
@@ -60,34 +70,28 @@ export default function Hero5() {
           style={{ height: "100%", width: "fit-content" }}
           alt="image"
         />
-        <Image width={716} height={760} src="/img/hero/5/3.jpg" alt="image" />
+        <Image width={716} height={760} src="/img/hero/5/3.jpg" alt="image"  />
         <Image
           width="760"
           height="40"
           src="/img/hero/5/mobile.svg"
-          alt="image"
+          alt="image" 
         />
       </div>
 
-      <div className="container">
+      <div className="container"   >
         <div className="row">
           <div className="col-lg-8">
             <div className="hero__content">
-              <div
-                data-aos="fade-up"
-                data-aos-delay="100"
-                className="hero__subtitle mb-10"
-              >
-                Trying to Conceive? Need Help Deciding Where to Start?
-              </div>
+
 
               <h1
                 data-aos="fade-up"
                 data-aos-delay="300"
                 className="hero__title "
               >
-                <span className="text-accent-2">Parivar Sathi</span> 
-                <span className="guide-font-size"> guides you <br /> with care</span>
+                <span className="text-accent-2">Trying to Conceive?  <br /> Feeling Unsure Where to Begin? </span>
+                <span className="guide-font-size"> </span>
               </h1>
 
               <div
@@ -100,32 +104,48 @@ export default function Hero5() {
                   data-aos-delay="100"
                   className="mt-2 mb-10"
                 >
-                  Book a free consultation or attend an OPD camp near you.
+                  Parivar Saathi guides you — gently, honestly, and without pressure. <br />
+                  Speak to a counselor or attend a free OPD camp in your city.
+
                 </div>
               </div>
               <div
                 // ref={}
-                className="d-flex justify-content-start align-items-start bg-transparent p-2 rounded-200 w-fit btnCouncelour">
-                <div className="searchForm__button">
-                  <button
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                    onClick={handleWhatsAppClick}
-                    className="button p-3 -dark-1 bg-accent-2 -hover-button rounded-200 text-white "
-                  >
-                    <FaUserDoctor />
-                    <p className="text-white ms-2">Talk to counselor</p>
-                  </button>
+                className="hero5-buttons bg-transparent p-2 rounded-200 w-fit btnCouncelour">
+                <div className="d-flex call-wa-button">
+                      <div className="searchForm__button">
+                    <button
+                      data-aos="fade-up"
+                      data-aos-delay="400"
+                      onClick={handleCallClick}
+                      className="button p-3  hero-5-buttons rounded-200 text-white "
+                    >
+                      <MdAddCall className="hero5-icon" />
+                      <p className="text-white ms-2">Call Now</p>
+                    </button>
+                  </div>
+                  <div className="searchForm__button">
+                    <button
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                      onClick={handleWhatsAppClick}
+                      className="button p-3 hero-5-buttons  rounded-200 text-white "
+                    >
+                      <FaWhatsapp className="hero5-icon" />
+                      <p className="text-white ms-2">Message on WhatsApp</p>
+                    </button>
+                  </div>
+              
                 </div>
                 <div className="searchForm__button">
                   <button
                     data-aos="fade-up"
-                    data-aos-delay="300"
+                    data-aos-delay="500"
                     onClick={() => router.push("/register-opd-camp")}
-                    className="button -dark-1 p-3 bg-accent-3-v rounded-200 text-white"
+                    className="button  p-3 hero-5-buttons rounded-200 text-white"
                   >
-                    <LiaCashRegisterSolid />
-                    <p className="text-white ms-2">Register OPD Camp</p>
+                    <FaMapMarkerAlt className="hero5-icon" />
+                    <p className="text-white ms-2">Register for OPD Camp</p>
                   </button>
                 </div>
               </div>

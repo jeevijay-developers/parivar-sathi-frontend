@@ -8,18 +8,18 @@ const HowWeHelp = () => {
     {
       icon: "/img/icons/1/1.svg",
       className: "text-18",
-      title: "Step 1: Reach Out",
-      description: "You reach out to us via social media, call, or camp",
+      title: " You reach out",
+      description: "via WhatsApp, call, or an OPD camp.",
     },
     {
       icon: "/img/icons/1/2.svg",
-      title: "Step 2: Consultation",
-      description: "Our counselor understands your needs and explains your choices",
+      title: " Our counselor listens and explains your options",
+      description: "clearly and kindly.",
     },
     {
       icon: "/img/icons/1/3.svg",
-      title: "Step 3: Referral",
-      description: "We refer you to ethical, experienced doctors or clinics with pre-agreed discounts",
+      title: "We guide you to experienced, ethical doctors and clinics",
+      description: "chosen with your comfort in mind.",
     },
   ];
 
