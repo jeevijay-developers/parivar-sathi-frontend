@@ -51,8 +51,8 @@ const ContactBanner = () => {
             {/* Responsive Styles */}
             <style jsx>{`
                 .contact-banner {
-                    background: linear-gradient(135deg, #f5f2eb 0%, #ede7d8 100%);
-                    padding: 80px 0;
+                    background-color: #fbe6c9;
+                    padding: 60px 0;
                     min-height: 500px;
                     display: flex;
                     align-items: center;
@@ -112,7 +112,7 @@ const ContactBanner = () => {
                     height: auto;
                     border-radius: 20px;
                     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-                    max-width: 500px;
+                    max-width: 400px;
                 }
 
                 /* Tablet Layout */
