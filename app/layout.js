@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className={dmsans.className}>
+      <body className={dmsans.className} style={{ backgroundColor: "#FFF9F2" }}>
         <Wrapper>{children}</Wrapper>
         {/* <ScrollToTop /> */}
         <WhatsAppFloatingButton />

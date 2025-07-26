@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="pageHeader -type-1">
+    <section className="pageHeader -type-1" >
       <div className="pageHeader__bg">
         <div style={{ height: "500px", width: "100%", backgroundColor: "#f0f0f0" }}>
         <Image

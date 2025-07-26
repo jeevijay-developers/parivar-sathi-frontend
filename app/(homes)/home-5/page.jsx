@@ -26,7 +26,7 @@ export const metadata = {
 export default function page() {
   return (
     <>
-      <main>
+      <main style={{ backgroundColor: "#FFF9F2" }}>
         <Header4 />
         <Hero5 />
         {/* <BrandsThree /> */}

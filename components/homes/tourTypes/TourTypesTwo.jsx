@@ -9,7 +9,7 @@ export default function TourTypesTwo() {
       <div className="container">
         <div className="row y-gap-10 justify-between items-end">
           <div className="col-auto">
-            <h2 data-aos="fade-up" data-aos-delay="" className="text-30">
+            <h2 data-aos="fade-up" data-aos-delay="" className="text-30"  style={{ color: "#5C2D91", fontFamily: "Poppins, sans-serif" }}>
               Who We Are ?
             </h2>
           </div>
@@ -34,7 +34,7 @@ export default function TourTypesTwo() {
         >
           {destinationsNine.map((elm, i) => (
             
-            <div key={i} className="col-xl-4 col-md-4 col-6">
+            <div key={i} className="col-xl-4 col-md-4 col-12">
               <div
                 // href={"/tour-list-1"}
                 className="featureCard -type-5 -hover-accent-2"
@@ -44,6 +44,7 @@ export default function TourTypesTwo() {
                 </div>
 
                 <h4 className="text-18 fw-500 mt-20">{elm.title}</h4>
+                <h5 className="text-18 fw-500 mt-20">{elm.detail}</h5>
                 {/* <div className="lh-13 mt-5">{elm.tourCount}+ Tours</div> */}
               </div>
             </div>

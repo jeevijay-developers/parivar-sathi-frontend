@@ -20,16 +20,57 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
       className={`menu js-menu ${mobileMenuOpen ? "-is-active" : ""} `}
       style={
         mobileMenuOpen
-          ? { opacity: "1", visibility: "visible" }
-          : { pointerEvents: "none", visibility: "hidden" }
+          ? { 
+              opacity: "1", 
+              visibility: "visible",
+              position: "fixed",
+              top: "0",
+              left: "0",
+              width: "100%",
+              height: "100%",
+              zIndex: "9999"
+            }
+          : { 
+              pointerEvents: "none", 
+              visibility: "hidden",
+              position: "fixed",
+              top: "0",
+              left: "0",
+              width: "100%",
+              height: "100%",
+              zIndex: "9999"
+            }
       }
     >
       <div
         onClick={() => setMobileMenuOpen(false)}
         className="menu__overlay js-menu-button"
+        style={{
+          position: "absolute",
+          top: "0",
+          left: "0",
+          width: "100%",
+          height: "100%",
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          zIndex: "1"
+        }}
       ></div>
 
-      <div className="menu__container">
+      <div 
+        className="menu__container"
+        style={{
+          position: "absolute",
+          top: "0",
+          right: mobileMenuOpen ? "0" : "-75%",
+          width: "75%",
+          height: "100%",
+          backgroundColor: "white",
+          boxShadow: "-5px 0 15px rgba(0, 0, 0, 0.1)",
+          transition: "right 0.3s ease-in-out",
+          zIndex: "2",
+          overflowY: "auto"
+        }}
+      >
         <div className="menu__header">
           <h4>Main Menu</h4>
 
