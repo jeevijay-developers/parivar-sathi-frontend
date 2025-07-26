@@ -80,9 +80,6 @@
 h1{
   font-family: "Lato", sans-serif;
 }
-:root {
-  /* --font-primary: "DM sans", sans-serif; */
-}
 
 :root {
   --text-8: 8px;
@@ -5439,13 +5436,6 @@ h6 {
 
 .featureCard.-type-9:hover {
   box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.05);
-}
-
-.pageHeader.-type-1 {
-  position: relative;
-  padding-top: 190px;
-  padding-bottom: 200px;
-  margin-top: 88px;
 }
 
 @media (max-width: 767px) {
@@ -13768,7 +13758,7 @@ table.table-4.-border-bottom tbody > tr {
 .text-overflow {
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
 }
 
