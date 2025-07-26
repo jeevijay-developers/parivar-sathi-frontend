@@ -46,8 +46,8 @@ export default function Header4() {
                <Link href="/">
               <Image
                 src={'/img/logo/logo.svg'}
-                width={80}
-                height={80}
+                width={70}
+                height={70}
               />
             </Link>
             </div>
