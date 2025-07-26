@@ -171,12 +171,12 @@ const ClinicPartnershipForm = () => {
       <div className="clinic-partnership-container">
         <Header4 />
         <div className="form-header">
-          <div className="logo-container">
+          {/* <div className="logo-container">
             <h1>
               <span className="parivar">Parivar </span>
               <span className="sathi">Sathi</span>
             </h1>
-          </div>
+          </div> */}
           <div className="hero-section">
             <div className="container">
               <div className="row justify-content-center">
