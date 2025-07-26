@@ -10,6 +10,8 @@ import Banner from "@/components/pages/about/Banner";
 import Hero from "@/components/pages/about/Hero";
 import Information from "@/components/pages/about/Information";
 import Team from "@/components/pages/about/Team";
+import ContactCall from "@/components/pages/about/ContactCall";
+import WhatWeDo from "@/components/pages/about/WhatWeDo";
 import React from "react";
 
 export const metadata = {
@@ -24,6 +26,7 @@ export default function page() {
         <Header4 />
         <Hero />
         <Information />
+        <WhatWeDo />
         {/* <Banner /> */}
         <FeaturesOne />
         <div className="mt-60">
@@ -32,6 +35,7 @@ export default function page() {
         {/* <TestimonialOne /> */}
         {/* <BannerOne /> */}
         <Team />
+        <ContactCall />
         {/* <BrandsOne /> */}
         <FooterOne />
       </main>

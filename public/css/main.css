@@ -10836,7 +10836,9 @@ h6 {
   height: 160%;
   object-fit: fill;
 }
-
+.text-gray-2{
+  color: #2C2C2C ;
+}
 .text-accent-2 {
   color: #5C2D91;
   font-weight: 600;
@@ -14086,5 +14088,22 @@ button.gm-ui-hover-effect::after {
     height : 700px;
   }
 }
+
+@media(width<500px){
+  .alignment-center{
+    display: flex;
+    justify-content: center;
+  }
+  .team-section{
+  gap:1rem;
+}
+}
+@media(width>=500px){
+    .team-section{
+  gap:4rem;
+}
+}
+
+
 
 
