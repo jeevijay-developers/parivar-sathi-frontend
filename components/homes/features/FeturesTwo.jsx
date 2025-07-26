@@ -23,14 +23,14 @@ export default function FeaturesTwo() {
               <h2
                 data-aos="fade-up"
                 data-aos-delay=""
-                className="text-40 lh-13"
+                className="text-40 lh-13 text-accent-2"
               >
                 We Make
                 <br className="md:d-none" />
                 Fertility Guidance Easy
               </h2>
 
-              <p data-aos="fade-up" data-aos-delay="" className="mt-10">
+              <p data-aos="fade-up" data-aos-delay="" className="mt-10 text-gray-2">
                 At Parivar Sathi, we provide compassionate and ethical guidance
                 to help you understand your fertility options and connect you to
                 the right support.
