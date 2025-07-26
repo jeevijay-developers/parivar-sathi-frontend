@@ -70,7 +70,7 @@ export default function Hero5() {
           style={{ height: "100%", width: "fit-content" }}
           alt="image"
         />
-        <Image width={716} height={760} src="/img/hero/5/3.jpg" alt="image"  />
+        <Image width={716} height={760} src="/img/hero/5/3.jpg" style={{borderRadius: "0px"}} alt="image"  />
         <Image
           width="760"
           height="40"
@@ -83,8 +83,6 @@ export default function Hero5() {
         <div className="row">
           <div className="col-lg-8">
             <div className="hero__content">
-
-
               <h1
                 data-aos="fade-up"
                 data-aos-delay="300"
@@ -110,10 +108,9 @@ export default function Hero5() {
                 </div>
               </div>
               <div
-                // ref={}
-                className="hero5-buttons bg-transparent p-2 rounded-200 w-fit btnCouncelour">
+                className="hero5-buttons bg-transparent p-2 rounded-200 w-fit">
                 <div className="d-flex call-wa-button">
-                      <div className="searchForm__button">
+                  <div className="searchForm__button">
                     <button
                       data-aos="fade-up"
                       data-aos-delay="400"
@@ -135,8 +132,6 @@ export default function Hero5() {
                       <p className="text-white ms-2">Message on WhatsApp</p>
                     </button>
                   </div>
-              
-                </div>
                 <div className="searchForm__button">
                   <button
                     data-aos="fade-up"
@@ -148,11 +143,136 @@ export default function Hero5() {
                     <p className="text-white ms-2">Register for OPD Camp</p>
                   </button>
                 </div>
+              
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
+      {/* Mobile-specific responsive styles */}
+      <style jsx>{`
+
+@media (max-width: 991px) {
+        @media (max-width: 768px) {
+          .hero.-type-5 {
+            min-height: auto !important;
+            padding-bottom: 40px;
+          }
+          
+          .hero__image {
+            position: relative !important;
+            right: auto !important;
+            top: auto !important;
+            width: 100% !important;
+            height: auto !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            margin-top: 20px !important;
+            z-index: 1 !important;
+          }
+          
+          .hero__image img {
+            max-width: 100% !important;
+            height: auto !important;
+            object-fit: contain !important;
+          }
+          
+          .hero__image img:nth-child(2) {
+            max-height: 300px !important;
+            width: auto !important;
+          }
+          
+          .hero__content {
+            text-align: center !important;
+            padding: 0 15px !important;
+          }
+          
+          .hero__title {
+            font-size: 1.8rem !important;
+            line-height: 1.3 !important;
+            margin: 20px 0px !important;
+          }
+          
+          .hero__filter {
+            margin-bottom: 25px !important;
+          }
+          
+          .hero5-buttons {
+            width: 100% !important;
+            padding: 10px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+          }
+          
+          .call-wa-button {
+            flex-direction: column !important;
+            gap: 12px !important;
+            margin-bottom: 12px !important;
+            width: 100% !important;
+          }
+          
+          .hero5-buttons .button {
+            padding: 12px 20px !important;
+            font-size: 0.9rem !important;
+            width: 100% !important;
+            max-width: 280px !important;
+            min-width: auto !important;
+            justify-content: center !important;
+            display: flex !important;
+            align-items: center !important;
+            margin: 0 auto !important;
+          }
+          
+          .hero5-buttons .searchForm__button {
+            width: 100% !important;
+            display: flex !important;
+            justify-content: center !important;
+          }
+          
+          .hero5-icon {
+            font-size: 1.1rem !important;
+            margin-right: 8px !important;
+          }
+          
+          .hero5-buttons .button p {
+            margin-bottom: 0 !important;
+            white-space: nowrap !important;
+          }
+          
+          .container {
+            padding: 0 15px !important;
+          }
+          
+          .col-lg-8 {
+            width: 100% !important;
+            max-width: 100% !important;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .hero__title {
+            font-size: 1.5rem !important;
+          }
+          
+          .hero5-buttons .button {
+            padding: 10px 16px !important;
+            font-size: 0.85rem !important;
+            max-width: 100% !important;
+          }
+          
+          .hero5-buttons .button p {
+            font-size: 0.85rem !important;
+          }
+          
+          .hero5-icon {
+            font-size: 1rem !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }

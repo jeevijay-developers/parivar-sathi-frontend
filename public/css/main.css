@@ -612,7 +612,7 @@ button:focus {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 28px;
   border-radius: 12px;
@@ -641,9 +641,7 @@ button:focus {
 .bi-arrow-left, .bi-arrow-up{
   margin-right: 10px;
 }
-.btnCouncelour{
-  column-gap: 15px;
-}
+
 .button.-underline:hover {
   text-decoration: underline;
 }
@@ -6378,7 +6376,6 @@ h6 {
 @media (max-width: 575px) {
   .cta.-type-4 .cta__content {
     padding: 34px;
-    padding-bottom: 210px;
   }
 }
 
@@ -14072,7 +14069,6 @@ button.gm-ui-hover-effect::after {
 .hero5-buttons{
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
 }
 
 
