@@ -23,9 +23,9 @@ export default function FeaturesTwo() {
               <h2
                 data-aos="fade-up"
                 data-aos-delay=""
-                className="text-40 lh-13 text-accent-2"
+                className="text-35 lh-13 text-accent-2"
               >
-                We Make
+                We Make &nbsp;
                 <br className="md:d-none" />
                 Fertility Guidance Easy
               </h2>
