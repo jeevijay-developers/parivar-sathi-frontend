@@ -21,6 +21,7 @@ export default function Team() {
   const getDescription = (member) => {
     const descriptions = {
       "Kaushal Joshi": "Kaushal Joshi is a healthcare entrepreneur, marketing strategist, and passionate changemaker. With an MBA in Marketing and credentials in Healthcare Analytics from IIM Kozhikode, Kaushal brings deep industry insight and a people-first vision to everything he does. Over the years, he has played a pivotal role in building and managing fertility care ecosystems across India. As the founder of Parivar Saathi, Kaushal envisions a supportive, ethical, and family-first approach to fertility guidance—where every couple feels heard, informed, and empowered. His belief in meaningful communication, respectful listening, and community-building drives the values of the organization.",
+      "Richa Joshi": "Rooted in empathy and guided by a commitment to service, She brings a nurturing perspective to the Parivar Saathi team—supporting families with sincerity and strength.",
       "Dr. Sachidanand Tiwari": "With over a decade of experience in fertility counseling, Dr. Tiwari simplifies complex decisions with empathy. He has guided thousands of couples across leading fertility networks like Indira IVF, Nova IVF, and Crysta IVF. His patient-first approach makes him one of the most trusted names in the field. Dr. Tiwari's expertise lies in helping couples understand their fertility options through compassionate counseling, ensuring that every family receives personalized guidance tailored to their unique circumstances and needs.",
       "Urbashi Chandra": "Urbashi Chandra serves as the Coordinator at Parivar Saathi, where she expertly manages the logistics of our fertility counseling camps and ensures seamless communication between our team and the families we serve. With her background in healthcare administration and her natural ability to connect with people, Urbashi plays a crucial role in making our services accessible and comfortable for all participants. Her attention to detail and compassionate approach helps create a welcoming environment for families seeking fertility support.",
       "Santanu Dutta": "Santanu brings two decades of healthcare operations expertise. He ensures our camps, counseling sessions, and clinic partnerships run smoothly and compassionately. Known for his calm leadership and thorough understanding of patient care systems, Santanu plays a key role in operational excellence. His extensive experience in healthcare operations and business development ensures that our mission of providing quality fertility support reaches families in every corner of India while maintaining the highest standards of care and professionalism.",
@@ -41,29 +42,29 @@ export default function Team() {
         <div className="row y-gap-30 pt-40 sm:pt-20 justify-content-center">
           {teamData.map((elm, i) => (
             <div key={i} className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-              <div 
+              <div
                 className="d-flex flex-column h-100"
-                style={{ 
+                style={{
                   cursor: "pointer",
                   maxWidth: "280px",
                   width: "100%"
                 }}
                 onClick={() => handleMemberClick(elm)}
               >
-                <div className="ratio ratio-23:26" style={{height: "350px", overflow: "hidden"}}>
+                <div className="ratio ratio-23:26" style={{ height: "350px", overflow: "hidden" }}>
                   <Image
                     width={345}
                     height={450}
                     src={elm.imgPath}
                     alt="image"
                     className="img-ratio bg-light-1 rounded-12"
-                    style={{objectFit: "cover", width: "100%", height: "100%"}}
+                    style={{ objectFit: "cover", width: "100%", height: "100%" }}
                   />
                 </div>
 
                 <div className="flex-grow-1 d-flex flex-column justify-content-start">
-                  <h3 className="text-16 fw-500 mt-20" style={{minHeight: "24px", lineHeight: "1.2"}}>{elm.name}</h3>
-                  <p className="text-14 lh-16" style={{minHeight: "40px", marginBottom: "0"}}>{elm.position}</p>
+                  <h3 className="text-16 fw-500 mt-20" style={{ minHeight: "24px", lineHeight: "1.2" }}>{elm.name}</h3>
+                  <p className="text-14 lh-16" style={{ minHeight: "40px", marginBottom: "0" }}>{elm.position}</p>
                 </div>
               </div>
             </div>
@@ -73,8 +74,8 @@ export default function Team() {
 
       {/* Modal Popup */}
       {isModalOpen && selectedMember && (
-        <div 
-          className="modal-overlay" 
+        <div
+          className="modal-overlay"
           style={{
             position: "fixed",
             top: 0,
@@ -90,7 +91,7 @@ export default function Team() {
           }}
           onClick={closeModal}
         >
-          <div 
+          <div
             className="modal-content"
             style={{
               backgroundColor: "#FFF9F2",
@@ -132,7 +133,7 @@ export default function Team() {
 
             {/* Modal Content */}
             <div className="d-flex flex-column align-items-center text-center">
-              <div 
+              <div
                 style={{
                   width: "200px",
                   height: "250px",
@@ -155,7 +156,7 @@ export default function Team() {
                 />
               </div>
 
-              <h2 
+              <h2
                 style={{
                   color: "#5C2D91",
                   fontFamily: "Poppins, sans-serif",
@@ -167,7 +168,7 @@ export default function Team() {
                 {selectedMember.name}
               </h2>
 
-              <h4 
+              <h4
                 style={{
                   color: "#2C2C2C",
                   fontFamily: "Poppins, sans-serif",
@@ -179,7 +180,7 @@ export default function Team() {
                 {selectedMember.position}
               </h4>
 
-              <p 
+              <p
                 style={{
                   color: "#666",
                   fontFamily: "Open Sans, sans-serif",

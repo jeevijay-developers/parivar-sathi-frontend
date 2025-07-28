@@ -23,7 +23,7 @@ export default function BannerEight() {
     fetchOpdCamp();
   }, []);
   return (
-    <section className="cta -type-2">
+    <section className="cta -type-2" id="opd-section">
       <div className="cta__bg">
         <Image src="/img/cta/7/bg.png" width={1093} height={600} alt="image" />
 
