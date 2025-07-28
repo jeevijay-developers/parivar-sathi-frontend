@@ -2,8 +2,11 @@
 import React from "react";
 import { FaWhatsapp, FaMapMarkerAlt, FaBullhorn } from "react-icons/fa";
 import { MdAddCall } from "react-icons/md";
+import { useRouter } from "next/navigation";
 
 export default function ContactCall() {
+  const router = useRouter();
+
   const handleWhatsAppClick = () => {
     const phoneNumber = process.env.NEXT_PUBLIC_COUNSELLOR_WHATSAPP_NUMBER;
     const message = encodeURIComponent(
@@ -18,6 +21,12 @@ export default function ContactCall() {
       window.location.href = `tel:${phoneNumber}`;
     }
   };
+
+  const handleUpcomingcampNavigation = () => {
+    sessionStorage.setItem('scrollToId', 'upcoming-opd-camp');
+    router.push("/");
+  }
+
 
   return (
     <section className="layout-pt-lg layout-pb-lg" >
@@ -72,6 +81,7 @@ export default function ContactCall() {
                 
                 <div className="w-100" style={{ maxWidth: "300px" }}>
                   <button
+                    onClick={handleUpcomingcampNavigation}
                     className="button p-3 hero-5-buttons rounded-200 text-white d-flex align-items-center justify-content-center w-100"
                     style={{ minHeight: "60px" }}
                   >

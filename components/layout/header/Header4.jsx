@@ -43,7 +43,7 @@ export default function Header4() {
         <div className="header__container container">
           <div className="headerMobile__right">
             <div>
-               <Link href="/">
+              <Link href="/">
               <Image
                 src={'/img/logo/logo.svg'}
                 width={70}
@@ -62,16 +62,6 @@ export default function Header4() {
           </div>
 
           <div className="header__logo">
-            {/* <Link href="/" className="header__logo">
-              <Image
-                width="167"
-                height="32"
-                src="/img/general/logo-2.svg"
-                alt="logo icon"
-                priority
-              />
-            </Link> */}
-
             <Menu />
           </div>
 
@@ -136,6 +126,99 @@ export default function Header4() {
         setMobileMenuOpen={setMobileMenuOpen}
         mobileMenuOpen={mobileMenuOpen}
       />
+      
+      <style jsx>{`
+        /* Desktop - Above 1200px */
+        @media (min-width: 1200px) {
+          .header__logo {
+            display: flex !important;
+            align-items: center !important;
+          }
+          .header__right {
+            display: flex !important;
+            align-items: center !important;
+          }
+          .headerMobile__right {
+            display: none !important;
+          }
+          .tablet-nav {
+            display: none !important;
+          }
+        }
+
+        /* Tablet - 768px to 1199px */
+        @media (max-width: 1199px) and (min-width: 768px) {
+          .header__logo {
+            display: flex !important;
+            align-items: center !important;
+          }
+          .header__right {
+            display: none !important;
+          }
+          .headerMobile__right {
+            display: flex !important;
+            align-items: center !important;
+          }
+          .tablet-nav {
+            display: none !important;
+          }
+        }
+
+        /* Mobile - Below 768px */
+        @media (max-width: 767px) {
+          .header__logo {
+            display: none !important;
+          }
+          .header__right {
+            display: none !important;
+          }
+          .headerMobile__right {
+            display: flex !important;
+            align-items: center !important;
+            width: 100% !important;
+            justify-content: space-between !important;
+          }
+          .tablet-nav {
+            display: none !important;
+          }
+        }
+
+        /* Header container responsive height */
+        @media (max-width: 767px) {
+          .header__container {
+            height: 57px !important;
+          }
+        }
+
+        /* Ensure proper flex layout */
+        .header__container {
+          display: flex !important;
+          align-items: center !important;
+          justify-content: space-between !important;
+        }
+
+        .headerMobile__right {
+          align-items: center !important;
+          gap: 15px !important;
+        }
+
+        /* Fix logo sizing across devices */
+        .headerMobile__right img {
+          width: 50px !important;
+          height: auto !important;
+        }
+
+        @media (min-width: 768px) {
+          .headerMobile__right img {
+            width: 70px !important;
+          }
+        }
+        @media (max-width: 1199px) and (min-width: 991px){
+          .headerMobile__right{
+            gap: 52rem !important;
+          }
+        }        
+      `}</style>
     </>
   );
 }

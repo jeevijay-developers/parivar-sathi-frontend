@@ -10,7 +10,7 @@ export default function Menu() {
   const pathname = usePathname();
   return (
     <>
-      <div className="xl:d-none ml-30">
+      <div className="xl:d-none">
         <div className="desktopNav">
           <div>
             <Link href="/">
@@ -51,7 +51,7 @@ export default function Menu() {
 
           <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5 ">
             <a href="/register-opd-camp">
-              Request for OPD camp
+              Register for OPD camp
               {/* <i className="icon-chevron-down"></i> */}
             </a>
 
@@ -88,6 +88,14 @@ export default function Menu() {
             <Link href="/contact">Contact</Link>
           </div> */}
         </div>
+        
+        <style jsx>{`
+          @media (max-width: 991px) {
+            .desktopNav {
+              display: none !important;
+            }
+          }
+        `}</style>
       </div>
     </>
   );
