@@ -229,7 +229,7 @@ const ClinicPartnershipForm = () => {
                           className="hero-button whatsapp-button d-flex align-items-center justify-content-center"
                         >
                           <FaWhatsapp className="button-icon" />
-                          <span className="button-text">Talk to Our Partnership Team on WhatsApp</span>
+                          <span className="button-text">Talk to Our Partnership Team Now</span>
                         </button>
                       </div>
                     </div>

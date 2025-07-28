@@ -1,9 +1,12 @@
 "use client";
 import React from "react";
+import { useRouter } from 'next/navigation';
 import { FaWhatsapp, FaMapMarkerAlt, FaBullhorn } from "react-icons/fa";
 import { MdAddCall } from "react-icons/md";
 
 export default function ContactCall() {
+  const router = useRouter();
+  
   const handleWhatsAppClick = () => {
     const phoneNumber = process.env.NEXT_PUBLIC_COUNSELLOR_WHATSAPP_NUMBER;
     const message = encodeURIComponent(
@@ -19,26 +22,40 @@ export default function ContactCall() {
     }
   };
 
+  const handleCampClick = () => {
+    router.push('/');
+    // Wait for navigation to complete, then scroll to the section
+    setTimeout(() => {
+      const element = document.getElementById('opd-section');
+      if (element) {
+        element.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }, 100);
+  };
+
   return (
     <section className="layout-pt-lg layout-pb-lg" >
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 col-md-10 col-12">
             <div className="text-center">
-              <h2 
-                className="text-30 fw-700 mb-4 d-flex align-items-center justify-content-center" 
-                style={{ 
-                  color: "#5C2D91", 
-                  fontFamily: "Poppins, sans-serif" 
+              <h2
+                className="text-30 fw-700 mb-4 d-flex align-items-center justify-content-center"
+                style={{
+                  color: "#5C2D91",
+                  fontFamily: "Poppins, sans-serif"
                 }}
               >
-                <FaBullhorn className="me-3"  />
+                <FaBullhorn className="me-3" />
                 LET'S TALK
               </h2>
-              
-              <p 
-                className="text-18 mb-5" 
-                style={{ 
+
+              <p
+                className="text-18 mb-5"
+                style={{
                   color: "#2C2C2C",
                   fontFamily: "Open Sans, sans-serif",
                   lineHeight: "1.6"
@@ -58,7 +75,7 @@ export default function ContactCall() {
                     <span className="ms-2 text-center">Call Now to Speak with a Counselor</span>
                   </button>
                 </div>
-                
+
                 <div className="w-100" style={{ maxWidth: "300px" }}>
                   <button
                     onClick={handleWhatsAppClick}
@@ -69,9 +86,10 @@ export default function ContactCall() {
                     <span className="ms-2 text-center">Message on WhatsApp</span>
                   </button>
                 </div>
-                
+
                 <div className="w-100" style={{ maxWidth: "300px" }}>
                   <button
+                    onClick={handleCampClick}
                     className="button p-3 hero-5-buttons rounded-200 text-white d-flex align-items-center justify-content-center w-100"
                     style={{ minHeight: "60px" }}
                   >
@@ -81,7 +99,7 @@ export default function ContactCall() {
                 </div>
               </div>
 
-              <div 
+              <div
                 className="p-4"
                 style={{
                   backgroundColor: "#D6C9F0",
@@ -89,14 +107,14 @@ export default function ContactCall() {
                   border: "2px solid #5C2D91"
                 }}
               >
-                <p 
-                  className="text-16 fw-600 mb-0" 
-                  style={{ 
+                <p
+                  className="text-16 fw-600 mb-0"
+                  style={{
                     color: "#5C2D91",
                     fontFamily: "Poppins, sans-serif"
                   }}
                 >
-                   Operational in: Delhi, Punjab, Uttar Pradesh, Bihar, Jharkhand & West Bengal
+                  Operational in: Delhi, Punjab, Uttar Pradesh, Bihar, Jharkhand & West Bengal
                 </p>
               </div>
             </div>
