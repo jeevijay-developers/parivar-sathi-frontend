@@ -19,6 +19,9 @@ export default function Menu() {
                 src={'/img/logo/logo.svg'}
                 width={120}
                 height={120}
+                alt="logo"
+                priority
+                style={{ width: '120px', height: 'auto' }}
               />
             </Link>
           </div>
