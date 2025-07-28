@@ -46,15 +46,15 @@ export default function Team() {
                 style={{ cursor: "pointer" }}
                 onClick={() => handleMemberClick(elm)}
               >
-                <div className="ratio ratio-23:26" style={{height: "280px", overflow: "hidden"}}>
-                  <Image
-                    width={345}
-                    height={400}
-                    src={elm.imgPath}
-                    alt="image"
-                    className="img-ratio bg-light-1 rounded-12"
-                    style={{objectFit: "fit", width: "100%", height: "100%"}}
-                  />
+                <div className="ratio ratio-23:26" style={{  height: "280px", overflow: "hidden " }}>
+                   <Image
+                     width={345}
+                     height={400}
+                     src={elm.imgPath}
+                     alt="image"
+                     className="img-ratio bg-light-1 rounded-12 object-top"
+                     style={{ objectFit: "cover", width: "100%", height: "100%" }}
+                     />
                 </div>
 
                 <div className="flex-grow-1 d-flex flex-column justify-content-start">
