@@ -71,17 +71,17 @@ export default function Information() {
           </div>
 
           {/* RIGHT SIDE IMAGE */}
-          <div className="col-lg-5 col-12 mb-20 md:mb-0 text-center">
+          <div className="col-lg-6 col-12 mb-20 md:mb-0 text-center">
             <Image
-              src="/img/about/parivarsathi-image.png"
+              src="/img/about/about-parivarsathi.png"
               alt="Fertility Support"
-              width={550}
-              height={750}
+              width={1000}
+              height={1100}
               className="image-rounded object-cover"
               style={{
                 width: "100%",
                 height: "auto",
-                maxWidth: "550px",
+                maxWidth: "900px",
                 borderRadius: "40px"
               }}
             />
@@ -114,7 +114,7 @@ export default function Information() {
         @media (max-width: 768px) {
           .image-rounded {
             border-radius: 30px !important;
-            max-width: 90% !important;
+            max-width: 95% !important;
           }
         }
       `}</style>

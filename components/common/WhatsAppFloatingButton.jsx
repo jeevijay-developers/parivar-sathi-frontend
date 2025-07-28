@@ -13,19 +13,21 @@ const WhatsAppFloatingButton = () => {
 
   return (
     <div
-      className="toTopButton "
+      className="toTopButton whatsapp-btn d-flex justify-content-center align-items-center"
       style={
         {
-          // backgroundColor: "#25D366",
+          backgroundColor: "#25D366",
+          color: "white",
+          
         }
       }
     >
       <button
-        className="btn btn-success rounded-circle p-3"
-        onClick={handleClick}
+        className=" rounded-circle p-3"
+        onClick={handleClick}  
       >
         {" "}
-        <FaWhatsapp size={24} color="white" />
+        <FaWhatsapp size={32} color="white" />
       </button>
     </div>
   );
