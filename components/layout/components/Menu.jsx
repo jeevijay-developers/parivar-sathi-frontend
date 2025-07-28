@@ -1,6 +1,5 @@
 "use client";
 
-import { homes, pages, tours } from "@/data/menu";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
