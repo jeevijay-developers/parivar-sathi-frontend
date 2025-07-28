@@ -44,29 +44,29 @@ export default function Team() {
         <div className="row y-gap-30 pt-40 sm:pt-20 justify-content-center">
           {teamData.map((elm, i) => (
             <div key={i} className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-              <div 
+              <div
                 className="d-flex flex-column h-100"
-                style={{ 
+                style={{
                   cursor: "pointer",
                   maxWidth: "280px",
                   width: "100%"
                 }}
                 onClick={() => handleMemberClick(elm)}
               >
-                <div className="ratio ratio-23:26" style={{height: "350px", overflow: "hidden"}}>
+                <div className="ratio ratio-23:26" style={{ height: "350px", overflow: "hidden" }}>
                   <Image
                     width={345}
                     height={450}
                     src={elm.imgPath}
                     alt="image"
                     className="img-ratio bg-light-1 rounded-12"
-                    style={{objectFit: "cover", width: "100%", height: "100%"}}
+                    style={{ objectFit: "cover", width: "100%", height: "100%" }}
                   />
                 </div>
 
                 <div className="flex-grow-1 d-flex flex-column justify-content-start">
-                  <h3 className="text-16 fw-500 mt-20" style={{minHeight: "24px", lineHeight: "1.2"}}>{elm.name}</h3>
-                  <p className="text-14 lh-16" style={{minHeight: "40px", marginBottom: "0"}}>{elm.position}</p>
+                  <h3 className="text-16 fw-500 mt-20" style={{ minHeight: "24px", lineHeight: "1.2" }}>{elm.name}</h3>
+                  <p className="text-14 lh-16" style={{ minHeight: "40px", marginBottom: "0" }}>{elm.position}</p>
                 </div>
               </div>
             </div>
@@ -76,8 +76,8 @@ export default function Team() {
 
       {/* Modal Popup */}
       {isModalOpen && selectedMember && (
-        <div 
-          className="modal-overlay" 
+        <div
+          className="modal-overlay"
           style={{
             position: "fixed",
             top: 0,
@@ -93,7 +93,7 @@ export default function Team() {
           }}
           onClick={closeModal}
         >
-          <div 
+          <div
             className="modal-content"
             style={{
               backgroundColor: "#FFF9F2",
@@ -135,7 +135,7 @@ export default function Team() {
 
             {/* Modal Content */}
             <div className="d-flex flex-column align-items-center text-center">
-              <div 
+              <div
                 style={{
                   width: "200px",
                   height: "250px",
@@ -158,7 +158,7 @@ export default function Team() {
                 />
               </div>
 
-              <h2 
+              <h2
                 style={{
                   color: "#5C2D91",
                   fontFamily: "Poppins, sans-serif",
@@ -170,7 +170,7 @@ export default function Team() {
                 {selectedMember.name}
               </h2>
 
-              <h4 
+              <h4
                 style={{
                   color: "#2C2C2C",
                   fontFamily: "Poppins, sans-serif",
@@ -182,7 +182,7 @@ export default function Team() {
                 {selectedMember.position}
               </h4>
 
-              <p 
+              <p
                 style={{
                   color: "#666",
                   fontFamily: "Open Sans, sans-serif",
