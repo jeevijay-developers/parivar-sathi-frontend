@@ -1,6 +1,5 @@
 "use client";
 
-import { homes, pages, tours } from "@/data/menu";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -19,6 +18,9 @@ export default function Menu() {
                 src={'/img/logo/logo.svg'}
                 width={120}
                 height={120}
+                alt="logo"
+                priority
+                style={{ width: '120px', height: 'auto' }}
               />
             </Link>
           </div>
