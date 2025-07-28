@@ -25,14 +25,14 @@ export default function FooterThree() {
                 </div>
               </div>
 
-              <div className="col-auto">
+              {/* <div className="col-auto">
                 <div className="footerSocials">
                   <div className="footerSocials__title">Follow Us</div>
                   <div className="footerSocials__icons">
                     <Socials />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 

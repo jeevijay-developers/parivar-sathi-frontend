@@ -13,6 +13,7 @@ import Team from "@/components/pages/about/Team";
 import ContactCall from "@/components/pages/about/ContactCall";
 import WhatWeDo from "@/components/pages/about/WhatWeDo";
 import React from "react";
+import FooterThree from "@/components/layout/footers/FooterThree";
 
 export const metadata = {
   title: "About ",
@@ -37,7 +38,7 @@ export default function page() {
         <Team />
         <ContactCall />
         {/* <BrandsOne /> */}
-        <FooterOne />
+        <FooterThree />
       </main>
     </>
   );
