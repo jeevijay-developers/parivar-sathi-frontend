@@ -38,22 +38,26 @@ export default function Team() {
           </div>
         </div>
 
-        <div className="row y-gap-30 pt-40 sm:pt-20">
+        <div className="row y-gap-30 pt-40 sm:pt-20 justify-content-center">
           {teamData.map((elm, i) => (
-            <div key={i} className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12" style={{flexBasis: '20%', maxWidth: '20%'}}>
+            <div key={i} className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
               <div 
                 className="d-flex flex-column h-100"
-                style={{ cursor: "pointer" }}
+                style={{ 
+                  cursor: "pointer",
+                  maxWidth: "280px",
+                  width: "100%"
+                }}
                 onClick={() => handleMemberClick(elm)}
               >
-                <div className="ratio ratio-23:26" style={{height: "280px", overflow: "hidden"}}>
+                <div className="ratio ratio-23:26" style={{height: "350px", overflow: "hidden"}}>
                   <Image
                     width={345}
-                    height={400}
+                    height={450}
                     src={elm.imgPath}
                     alt="image"
                     className="img-ratio bg-light-1 rounded-12"
-                    style={{objectFit: "fit", width: "100%", height: "100%"}}
+                    style={{objectFit: "cover", width: "100%", height: "100%"}}
                   />
                 </div>
 

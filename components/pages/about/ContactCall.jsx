@@ -37,7 +37,7 @@ export default function ContactCall() {
               </h2>
               
               <p 
-                className="text-18 mb-4" 
+                className="text-18 mb-5" 
                 style={{ 
                   color: "#2C2C2C",
                   fontFamily: "Open Sans, sans-serif",
@@ -47,39 +47,42 @@ export default function ContactCall() {
                 Whether you've just started trying or are feeling unsure, our counselors are here to support you.
               </p>
 
-              <div className="hero5-buttons bg-transparent p-2 rounded-200 w-fit d-flex flex-wrap justify-content-center gap-3">
-                <div className="searchForm__button">
+              <div className="d-flex flex-wrap    justify-content-center lets-talk-buttons">
+                <div className="w-100" style={{ maxWidth: "300px" }}>
                   <button
                     onClick={handleCallClick}
-                    className="button p-3 hero-5-buttons rounded-200 text-white d-flex align-items-center"
+                    className="button p-3 hero-5-buttons rounded-200 text-white d-flex align-items-center justify-content-center w-100"
+                    style={{ minHeight: "60px" }}
                   >
-                    <MdAddCall className="hero5-icon" />
-                    <p className="text-white ms-2 mb-0">Call Now to Speak with a Counselor</p>
+                    <MdAddCall className="hero5-icon flex-shrink-0" />
+                    <span className="ms-2 text-center">Call Now to Speak with a Counselor</span>
                   </button>
                 </div>
                 
-                <div className="searchForm__button">
+                <div className="w-100" style={{ maxWidth: "300px" }}>
                   <button
                     onClick={handleWhatsAppClick}
-                    className="button p-3 hero-5-buttons rounded-200 text-white d-flex align-items-center"
+                    className="button p-3 hero-5-buttons rounded-200 text-white d-flex align-items-center justify-content-center w-100"
+                    style={{ minHeight: "60px" }}
                   >
-                    <FaWhatsapp className="hero5-icon" />
-                    <p className="text-white ms-2 mb-0">Message on WhatsApp</p>
+                    <FaWhatsapp className="hero5-icon flex-shrink-0" />
+                    <span className="ms-2 text-center">Message on WhatsApp</span>
                   </button>
                 </div>
                 
-                <div className="searchForm__button">
+                <div className="w-100" style={{ maxWidth: "300px" }}>
                   <button
-                    className="button p-3 hero-5-buttons rounded-200 text-white d-flex align-items-center"
+                    className="button p-3 hero-5-buttons rounded-200 text-white d-flex align-items-center justify-content-center w-100"
+                    style={{ minHeight: "60px" }}
                   >
-                    <FaMapMarkerAlt className="hero5-icon" />
-                    <p className="text-white ms-2 mb-0">Find a Camp Near You</p>
+                    <FaMapMarkerAlt className="hero5-icon flex-shrink-0" />
+                    <span className="ms-2 text-center">Find a Camp Near You</span>
                   </button>
                 </div>
               </div>
 
               <div 
-                className="mt-4 p-3"
+                className="p-4"
                 style={{
                   backgroundColor: "#D6C9F0",
                   borderRadius: "12px",

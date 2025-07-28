@@ -1,26 +1,12 @@
-import Image from "next/image";
 import React from "react";
 
 export default function Hero() {
   return (
-    <section className="pageHeader -type-1" >
+    <section className="pageHeader -type-1" style={{ marginTop: "40px" }}>
       <div className="pageHeader__bg">
-        <div style={{ height: "500px", width: "100%", backgroundColor: "#f0f0f0" }}>
-        <Image
-          width={1800}
-          height={500}
-          src="/img/pageHeader/pageHeader1.png"
-          alt="image"
-          style={{ objectFit: "contain", width: "100%", height: "100%", position: "absolute" }}
-          />
+        <div style={{ height: "550px", width: "100%", backgroundColor: "#f0f0f0" }}>
+          {/* Background images removed */}
           </div>
-        <Image
-          width="1800"
-          height="40"
-          style={{ height: "auto", width: "auto" }}
-          src="/img/hero/1/shape.svg"
-          alt="image"
-        />
       </div>
 
       {/* <div className="container">
