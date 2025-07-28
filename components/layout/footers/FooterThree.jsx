@@ -19,7 +19,7 @@ export default function FooterThree() {
                   <div className="col-auto">
                     <div className="text-20 fw-500">
                       Talk to us on WhatsApp:&nbsp;
-                      <span className="text-accent-2">+91 98765 54321</span>
+                      <span className="text-accent-2">+91 9230965019</span>
                     </div>
                   </div>
                 </div>
@@ -45,7 +45,7 @@ export default function FooterThree() {
                     support@parivarsathi.com
                   </span>
                   <span className="d-block">
-                    +91 98765 54321
+                    +91 9230965019
                   </span>
                   {/* <a
                     href={`https://wa.me/${process.env.NEXT_PUBLIC_COUNSELLOR_WHATSAPP_NUMBER}`}
