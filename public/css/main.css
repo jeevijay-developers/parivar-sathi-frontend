@@ -1,3 +1,6 @@
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
 .ratio {
   position: relative;
   display: block;
@@ -2253,17 +2256,23 @@ h6 {
 }
 
 .headerMobile__left {
-  display: none;
+  display: flex;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .headerMobile__left {
-    display: block;
+    display: flex;
   }
 }
 
 .headerMobile__right {
   display: none;
+}
+
+@media (max-width: 1199px) {
+  .headerMobile__right {
+    display: flex;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2605,6 +2614,13 @@ h6 {
 @media (max-width: 991px) {
   .header.-type-3.-page-5 .header__right {
     display: none;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .header.-type-3 .header__logo {
+    display: flex !important;
+    align-items: center !important;
   }
 }
 

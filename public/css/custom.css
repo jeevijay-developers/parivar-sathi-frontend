@@ -105,16 +105,12 @@ div, span{
     font-size: 35px;
     font-weight: bold;
     box-sizing: border-box;
-   
-
   }
   .modal .close:hover{
     color: #999;
     text-decoration: none;
     cursor: pointer;
-
   }
-  
  
   
   .modal .mySlides {

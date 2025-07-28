@@ -29,8 +29,6 @@ export default function Header5() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
-    // Cleanup the event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
