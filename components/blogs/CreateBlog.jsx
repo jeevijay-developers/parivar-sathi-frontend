@@ -95,9 +95,9 @@ export default function CreateBlog() {
           <div className="d-flex flex-wrap gap-3 mt-2">
             {contentImages.filter(Boolean).map((file, idx) => (
               <Image
-              height={200}
-              width={100}
-              key={idx}
+                height={200}
+                width={100}
+                key={idx}
                 src={URL.createObjectURL(file)}
                 alt={`Preview ${idx}`}
                 className="rounded"

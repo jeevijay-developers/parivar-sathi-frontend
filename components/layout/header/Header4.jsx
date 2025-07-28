@@ -42,12 +42,14 @@ export default function Header4() {
       >
         <div className="header__container container">
           <div className="headerMobile__right">
-            <div >
+            <div>
                <Link href="/">
               <Image
                 src={'/img/logo/logo.svg'}
                 width={70}
                 height={70}
+                alt="logo"
+                style={{ width: '70px', height: 'auto' }}
               />
             </Link>
             </div>

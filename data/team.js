@@ -9,7 +9,7 @@ export const teamData = [
     id: 2,
     name: "Richa Joshi",
     position: "Partner",
-    imgPath: "/img/team/1/richa.png",
+    imgPath: "/img/team/1/richa.jpg",
   },
   {
     id: 3,

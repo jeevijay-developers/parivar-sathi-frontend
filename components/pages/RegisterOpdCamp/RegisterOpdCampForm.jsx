@@ -124,7 +124,7 @@ export default function RegisterOpdCampForm() {
   };
 
   return (
-    <section className="layout-pt-lg layout-pb-lg">
+    <section id='registration-form' className="layout-pt-lg layout-pb-lg">
       <div className="container">
         <div className="row justify-center">
           <div className="col-lg-8">
