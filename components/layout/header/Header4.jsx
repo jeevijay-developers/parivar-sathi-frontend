@@ -48,6 +48,8 @@ export default function Header4() {
                 src={'/img/logo/logo.svg'}
                 width={70}
                 height={70}
+                alt="logo"
+                style={{ width: '70px', height: 'auto' }}
               />
             </Link>
             </div>
