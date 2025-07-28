@@ -229,9 +229,9 @@ h1{
   animation-delay: 0.2s;
 }
 
-.desktopNav__item > a:hover{
+/* .desktopNav__item > a:hover{
   color: #ffffff !important;
-}
+} */
 
 [data-anim*="delay-2"]::after,
 [data-anim-child*="delay-2"]::after {
@@ -2368,9 +2368,9 @@ h6 {
   width: 100%;
 }
 
-.header .desktopNav__item a:hover {
+/* .header .desktopNav__item a:hover {
   color: var(--color-accent-1);
-}
+} */
 
 .header .desktopNavMega {
   position: absolute;
@@ -2502,9 +2502,9 @@ h6 {
   transition: 0.2s;
 }
 
-.header.-type-2 .desktopNav > *:hover {
+/* .header.-type-2 .desktopNav > *:hover {
   background-color: #fef7f4;
-}
+} */
 
 .header.-type-2 .headerMobile__left {
   display: none;
@@ -2594,13 +2594,13 @@ h6 {
   transition: 0.2s;
 }
 
-.header.-type-3 .desktopNav > *:hover {
+/* .header.-type-3 .desktopNav > *:hover {
   background-color: #f1ecf2;
-}
+} */
 
-.header.-type-3 .desktopNav > * a:hover {
+/* .header.-type-3 .desktopNav > * a:hover {
   color: var(--color-dark-1);
-}
+} */
 
 @media (max-width: 991px) {
   .header.-type-3.-page-5 .header__right {
@@ -2623,14 +2623,14 @@ h6 {
 .header.-type-3.-page-5 .desktopNav > * {
   transition: 0.2s;
 }
-
+/* 
 .header.-type-3.-page-5 .desktopNav > *:hover {
   background-color: #ffffff;
 }
 
 .header.-type-3.-page-5 .desktopNav > * a:hover {
   color: var(--color-dark-1);
-}
+} */
 
 .header .desktopNav {
   display: flex;
@@ -2786,7 +2786,7 @@ h6 {
   font-size: 20px;
 }
 
-.header.-type-4 .desktopNav > * {
+/* .header.-type-4 .desktopNav > * {
   transition: 0.2s;
 }
 
@@ -2796,7 +2796,7 @@ h6 {
 
 .header.-type-4 .desktopNav > * a:hover {
   color: var(--color-dark-1);
-}
+} */
 
 .header.-type-4 .headerMobile__left {
   display: none;
