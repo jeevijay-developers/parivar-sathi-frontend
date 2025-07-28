@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import Image from "next/image";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Information() {
   const handleWhatsAppClick = () => {
@@ -11,20 +13,36 @@ export default function Information() {
   };
 
   return (
-    <section className="layout-pt-lg">
-      <div className="container">
-        <div className="row y-gap-20 justify-between">
-          <div className="col-lg-6">
-            <h2 className="text-30 fw-700 text-accent-2 ">
-              WHO WE ARE
+    <>
+      <section 
+        className="information-section"
+        style={{ 
+          minHeight: "100vh !important", 
+          backgroundColor: "#f8f9fa !important", 
+          paddingTop: "80px !important", 
+          paddingBottom: "80px !important",
+          position: "relative !important",
+          display: "block !important"
+        }}
+      >
+        <div className="container">
+          <div className="row y-gap-40 justify-between items-center flex-wrap-reverse md:flex-nowrap">
+            {/* LEFT SIDE */}
+            <div className="col-lg-6 col-12">
+              <h2 className="text-30 fw-700 text-accent-2">WHO WE ARE</h2>
 
+            {/* Sub-heading */}
+            <h4 className="text-24 fw-600 mt-20 text-accent-2">
+              Your Guide Through the Fertility Journey
+            </h4>
 
-            </h2>
-            <h4 className="text-24 fw-600 mt-20 text-accent-2 " >  Your Guide Through the Fertility Journey</h4>
-          </div>
+            {/* Short description under heading */}
+            <p className="mt-10 text-gray-2">
+              We walk with you through one of life’s most delicate paths — offering support, clarity, and hope.
+            </p>
 
-          <div className="col-lg-5 text-gray-2">
-            <p>
+            {/* Paragraph */}
+            <p className="mt-20 text-gray-2">
               Parivar Saathi is a community-first initiative by Morskap Healthcare LLP, dedicated to supporting families navigating fertility challenges. We provide trusted information, emotional support, and connections to experienced fertility professionals across India.
               <br />
               <br />
@@ -40,17 +58,66 @@ export default function Information() {
               We stand for clarity, care, and compassion at every step.
             </p>
 
+            {/* Button */}
             <div className="alignment-center">
               <button
                 onClick={handleWhatsAppClick}
-                className="mt-3 button  p-3   hero-5-buttons rounded-200 text-white"
+                className="mt-4 button p-3 hero-5-buttons rounded-200 text-white d-flex align-items-center justify-content-center"
               >
+                <FaWhatsapp className="me-2" style={{ fontSize: "18px" }} />
                 Talk to a Counselor
               </button>
             </div>
           </div>
+
+          {/* RIGHT SIDE IMAGE */}
+          <div className="col-lg-5 col-12 mb-20 md:mb-0 text-center">
+            <Image
+              src="/img/about/parivarsathi-image.png"
+              alt="Fertility Support"
+              width={550}
+              height={750}
+              className="image-rounded object-cover"
+              style={{
+                width: "100%",
+                height: "auto",
+                maxWidth: "550px",
+                borderRadius: "40px"
+              }}
+            />
+          </div>
         </div>
       </div>
-    </section>
+      </section>
+
+      <style jsx>{`
+        .information-section {
+          min-height: 100vh !important;
+          background-color: #f8f9fa !important;
+          padding-top: 80px !important;
+          padding-bottom: 80px !important;
+          position: relative !important;
+          display: block !important;
+        }
+
+        .image-rounded {
+          border-radius: 40px !important;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+          transition: all 0.3s ease !important;
+        }
+
+        .image-rounded:hover {
+          transform: translateY(-5px) !important;
+          box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15) !important;
+        }
+
+        @media (max-width: 768px) {
+          .image-rounded {
+            border-radius: 30px !important;
+            max-width: 90% !important;
+          }
+        }
+      `}</style>
+    </>
   );
 }
