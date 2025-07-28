@@ -3,7 +3,6 @@ import React from "react";
 import { useRouter } from 'next/navigation';
 import { FaWhatsapp, FaMapMarkerAlt, FaBullhorn } from "react-icons/fa";
 import { MdAddCall } from "react-icons/md";
-import { useRouter } from "next/navigation";
 
 export default function ContactCall() {
   const router = useRouter();
