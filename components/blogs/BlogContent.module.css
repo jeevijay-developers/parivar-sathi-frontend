@@ -1,0 +1,236 @@
+/* Blog Content Styling Module */
+.blogContent {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #374151;
+}
+
+/* Paragraph styling */
+.blogContent p {
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+}
+
+/* Heading styles */
+.blogContent h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.blogContent h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-top: 1.75rem;
+  margin-bottom: 0.875rem;
+  color: #1f2937;
+}
+
+.blogContent h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #1f2937;
+}
+
+.blogContent h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.625rem;
+  color: #1f2937;
+}
+
+.blogContent h5 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.blogContent h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.875rem;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+/* List styles */
+.blogContent ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  padding-left: 0.5rem;
+}
+
+.blogContent ol {
+  list-style-type: decimal;
+  margin-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  padding-left: 0.5rem;
+}
+
+.blogContent li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+  padding-left: 0.25rem;
+}
+
+.blogContent li::marker {
+  color: #059669;
+  font-weight: bold;
+}
+
+/* Nested lists */
+.blogContent ul ul, 
+.blogContent ol ol, 
+.blogContent ul ol, 
+.blogContent ol ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1.25rem;
+}
+
+/* Bold and italic */
+.blogContent strong, 
+.blogContent b {
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.blogContent em, 
+.blogContent i {
+  font-style: italic;
+}
+
+/* Links */
+.blogContent a {
+  color: #059669;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.blogContent a:hover {
+  color: #047857;
+}
+
+/* Blockquotes */
+.blogContent blockquote {
+  border-left: 4px solid #059669;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  background-color: #f3f4f6;
+  padding: 1rem 1.5rem;
+  border-radius: 0.375rem;
+}
+
+/* Code blocks */
+.blogContent pre {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  overflow-x: auto;
+  margin: 1.25rem 0;
+  font-family: ui-monospace, SFMono-Regular, 'Courier New', monospace;
+}
+
+.blogContent code {
+  background-color: #f3f4f6;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-family: ui-monospace, SFMono-Regular, 'Courier New', monospace;
+  font-size: 0.875rem;
+}
+
+.blogContent pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Images */
+.blogContent img {
+  max-width: 100%;
+  height: auto;
+  margin: 1.25rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Tables */
+.blogContent table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+}
+
+.blogContent th, 
+.blogContent td {
+  border: 1px solid #d1d5db;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.blogContent th {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
+
+/* Horizontal rule */
+.blogContent hr {
+  border: none;
+  border-top: 2px solid #e5e7eb;
+  margin: 2rem 0;
+}
+
+/* Line breaks */
+.blogContent br {
+  line-height: 2;
+}
+
+/* Additional content formatting */
+.blogContent div {
+  margin-bottom: 0.75rem;
+}
+
+.blogContent span {
+  line-height: inherit;
+}
+
+/* For rich text editor content */
+.blogContent .ql-editor {
+  padding: 0 !important;
+}
+
+.blogContent .ql-editor p {
+  margin-bottom: 1rem;
+}
+
+/* Ensure proper spacing for formatted content */
+.blogContent > *:first-child {
+  margin-top: 0;
+}
+
+.blogContent > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Better spacing for consecutive elements */
+.blogContent p + h1,
+.blogContent p + h2,
+.blogContent p + h3,
+.blogContent p + h4,
+.blogContent p + h5,
+.blogContent p + h6 {
+  margin-top: 2rem;
+}
+
+.blogContent ul + p,
+.blogContent ol + p {
+  margin-top: 1rem;
+}

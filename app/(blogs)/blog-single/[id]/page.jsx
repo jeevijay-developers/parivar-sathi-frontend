@@ -3,6 +3,7 @@ import Header1 from "@/components/layout/header/Header1";
 import Hero1 from "@/components/blogs/Hero1";
 import BlogSingle from "@/components/blogs/BlogSingle";
 import { axiosInstance } from "@/app/lib/axiousInstance";
+import Header4 from "@/components/layout/header/Header4";
 
 export const metadata = {
   title: "Parivar Sathi",
@@ -28,7 +29,7 @@ export default async function Page({ params }) {
 
   return (
     <main>
-      <Header1 />
+      <Header4 />
       <Hero1 blog={blog} />
       <BlogSingle blog={blog} />
       <FooterOne />
