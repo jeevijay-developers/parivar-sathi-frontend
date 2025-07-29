@@ -70,7 +70,7 @@ const ClinicPartnershipForm = () => {
   };
 
   const handleCallClick = () => {
-    const phoneNumber = "+91-9876543210"; // Dummy number - replace with actual
+    const phoneNumber = "+91-919230965019"; // Dummy number - replace with actual
     window.open(`tel:${phoneNumber}`, "_self");
   };
 
