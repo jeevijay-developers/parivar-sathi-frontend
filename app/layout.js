@@ -1,4 +1,3 @@
-import ScrollToTop from "@/components/common/ScrollToTop";
 import "../public/css/style.css";
 import "../public/css/blog-section.css";
 
@@ -26,6 +25,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/img/logo/logo.svg" type="image/svg+xml" />
       </head>
       <body className={dmsans.className} style={{ backgroundColor: "#FFF9F2" }}>
         <Wrapper>{children}</Wrapper>
