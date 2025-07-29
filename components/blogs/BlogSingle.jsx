@@ -2,10 +2,14 @@
 
 import React from "react";
 import Image from "next/image";
+import parse from 'html-react-parser';
+import styles from './BlogContent.module.css';
 // import Reviews from "./Reviews";
 // import CommentBox from "./CommentBox";
 
 export default function BlogSingle({ blog }) {
+  console.log("Blog data: ", blog);
+  
   if (!blog) {
     return (
       <section className="layout-pt-md layout-pb-xl">
@@ -38,19 +42,6 @@ export default function BlogSingle({ blog }) {
         <div className="container">
           <div className="row y-gap-30 justify-center">
             <div className="col-lg-8">
-              {/* Blog Banner Image */}
-              {/* {blog.bannerImage && (
-                <div className="relative mb-40">
-                  <Image
-                    width={800}
-                    height={400}
-                    src={blog.bannerImage}
-                    alt={blog.title || "Blog banner"}
-                    className="rounded-12 w-full object-cover"
-                    style={{ height: '400px' }}
-                  />
-                </div>
-              )} */}
 
               {/* Blog Header */}
               <div className="mb-30">
@@ -66,14 +57,14 @@ export default function BlogSingle({ blog }) {
 
                 {/* Blog Meta Info */}
                 <div className="d-flex flex-wrap items-center text-14 text-dark-3 gap-20">
-                  {blog.author && (
+                  {/* {blog.author && (
                     <div className="d-flex items-center">
                       <i className="icon-user mr-8"></i>
                       <span>By {blog.author}</span>
                     </div>
-                  )}
+                  )} */}
                   
-                  {blog.createdAt && (
+                  {/* {blog.createdAt && (
                     <div className="d-flex items-center">
                       <i className="icon-calendar mr-8"></i>
                       <span>
@@ -84,7 +75,7 @@ export default function BlogSingle({ blog }) {
                         })}
                       </span>
                     </div>
-                  )}
+                  )} */}
 
                   {blog.category && (
                     <div className="d-flex items-center">
@@ -98,17 +89,11 @@ export default function BlogSingle({ blog }) {
               </div>
 
               {/* Blog Content */}
-              <div className="blogContent">
+              <div className={styles.blogContent}>
                 {blog.content ? (
-                  <div 
-                    dangerouslySetInnerHTML={{ __html: blog.content }}
-                    className="prose max-w-none"
-                    style={{
-                      lineHeight: '1.7',
-                      fontSize: '16px',
-                      color: '#374151'
-                    }}
-                  />
+                  <div className="prose prose-lg max-w-none">
+                    {parse(blog.content)}
+                  </div>
                 ) : (
                   <div className="text-16 text-dark-1">
                     <p>No content available for this blog post.</p>
