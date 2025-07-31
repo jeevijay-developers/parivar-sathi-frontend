@@ -14,7 +14,7 @@ export default function page() {
     <>
       <main>
         <Header4 />
-        {/* <Hero /> */}
+        <Hero />
         <ContactForm />
         {/* <TestimonialOne /> */}
         {/* <BannerOne /> */}
