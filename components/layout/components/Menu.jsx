@@ -46,10 +46,6 @@ export default function Menu() {
           </div> */}
 
           <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5 ">
-            <a href="/clinic-partnership">Join us</a>
-          </div>
-
-          <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5 ">
             <a href="/register-opd-camp">
               Register for OPD camp
               {/* <i className="icon-chevron-down"></i> */}
@@ -82,6 +78,10 @@ export default function Menu() {
                 ))}
               </div>
             </div> */}
+          </div>
+
+           <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5 ">
+            <a href="/clinic-partnership">Join us</a>
           </div>
 
           {/* <div className="desktopNav__item">
