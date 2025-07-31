@@ -1258,12 +1258,12 @@ button:focus {
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.contactForm select:focus,
+/* .contactForm select:focus,
 .contactForm input:not([type="range"]):focus,
 .contactForm textarea:focus {
   outline: 1px solid #05073c;
   border: 1px solid #05073c;
-}
+} */
 
 .contactForm textarea {
   height: auto;
@@ -1420,7 +1420,6 @@ input.text-white::placeholder {
 }
 
 .form-radio .radio input:checked ~ .radio__mark {
-  border-color: var(--color-accent-1);
   background-color: var(--color-accent-1);
 }
 
@@ -1497,10 +1496,10 @@ input.text-white::placeholder {
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.select__button:focus {
+/* .select__button:focus {
   outline: 1px solid #05073c;
   border: 1px solid #05073c;
-}
+} */
 
 .select__icon {
   width: 20px;
