@@ -8,8 +8,8 @@ import FooterOne from "@/components/layout/footers/FooterOne";
 
 import Header4 from "@/components/layout/header/Header4";
 import Banner from "@/components/pages/about/Banner";
-import Hero from "@/components/pages/joinus/Hero";
-import JoinUsForm from "@/components/pages/joinus/JoinUsForm";
+import Hero from "@/components/pages/clinicPartnership/Hero";
+import JoinUsForm from "@/components/pages/clinicPartnership/ClinicPartnershipForm";
 import Information from "@/components/pages/about/Information";
 import Team from "@/components/pages/about/Team";
 import React from "react";

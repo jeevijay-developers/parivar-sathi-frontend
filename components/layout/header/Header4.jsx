@@ -89,10 +89,10 @@ export default function Header4() {
               <a href="/clinic-partnership">Clinic Partnership</a>
             </div>
             <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
-              <a href="/help-center">FAQ&apos;s</a>
+              <a href="/about">About us</a>
             </div>
             <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
-              <a href="/about">About us</a>
+              <a href="/help-center">FAQ&apos;s</a>
             </div>
             {/* <div className="text-white ml-20">
               <a href="#">Join us</a>
