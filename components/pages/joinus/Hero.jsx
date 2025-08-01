@@ -41,7 +41,7 @@ export default function HeroBanner() {
             {/* IMAGE RIGHT (desktop), TOP (mobile) */}
             <div className="col-lg-6 col-12 hero-img-col text-center">
               <Image
-                src="/img/avatars/joinImg2.png"
+                src="/img/avatars/joinusImg3.png"
                 alt="Pixar-style superhero team"
                 width={650}
                 height={700}
