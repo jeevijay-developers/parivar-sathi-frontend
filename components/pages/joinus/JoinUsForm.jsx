@@ -147,11 +147,11 @@ export default function JoinUsForm() {
     }
   };
   return (
-    <section className="layout-pt-lg layout-pb-lg">
+    <section className="layout-pt-lg layout-pb-lg" id="form-section">
       <div className="container">
         <div className="row justify-center">
           <div className="col-lg-8 join-us-form-container">
-            <h2 className="text-30 fw-700 text-center mb-10">
+            <h2 className="text-30 fw-700 text-center mb-10" style={{ color: "#5C2D91", fontFamily: "Poppins, sans-serif" }}>
               Join Us – Parivar Saathi
             </h2>
 
