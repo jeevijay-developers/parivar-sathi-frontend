@@ -12,34 +12,34 @@ export const teamData = [
     imgPath: "/img/team/1/richa.jpg",
   },
   {
-    id: 2,
+    id: 3,
     name: "Rohit Sinha",
     position: "Regional Head North, India",
     imgPath: "/img/team/1/rohit.jpg",
   },
   {
-    id: 3,
-    name: "Santanu Dutta",
-    position: "General Manager",
-    imgPath: "/img/team/1/004.jpg",
-  },
-  {
     id: 4,
-    name: "Dr. Sachidanand Tiwari",
-    position: "Senior IVF Counsellor",
-    imgPath: "/img/team/1/002.jpg",
-  },
-  {
-    id: 5,
     name: "Urbashi Chandra",
     position: "Coordinator",
     imgPath: "/img/team/1/003.jpg",
   },
-  {
-    id: 6,
-    name: "Arpita Sadhukhan",
-    position: "Senior Executive – Patient Services",
-    imgPath: "/img/team/1/arpita.jpg",
-  },
+  // {
+  //   id: 5,
+  //   name: "Santanu Dutta",
+  //   position: "General Manager",
+  //   imgPath: "/img/team/1/004.jpg",
+  // },
+  // {
+  //   id: 6,
+  //   name: "Dr. Sachidanand Tiwari",
+  //   position: "Senior IVF Counsellor",
+  //   imgPath: "/img/team/1/002.jpg",
+  // },
+  // {
+  //   id: 7,
+  //   name: "Arpita Sadhukhan",
+  //   position: "Senior Executive – Patient Services",
+  //   imgPath: "/img/team/1/arpita.jpg",
+  // },
   // Add more team members as needed
 ];
