@@ -13,16 +13,47 @@ export const teamData = [
   },
   {
     id: 3,
+    name: "Rutviz Dalal",
+    position: "Partner",
+    imgPath: "/img/testimonials/1/2.png",
+  },
+  {
+    id: 4,
+    name: "Dr. Shalu Kashyap",
+    position: "Senior IVF Counsellor",
+    imgPath: "/img/team/1/shalu.jpg",
+  },
+  {
+    id: 5,
+    name: "Dr. Deeksha Goswami",
+    position: "IVF Counsellor",
+    imgPath: "/img/team/1/diksha.jpeg",
+  },
+  {
+    id: 6,
+    name: "Farhana Arshad",
+    position: "Country Representative, Bangladesh",
+    imgPath: "/img/team/1/farhana.jpeg",
+  },
+  {
+    id: 7,
     name: "Rohit Sinha",
     position: "Regional Head North, India",
     imgPath: "/img/team/1/rohit.jpg",
   },
   {
-    id: 4,
-    name: "Urbashi Chandra",
-    position: "Coordinator",
-    imgPath: "/img/team/1/003.jpg",
+    id: 8,
+    name: "Shikha",
+    position: "Senior Coordinator",
+    imgPath: "/img/team/1/shikha.jpeg",
   },
+  {
+    id: 9,
+    name: "Pooja Sharma",
+    position: "Coordinator",
+    imgPath: "/img/team/1/pooja.jpeg",
+  },
+
   // {
   //   id: 5,
   //   name: "Santanu Dutta",

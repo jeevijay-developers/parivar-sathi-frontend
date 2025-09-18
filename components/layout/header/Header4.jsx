@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Menu from "../components/Menu";
-import Currency from "../components/Currency";
 import MobileMenu from "../components/MobileMenu";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,7 +13,10 @@ export default function Header4() {
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [addClass, setAddClass] = useState(false);
-
+  const phoneNumber = process.env.NEXT_PUBLIC_COUNSELLOR_WHATSAPP_NUMBER;
+  const message = encodeURIComponent(
+    "Hi Parivar Sathi, I have some questions about fertility support. Can you help?"
+  );
   // Add a class to the element when scrolled 50px
   const handleScroll = () => {
     if (window.scrollY >= 50) {
@@ -36,22 +37,22 @@ export default function Header4() {
   return (
     <>
       <header
-        className={`header -type-3 -page-5 js-header ${
-          addClass ? "-is-sticky" : ""
-        }`}
+        className={`header -type-3 -page-5 js-header ${addClass ? "-is-sticky" : ""
+          }`}
       >
         <div className="header__container container">
+          {/* Mobile Header */}
           <div className="headerMobile__right">
             <div>
               <Link href="/">
-              <Image
-                src={'/img/logo/logo.svg'}
-                width={70}
-                height={70}
-                alt="logo"
-                style={{ width: '70px', height: 'auto' }}
-              />
-            </Link>
+                <Image
+                  src={'/img/logo/logo.svg'}
+                  width={70}
+                  height={70}
+                  alt="logo"
+                  style={{ width: '70px', height: 'auto' }}
+                />
+              </Link>
             </div>
             <button
               onClick={() => setMobileMenuOpen(true)}
@@ -61,64 +62,46 @@ export default function Header4() {
             </button>
           </div>
 
+          {/* Desktop Header - Logo */}
           <div className="header__logo">
-            <Menu />
+            <Link href="/">
+              <Image
+                src={'/img/logo/logo.svg'}
+                width={120}
+                height={120}
+                alt="logo"
+                priority
+                style={{ width: '120px', height: 'auto' }}
+              />
+            </Link>
           </div>
 
-          {/* <div className="headerMobile__right">
-            <button
-              onClick={() => pageNavigate("/tour-list-1")}
-              className="d-flex"
-            >
-              <i className="icon-search text-18"></i>
-            </button>
-
-            <button
-              onClick={() => pageNavigate("/login")}
-              className="d-flex ml-20"
-            >
-              <i className="icon-person text-18"></i>
-            </button>
-          </div> */}
-
-          <div className="header__right">
-            {/* <div className="ml-30 dnStiky ">
-              <Currency />
-            </div> */}
+          {/* Desktop Navigation */}
+          <div className="header__right" >
             <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
-              <a href="/clinic-partnership">Clinic Partnership</a>
+              <Link href="/">Home</Link>
             </div>
             <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
-              <a href="/about">About us</a>
+              <Link href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank">Counselling Support</Link>
             </div>
             <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
-              <a href="/help-center">FAQ&apos;s</a>
+              <Link href="/register-opd-camp">OPD Camp</Link>
             </div>
-            {/* <div className="text-white ml-20">
-              <a href="#">Join us</a>
-            </div> */}
-
-            {/* <Link href="/help-center" className="text-white ml-20">
-              Help
-            </Link>
-
-            <Link href="/register" className="text-white ml-30">
-              Sign up
-            </Link>
-
-            <Link
-              href="/login"
-              className="button -sm -outline-white rounded-200 text-white ml-30"
-            >
-              Log in
-            </Link>
-
-            <Link
-              href="/login"
-              className="button size-42 -outline-white rounded-200 text-white ml-30"
-            >
-              <i className="icon-search"></i>
-            </Link> */}
+            <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
+              <Link href="/clinic-partnership">Partner With Us</Link>
+            </div>
+            <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
+              <Link href="/joinus">Join Our Team</Link>
+            </div>
+            <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
+              <Link href="/about">About Us</Link>
+            </div>
+            <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
+              <Link href="/help-center">FAQs</Link>
+            </div>
+            <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
+              <Link href="/contact">Contact</Link>
+            </div>
           </div>
         </div>
       </header>
@@ -126,7 +109,7 @@ export default function Header4() {
         setMobileMenuOpen={setMobileMenuOpen}
         mobileMenuOpen={mobileMenuOpen}
       />
-      
+
       <style jsx>{`
         /* Desktop - Above 1200px */
         @media (min-width: 1200px) {
@@ -137,12 +120,30 @@ export default function Header4() {
           .header__right {
             display: flex !important;
             align-items: center !important;
+            flex-wrap: wrap !important;
           }
           .headerMobile__right {
             display: none !important;
           }
           .tablet-nav {
             display: none !important;
+          }
+        }
+
+        /* Large Desktop - Above 1400px - Better spacing for many nav items */
+        @media (min-width: 1400px) {
+          .header__right div {
+            margin-left: 20px !important;
+          }
+        }
+
+        /* Medium Desktop - 1200px to 1399px - Tighter spacing */
+        @media (max-width: 1399px) and (min-width: 1200px) {
+          .header__right div {
+            margin-left: 10px !important;
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            font-size: 14px !important;
           }
         }
 
@@ -158,6 +159,8 @@ export default function Header4() {
           .headerMobile__right {
             display: flex !important;
             align-items: center !important;
+            width: 100% !important;
+            justify-content: space-between !important;
           }
           .tablet-nav {
             display: none !important;
@@ -213,11 +216,32 @@ export default function Header4() {
             width: 70px !important;
           }
         }
-        @media (max-width: 1199px) and (min-width: 991px){
-          .headerMobile__right{
+
+        /* Navigation item hover effects */
+        .header__right div:hover {
+          background-color: rgb(137, 71, 204) !important;
+          transition: background-color 0.3s ease !important;
+        }
+
+        /* Responsive navigation text */
+        @media (max-width: 1199px) and (min-width: 991px) {
+          .headerMobile__right {
             gap: 52rem !important;
           }
-        }        
+        }
+
+        /* Ensure navigation items don't overflow on smaller desktops */
+        @media (max-width: 1299px) and (min-width: 1200px) {
+          .header__right {
+            font-size: 13px !important;
+          }
+          .header__right div {
+            padding-left: 12px !important;
+            padding-right: 12px !important;
+            padding-top: 3px !important;
+            padding-bottom: 3px !important;
+          }
+        }
       `}</style>
     </>
   );
