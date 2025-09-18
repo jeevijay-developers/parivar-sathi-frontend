@@ -1,11 +1,21 @@
 "use client";
 import { teamData } from "@/data/team";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
 
 export default function Team() {
   const [selectedMember, setSelectedMember] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+      delay: 100,
+      once: true,
+      easing: 'ease-out'
+    });
+  }, []);
 
   const handleMemberClick = (member) => {
     setSelectedMember(member);
@@ -21,13 +31,22 @@ export default function Team() {
   const getDescription = (member) => {
     const descriptions = {
       "Kaushal Joshi": "Kaushal Joshi is a healthcare entrepreneur, marketing strategist, and passionate changemaker. With an MBA in Marketing and credentials in Healthcare Analytics from IIM Kozhikode, Kaushal brings deep industry insight and a people-first vision to everything he does. Over the years, he has played a pivotal role in building and managing fertility care ecosystems across India. As the founder of Parivar Saathi, Kaushal envisions a supportive, ethical, and family-first approach to fertility guidance—where every couple feels heard, informed, and empowered. His belief in meaningful communication, respectful listening, and community-building drives the values of the organization.",
+
       "Richa Joshi": "Rooted in empathy and guided by a commitment to service, She brings a nurturing perspective to the Parivar Saathi team—supporting families with sincerity and strength.",
-      "Dr. Sachidanand Tiwari": "With over a decade of experience in fertility counseling, Dr. Tiwari simplifies complex decisions with empathy. He has guided thousands of couples across leading fertility networks like Indira IVF, Nova IVF, and Crysta IVF. His patient-first approach makes him one of the most trusted names in the field. Dr. Tiwari's expertise lies in helping couples understand their fertility options through compassionate counseling, ensuring that every family receives personalized guidance tailored to their unique circumstances and needs.",
-      "Urbashi Chandra": "Urbashi Chandra serves as the Coordinator at Parivar Saathi, where she expertly manages the logistics of our fertility counseling camps and ensures seamless communication between our team and the families we serve. With her background in healthcare administration and her natural ability to connect with people, Urbashi plays a crucial role in making our services accessible and comfortable for all participants. Her attention to detail and compassionate approach helps create a welcoming environment for families seeking fertility support.",
-      "Santanu Dutta": "Santanu brings two decades of healthcare operations expertise. He ensures our camps, counseling sessions, and clinic partnerships run smoothly and compassionately. Known for his calm leadership and thorough understanding of patient care systems, Santanu plays a key role in operational excellence. His extensive experience in healthcare operations and business development ensures that our mission of providing quality fertility support reaches families in every corner of India while maintaining the highest standards of care and professionalism.",
-      "Mr. Prakash": "Mr. Prakash is a dedicated Counsellor who brings warmth and understanding to every interaction with the families seeking fertility support. His patient and empathetic approach helps individuals and couples navigate the emotional challenges of their fertility journey. Mr. Prakash specializes in providing personalized counseling sessions that address both the practical and emotional aspects of fertility treatment decisions, ensuring that every family feels supported throughout their journey.",
+
+      // Rutviz dalal
+
+      "Dr. Shalu Kashyap": "Dr. Shalu Kashyap has been associated with women’s healthcare since 2015 after completing her Bachelor of Ayurvedic Medicine & Surgery from the University of Punjab. With nearly a decade of experience, she has dedicated herself to guiding individuals and couples through the sensitive journey of infertility and reproductive health. She has conducted 600+ free health camps and OPDs, reflecting her commitment to community service and spreading awareness about women’s wellness. Specialized in gynaecology and infertility counselling, Dr. Shalu focuses on resolving queries with clarity, compassion, and practical guidance. At Parivar Saathi, she serves as Senior IVF Counsellor, bringing together her medical knowledge and empathetic approach to ensure every couple feels supported and informed as they move forward on their path to parenthood.",
+
+      "Dr. Deeksha Goswami": "Dr. Deeksha Goswami is an MBBS graduate from Nanjing University of Chinese Medicine, China, with clinical training at Taikang Xianlin Drum Tower Hospital, Nanjing. She specializes in patient counselling for fertility treatments, offering guidance and emotional support throughout procedures like IVF, IUI, and ICSI. With strong communication skills and a compassionate approach, she helps couples navigate their fertility journey with clarity and confidence.",
+
+      "Farhana Arshad": "Farhana Arshad is a seasoned professional with diverse experience in operations management, business consultancy, and international collaborations. She has successfully managed operations across hotels, resorts, and the IT industry, while also contributing her expertise to the field of medical tourism. Currently, she serves as Operations Manager of the United States-Bangladesh Chamber of Commerce and Industry (USBCCI), where she plays a key role in fostering cross-border business relationships. At Parivar Saathi, Farhana represents the platform in Bangladesh. In this role, she leverages her extensive network and experience to connect individuals and families seeking fertility solutions with trusted counselling support in India. Her strategic insight and professional background make her a vital bridge between Parivar Saathi and couples in Bangladesh who are looking for guidance and care on their fertility journey.",
+
       "Rohit Sinha": "Rohit leads Parivar Saathi’s efforts in Punjab and North India, connecting families with trusted fertility care. With his healthcare experience and people-first approach, he builds clinic partnerships, organizes OPD camps, and ensures every patient feels supported on their journey.",
-      "Arpita Sadhukhan": "With over 5 years of dedicated experience in the healthcare industry, Arpita Sadhukhan serves as a vital pillar of Parivar Saathi’s patient care operations. As a Senior Executive, she brings deep empathy, professionalism, and hands-on expertise in handling patient needs across various stages of the fertility journey. Arpita’s background includes working closely with families seeking IVF and fertility support. She is known for her ability to listen with compassion, explain complex medical information in simple terms, and ensure every patient feels heard, informed, and supported.",
+
+      "Shikha": "Shikha has been associated with the IVF field since 2016. With her background as a trained nurse and years of experience, she brings deep knowledge and strong organizational skills to Parivar Saathi. As Senior Coordinator, she oversees the flow of activities, ensures smooth communication, and maintains efficiency across all processes. Her experience and leadership make her a key part of the platform’s operations.",
+
+      "Pooja Sharma": "Pooja has over 4 years of experience in the IVF field. At Parivar Saathi, she manages coordination activities, ensuring timely scheduling, clear communication, and structured support for all processes. With her dedication and attention to detail, Pooja contributes to keeping operations organized and seamless.",
     };
     return descriptions[member.name] || "A dedicated team member committed to helping families navigate their fertility journey with compassion and expertise.";
   };
@@ -43,9 +62,15 @@ export default function Team() {
 
         <div className="row y-gap-30 pt-40 sm:pt-20 justify-content-center">
           {teamData.map((elm, i) => (
-            <div key={i} className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+            <div 
+              key={i} 
+              className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay={i * 100}
+              data-aos-duration="600"
+            >
               <div
-                className="d-flex flex-column h-100"
+                className="d-flex flex-column h-100 team-card-content"
                 style={{
                   cursor: "pointer",
                   maxWidth: "280px",
@@ -197,6 +222,15 @@ export default function Team() {
           </div>
         </div>
       )}
+
+      <style jsx>{`
+        .team-card-content {
+          /* No hover effect */
+        }
+        .team-card-content .img-ratio {
+          /* No hover effect */
+        }
+      `}</style>
     </section>
   );
 }
