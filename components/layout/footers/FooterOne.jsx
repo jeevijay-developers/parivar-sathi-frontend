@@ -29,7 +29,7 @@ export default function FooterOne() {
                   <div className="col-auto">
                     <div className="text-20 fw-500">
                       Speak to our expert at
-                      <span className="text-accent-1"> +91 98765 43210</span>
+                      <span className="text-accent-1"> +91 9230965019</span>
                     </div>
                   </div>
                 </div>
