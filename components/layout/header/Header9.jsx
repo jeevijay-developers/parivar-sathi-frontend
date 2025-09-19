@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 
 import Currency from "../components/Currency";
 import MobileMenu from "../components/MobileMenu";
-import Menu from "../components/Menu";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -59,10 +58,6 @@ export default function Header9() {
                   alt="logo icon"
                 />
               </Link>
-
-              <div className="text-white">
-                <Menu />
-              </div>
             </div>
           </div>
 

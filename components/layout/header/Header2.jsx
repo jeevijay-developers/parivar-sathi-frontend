@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Menu from "../components/Menu";
 import Currency from "../components/Currency";
 import MobileMenu from "../components/MobileMenu";
 import Image from "next/image";
@@ -37,8 +36,6 @@ export default function Header2() {
                 priority
               />
             </Link>
-
-            <Menu />
           </div>
 
           <div className="headerMobile__right">
