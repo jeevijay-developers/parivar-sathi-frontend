@@ -152,18 +152,20 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
         </div>
 
         <div className="menu__footer">
-          <i className="icon-headphone text-50"></i>
+          <div className="d-flex items-center gap-[5px]">
+          <i className="icon-headphone text-20"></i>
 
-          <div className="text-20 lh-12 fw-500 mt-20">
+          <div className="text-15 lh-6 fw-500 mt-20">
             <div>Speak to our expert at</div>
             <div className="text-accent-1"> +91 9230965019</div>
           </div>
+</div>
 
-          <div className="d-flex items-center x-gap-10 pt-30">
-            {socialMediaLinks.map((elm, i) => (
-              <div key={i}>
-                <a href={elm.href} className="d-block">
-                  <i className={elm.class}></i>
+        <div className="d-flex items-center x-gap-10 pt-30">
+          {socialMediaLinks.map((elm, i) => (
+            <div key={i}>
+              <a href={elm.href} className="d-block">
+                <i className={elm.class}></i>
                 </a>
               </div>
             ))}
