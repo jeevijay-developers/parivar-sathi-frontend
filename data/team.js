@@ -14,8 +14,8 @@ export const teamData = [
   {
     id: 3,
     name: "Rutviz Dalal",
-    position: "Partner",
-    imgPath: "/img/testimonials/1/2.png",
+    position: "IVF Expert & Mentor",
+    imgPath: "/img/team/1/rutviz.jpg",
   },
   {
     id: 4,

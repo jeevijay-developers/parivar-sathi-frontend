@@ -35,6 +35,7 @@ export default function Team() {
       "Richa Joshi": "Rooted in empathy and guided by a commitment to service, She brings a nurturing perspective to the Parivar Saathi team—supporting families with sincerity and strength.",
 
       // Rutviz dalal
+      "Dr. Rutviz  Dalal": "Dr. Dalal is a senior IVF specialist who has helped countless families on their path to parenthood. Along with his clinical practice, he is associated with Parivar Saathi in an honorary role, serving as IVF Expert & Mentor. Through this initiative, he contributes his knowledge and experience to guide the counselling framework and support couples with clarity and confidence. His involvement reflects his commitment to giving back to society by making fertility guidance more accessible, reliable, and compassionate",
 
       "Dr. Shalu Kashyap": "Dr. Shalu Kashyap has been associated with women’s healthcare since 2015 after completing her Bachelor of Ayurvedic Medicine & Surgery from the University of Punjab. With nearly a decade of experience, she has dedicated herself to guiding individuals and couples through the sensitive journey of infertility and reproductive health. She has conducted 600+ free health camps and OPDs, reflecting her commitment to community service and spreading awareness about women’s wellness. Specialized in gynaecology and infertility counselling, Dr. Shalu focuses on resolving queries with clarity, compassion, and practical guidance. At Parivar Saathi, she serves as Senior IVF Counsellor, bringing together her medical knowledge and empathetic approach to ensure every couple feels supported and informed as they move forward on their path to parenthood.",
 
@@ -60,11 +61,11 @@ export default function Team() {
           </div>
         </div>
 
-        <div className="row y-gap-30 pt-40 sm:pt-20 justify-content-center">
+        <div className="row y-gap-20 pt-40 sm:pt-20 justify-content-center">
           {teamData.map((elm, i) => (
             <div 
               key={i} 
-              className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+              className="col-12 col-sm-6 col-md-4 d-flex justify-content-center"
               data-aos="fade-up"
               data-aos-delay={i * 100}
               data-aos-duration="600"

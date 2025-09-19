@@ -106,7 +106,7 @@ export default function ContactCall() {
                     fontFamily: "Poppins, sans-serif"
                   }}
                 >
-                  Operational in: Delhi, Punjab, Uttar Pradesh, Bihar, Jharkhand & West Bengal
+                  Reaching couples across India & Dhaka with dedicated counselling support
                 </p>
               </div>
             </div>
