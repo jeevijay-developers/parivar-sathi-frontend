@@ -82,9 +82,6 @@ export default function Header4() {
               <Link href="/">Home</Link>
             </div>
             <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
-              <Link href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank">Counselling Support</Link>
-            </div>
-            <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
               <Link href="/register-opd-camp">OPD Camp</Link>
             </div>
             <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">

@@ -4,7 +4,6 @@ export const menuData = [
     label: "Menu",
     submenu: [
       { id: 101, label: "Home", href: "/" },
-      { id: 102, label: "Counselling Support", href: "/counselling-support" },
       { id: 103, label: "OPD Camp", href: "/register-opd-camp" },
       { id: 104, label: "Partner With Us", href: "/clinic-partnership" },
       { id: 105, label: "Join Our Team", href: "/joinus" },
