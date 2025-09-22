@@ -42,8 +42,7 @@ export default function ContactForm() {
                     <h4 className="text-18 fw-600 text-accent-3-v">Bangladesh Office</h4>
                   </div>
                   <p className="text-15 text-dark-1 mb-0">
-                    House-60, Road-28, Gulshan-1,<br />
-                    Dhaka, 1212, Bangladesh
+                    House -28, Road -1, Block - A, Niketon, Gulshan - 1,<br />  Dhaka : 1212
                   </p>
                 </div>
 
