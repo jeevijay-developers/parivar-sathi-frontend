@@ -36,7 +36,7 @@ export default function RegisterOpdCampForm() {
   const departments = [
     "General Medicine", "Pediatrics", "Obstetrics & Gynecology", 
     "Orthopedics", "Ophthalmology", "ENT", "Dermatology",
-    "Cardiology", "Neurology", "Dentistry", "Physiotherapy", "Other"
+    "Cardiology", "Neurology", "Dentistry", "Physiotherapy", "Infertility", "Other"
   ];
   
   const states = [
