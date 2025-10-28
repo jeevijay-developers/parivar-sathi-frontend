@@ -25,14 +25,14 @@ export default function FooterThree() {
                 </div>
               </div>
 
-              {/* <div className="col-auto">
+              <div className="col-auto">
                 <div className="footerSocials">
                   <div className="footerSocials__title">Follow Us</div>
                   <div className="footerSocials__icons">
                     <Socials />
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
 
@@ -41,12 +41,8 @@ export default function FooterThree() {
               <div className="col-lg-4 col-md-6">
                 <h4 className="text-20 fw-500">Contact</h4>
                 <div className="y-gap-10 mt-20">
-                  <span className="d-block">
-                    support@parivarsathi.com
-                  </span>
-                  <span className="d-block">
-                    +91 9230965019
-                  </span>
+                  <span className="d-block">support@parivarsathi.com</span>
+                  <span className="d-block">+91 9230965019</span>
                   {/* <a
                     href={`https://wa.me/${process.env.NEXT_PUBLIC_COUNSELLOR_WHATSAPP_NUMBER}`}
                     target="_blank"
