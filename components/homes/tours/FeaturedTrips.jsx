@@ -47,7 +47,7 @@ export default function FeaturedTrips() {
         </div>
       
       {noOpdCamps ? (
-        <div className="py-60 text-center border-1 mt-lg-3" style={{borderRadius:"10px"}}>No Upcoming OPD camps</div>
+        <div className="py-60 text-center border mt-lg-3" style={{borderRadius:"10px"}}>No Upcoming OPD camps</div>
 
       ): (
         <div className="relative pt-40 sm:pt-20">

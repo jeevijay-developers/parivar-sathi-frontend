@@ -57,7 +57,7 @@ export default function TourSlider() {
                   <SwiperSlide key={i}>
                     <Link
                       href={`/tour-single-1/${elm.id}`}
-                      className="tourCard -type-1 py-10 px-10 border-1 rounded-12 bg-white -hover-shadow"
+                      className="tourCard -type-1 py-10 px-10 border rounded-12 bg-white -hover-shadow"
                     >
                       <div className="tourCard__header">
                         <div className="tourCard__image ratio ratio-28:20">
