@@ -4,6 +4,7 @@ import Hero1 from "@/components/blogs/Hero1";
 import BlogSingle from "@/components/blogs/BlogSingle";
 // Use native fetch on the server for reliability in RSC
 import Header4 from "@/components/layout/header/Header4";
+import FooterThree from "@/components/layout/footers/FooterThree";
 
 export const metadata = {
   title: "Parivar Sathi",
@@ -39,7 +40,7 @@ export default async function Page({ params }) {
       <Header4 />
       <Hero1 blog={blog} />
       <BlogSingle blog={blog} />
-      <FooterOne />
+      <FooterThree />
     </main>
   );
 }
