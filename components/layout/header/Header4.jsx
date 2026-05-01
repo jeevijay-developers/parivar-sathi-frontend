@@ -85,7 +85,7 @@ export default function Header4() {
               <Link href="/register-opd-camp">OPD Camp</Link>
             </div>
             <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
-              <Link href="/joinus">Partner With Us</Link>
+              <Link href="/clinic-partnership">Partner With Us</Link>
             </div>
             <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
               <Link href="/joinus">Join Our Team</Link>
