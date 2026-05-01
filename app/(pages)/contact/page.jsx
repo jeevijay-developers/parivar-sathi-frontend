@@ -6,7 +6,7 @@ import React from "react";
 
 export const metadata = {
   title: "Contact",
-  description: "Parivar Sathi Contact Page",
+  description: "Parivar Saathi Contact Page",
 };
 
 export default function page() {

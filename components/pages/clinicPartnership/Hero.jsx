@@ -29,13 +29,13 @@ export default function Hero() {
                 Partner with Us to Reach More People Ethically
               </h1>
               {/* <p className="pageHeader__text">
-                At <strong>Parivar Sathi</strong>, we help people who are
+                At <strong>Parivar Saathi</strong>, we help people who are
                 silently struggling with fertility concerns and don’t know where
                 to begin. We're not a hospital, clinic, or NGO—but we operate
                 with the compassion and community spirit of one.
               </p> */}
               <p className="pageHeader__text">
-                Parivar Sathi is a lead-generation and referral platform that
+                Parivar Saathi is a lead-generation and referral platform that
                 brings pre-counseled, informed clients to your clinic. We handle
                 awareness, engagement, and trust-building—so you can focus on
                 care.

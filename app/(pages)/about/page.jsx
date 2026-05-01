@@ -11,7 +11,7 @@ import FooterThree from "@/components/layout/footers/FooterThree";
 
 export const metadata = {
   title: "About ",
-  description: "Parivar Sathi ",
+  description: "Parivar Saathi ",
 };
 
 export default function page() {

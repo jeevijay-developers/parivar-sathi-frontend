@@ -41,7 +41,7 @@ export default function FooterThree() {
               <div className="col-lg-4 col-md-6">
                 <h4 className="text-20 fw-500">Contact</h4>
                 <div className="y-gap-10 mt-20">
-                  <span className="d-block">support@parivarsathi.com</span>
+                  <span className="d-block">support@parivarsaathi.com</span>
                   <span className="d-block">+91 9230965019</span>
                   {/* <a
                     href={`https://wa.me/${process.env.NEXT_PUBLIC_COUNSELLOR_WHATSAPP_NUMBER}`}
@@ -90,7 +90,7 @@ export default function FooterThree() {
           <div className="row y-gap-5 justify-between items-center">
             <div className="col-auto">
               <div>
-                © {new Date().getFullYear()} Parivar Sathi. All rights reserved.
+                © {new Date().getFullYear()} Parivar Saathi. All rights reserved.
               </div>
             </div>
 

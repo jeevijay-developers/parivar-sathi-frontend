@@ -6,7 +6,7 @@ const ContactBanner = () => {
     const handleWhatsAppClick = () => {
         const phoneNumber = process.env.NEXT_PUBLIC_COUNSELLOR_WHATSAPP_NUMBER;
         const message = encodeURIComponent(
-            "Hi Parivar Sathi, I have a question and need assistance. Can you help?"
+            "Hi Parivar Saathi, I have a question and need assistance. Can you help?"
         );
         window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
     };

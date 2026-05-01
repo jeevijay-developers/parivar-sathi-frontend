@@ -3,7 +3,7 @@ export const tourData = [
     id: 1,
     imageSrc: "/img/tourCards/1/1.jpg",
     location: "Kota, Rajasthan",
-    title: "Parivar Sathi OPD Camp – Fertility Awareness & Counseling",
+    title: "Parivar Saathi OPD Camp – Fertility Awareness & Counseling",
     ratingCount: 143,
     rating: 4.9,
     date: "16/08/2025",

@@ -74,7 +74,7 @@ export const testimonialsThree = [
     name: "Neha Sharma",
     role: "Gorakhpur, Uttar Pradesh",
     comment:
-      "I was confused and anxious about fertility options. Parivar Sathi didn’t sell me anything—they just helped me understand my next steps. It changed everything.",
+      "I was confused and anxious about fertility options. Parivar Saathi didn’t sell me anything—they just helped me understand my next steps. It changed everything.",
   },
   {
     id: 2,
@@ -90,7 +90,7 @@ export const testimonialsThree = [
     name: "Aarti Mehta",
     role: "Nashik, Maharashtra",
     comment:
-      "Parivar Sathi’s counselor explained all my options patiently. I wasn’t pressured, just supported. I finally found a doctor I trust.",
+      "Parivar Saathi’s counselor explained all my options patiently. I wasn’t pressured, just supported. I finally found a doctor I trust.",
   },
   {
     id: 4,
@@ -106,7 +106,7 @@ export const testimonialsThree = [
     name: "Pooja Desai",
     role: "Surat, Gujarat",
     comment:
-      "I didn’t even know where to start. Parivar Sathi listened, explained everything clearly, and connected me to the right clinic near me.",
+      "I didn’t even know where to start. Parivar Saathi listened, explained everything clearly, and connected me to the right clinic near me.",
   },
 ];
 

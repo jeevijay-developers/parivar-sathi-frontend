@@ -8,7 +8,7 @@ export default function Banner12() {
   const handleWhatsAppClick = () => {
     const phoneNumber = process.env.NEXT_PUBLIC_COUNSELLOR_WHATSAPP_NUMBER;
     const message = encodeURIComponent(
-      "Hi Parivar Sathi, I have some questions about fertility support. Can you help?"
+      "Hi Parivar Saathi, I have some questions about fertility support. Can you help?"
     );
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };

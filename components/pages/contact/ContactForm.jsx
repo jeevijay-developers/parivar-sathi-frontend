@@ -55,7 +55,7 @@ export default function ContactForm() {
                   </div>
                   <div className="contact-item d-flex align-items-center mb-15">
                     <span className="icon-email text-16 text-accent-3-v mr-15"></span>
-                    <a href="mailto:kj@parivarsaathi.com" className="text-15 text-dark-1">kj@parivarsaathi.com</a>
+                    <a href="mailto:support@parivarsaathi.com" className="text-15 text-dark-1">support@parivarsaathi.com</a>
                   </div>
                   <div className="contact-item d-flex align-items-center mb-15">
                     <span className="icon-globe text-16 text-accent-3-v mr-15"></span>

@@ -31,7 +31,7 @@ export default function FeaturesTwo() {
               </h2>
 
               <p data-aos="fade-up" data-aos-delay="" className="mt-10 text-gray-2">
-                At Parivar Sathi, we provide compassionate and ethical guidance
+                At Parivar Saathi, we provide compassionate and ethical guidance
                 to help you understand your fertility options and connect you to
                 the right support.
               </p>

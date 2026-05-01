@@ -64,7 +64,7 @@ const ClinicPartnershipForm = () => {
   const handleWhatsAppClick = () => {
     const phoneNumber = process.env.NEXT_PUBLIC_COUNSELLOR_WHATSAPP_NUMBER;
     const message = encodeURIComponent(
-      "Hi Parivar Sathi, I have some questions about fertility support. Can you help?"
+      "Hi Parivar Saathi, I have some questions about fertility support. Can you help?"
     );
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
@@ -761,7 +761,7 @@ const ClinicPartnershipForm = () => {
                     required
                   />
                   <label className="form-check-label" htmlFor="consent">
-                    I confirm that the information provided is accurate and I agree to be contacted by Parivar Sathi
+                    I confirm that the information provided is accurate and I agree to be contacted by Parivar Saathi
                   </label>
                   <span className="ms-1 required">*</span>
                 </div>

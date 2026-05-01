@@ -50,7 +50,7 @@ export default function FooterSeven() {
                     328 Queensberry Street, North Melbourne VIC3051, Australia.
                   </span>
                   <span className="d-block">
-                    support@parivarsathi.com
+                    support@parivarsaathi.com
                   </span>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export default function FooterSeven() {
         <div className="footer__bottom">
           <div className="row y-gap-5 justify-between items-center">
             <div className="col-auto">
-              <div>© {new Date().getFullYear()} Parivar Sathi. All rights reserved.</div>
+              <div>© {new Date().getFullYear()} Parivar Saathi. All rights reserved.</div>
             </div>
 
             <div className="col-auto">

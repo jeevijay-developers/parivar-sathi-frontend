@@ -9,7 +9,7 @@ export default function FeaturesOne() {
         <div className="row justify-content-center">
           <div className="col-auto">
             <h2 data-aos="fade-up" className="text-30 md:text-24 text-accent-2 text-center" style={{ fontFamily: "Poppins, sans-serif" }}>
-              Why choose Parivar Sathi
+              Why choose Parivar Saathi
             </h2>
           </div>
         </div>

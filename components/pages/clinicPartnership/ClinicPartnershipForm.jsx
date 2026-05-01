@@ -15,7 +15,7 @@ export default function ContactForm() {
             {/* Added Section: Why Clinics & Labs Work With Us */}
             <div className="mb-30">
               <p className="text-16">
-                Parivar Sathi partners with clinics and labs that want to grow
+                Parivar Saathi partners with clinics and labs that want to grow
                 ethically. Here’s why they choose to work with us:
               </p>
               <ul className="mt-10 text-16 list-disc list-inside">
@@ -69,7 +69,7 @@ export default function ContactForm() {
 
                 <div className="col-6 mt-20 ">
                   <a
-                    href="/clinic-partnership-kit.pdf"
+                    href="/joinus-kit.pdf"
                     className="button -md -dark-1 bg-green-2 text-white col-12"
                     download
                   >

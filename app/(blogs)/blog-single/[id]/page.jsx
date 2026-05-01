@@ -7,9 +7,9 @@ import Header4 from "@/components/layout/header/Header4";
 import FooterThree from "@/components/layout/footers/FooterThree";
 
 export const metadata = {
-  title: "Parivar Sathi",
+  title: "Parivar Saathi",
   description:
-    "Parivar Sathi was created for people who are silently struggling with fertility concerns and don’t know where to begin...",
+    "Parivar Saathi was created for people who are silently struggling with fertility concerns and don’t know where to begin...",
 };
 
 async function getBlogData(id) {

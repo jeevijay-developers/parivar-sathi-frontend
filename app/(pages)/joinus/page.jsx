@@ -6,7 +6,7 @@ import Hero from "@/components/pages/joinus/Hero";
 
 export const metadata = {
   title: "Join US ",
-  description: "Parivar Sathi ",
+  description: "Parivar Saathi ",
 };
 
 export default function page() {

@@ -15,7 +15,7 @@ export default function Header4() {
   const [addClass, setAddClass] = useState(false);
   const phoneNumber = process.env.NEXT_PUBLIC_COUNSELLOR_WHATSAPP_NUMBER;
   const message = encodeURIComponent(
-    "Hi Parivar Sathi, I have some questions about fertility support. Can you help?"
+    "Hi Parivar Saathi, I have some questions about fertility support. Can you help?"
   );
   // Add a class to the element when scrolled 50px
   const handleScroll = () => {
@@ -85,7 +85,7 @@ export default function Header4() {
               <Link href="/register-opd-camp">OPD Camp</Link>
             </div>
             <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
-              <Link href="/clinic-partnership">Partner With Us</Link>
+              <Link href="/joinus">Partner With Us</Link>
             </div>
             <div className="text-white ml-20 bg-accent-3-v rounded-200 px-20 py-5">
               <Link href="/joinus">Join Our Team</Link>

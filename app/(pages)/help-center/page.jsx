@@ -9,7 +9,7 @@ import React from "react";
 
 export const metadata = {
   title: "Help center ",
-  description: "Parivar Sathi - Help Center",
+  description: "Parivar Saathi - Help Center",
 };
 
 export default function page() {

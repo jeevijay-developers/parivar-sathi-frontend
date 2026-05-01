@@ -764,7 +764,7 @@ export default function AddTour() {
             </div>
 
             <div className="text-center pt-30">
-              © {new Date().getFullYear()} Parivar Sathi. All rights reserved.
+              © {new Date().getFullYear()} Parivar Saathi. All rights reserved.
             </div>
           </div>
         </div>

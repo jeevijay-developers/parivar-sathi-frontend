@@ -24,7 +24,7 @@ export default function FAQTeaser() {
               data-aos-delay="100"
               className="mt-10 text-black text-16 md:text-14"
             >
-              See how Parivar Sathi works for you.
+              See how Parivar Saathi works for you.
             </p>
           </div>
         </div>

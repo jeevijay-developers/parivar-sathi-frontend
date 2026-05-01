@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Register OPD Camp",
-  description: "Parivar Sathi",
+  description: "Parivar Saathi",
 };
 
 export default function Layout({ children }) {

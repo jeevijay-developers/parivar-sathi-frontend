@@ -53,7 +53,7 @@ export default function FooterFour() {
                       Australia.
                     </span>
                     <span className="d-block">
-                      support@parivarsathi.com
+                      support@parivarsaathi.com
                     </span>
                   </div>
                 </div>
@@ -101,7 +101,7 @@ export default function FooterFour() {
           <div className="footer__bottom">
             <div className="row y-gap-5 justify-between items-center">
               <div className="col-auto text-white">
-                <div>© {new Date().getFullYear()} Parivar Sathi. All rights reserved.</div>
+                <div>© {new Date().getFullYear()} Parivar Saathi. All rights reserved.</div>
               </div>
 
               <div className="col-auto">

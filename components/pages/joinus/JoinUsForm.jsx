@@ -158,7 +158,7 @@ export default function JoinUsForm() {
             {/* Added Section: Why Clinics & Labs Work With Us */}
             {/* <div className="mb-30">
               <p className="text-16">
-                Parivar Sathi partners with clinics and labs that want to grow
+                Parivar Saathi partners with clinics and labs that want to grow
                 ethically. Here’s why they choose to work with us:
               </p>
               <ul className="mt-10 text-16 list-disc list-inside">
