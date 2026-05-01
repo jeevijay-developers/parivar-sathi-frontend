@@ -40,7 +40,7 @@ export default function ArticlesOne() {
           {blogs.slice(0, 3).map((elm, i) => (
             <div key={i} className="col-lg-4 col-md-6">
               <Link
-                href={`/blog-single/${elm.id}`}
+                href={`/blog-single/${elm._id || elm.id}`}
                 className="blogCard -type-1"
               >
                 <div className="blogCard__image ratio ratio-41:30">
