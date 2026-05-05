@@ -18,6 +18,10 @@ if (typeof window !== "undefined") {
 }
 
 export const metadata = {
+  metadataBase: new URL("https://parivarsaathi.com"),
+  alternates: {
+    canonical: "/",
+  },
   title: "Parivar Saathi - Trying to conceive? We can help.",
   description: "Gentle, honest fertility counseling. Speak to a counselor or attend a free OPD camp in your city.",
   openGraph: {

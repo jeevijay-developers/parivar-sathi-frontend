@@ -84,7 +84,7 @@ export default function HeaderSerch({ white }) {
           ref={inputRef}
           onClick={() => setDdActive((pre) => !pre)}
           type="text"
-          placeholder="Search destinations or activities"
+          placeholder="Search for IVF, Counselling, or Clinics..."
           className={`js-search ${white ? "text-white" : ""}`}
         />
 
@@ -112,7 +112,7 @@ export default function HeaderSerch({ white }) {
                     className="headerSearchRecent__item js-search-option"
                     data-x-click="headerSearch"
                   >
-                    <div className="size-50 bg-white rounded-12 border-1 flex-center">
+                    <div className="size-50 bg-white rounded-12 border flex-center">
                       {elm.iconClass && <i className={elm.iconClass}></i>}
                       {elm.img && (
                         <Image

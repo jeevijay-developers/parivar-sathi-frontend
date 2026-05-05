@@ -9,9 +9,11 @@ export default async function sitemap() {
     { url: `${BASE_URL}/about`,    lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/contact`,  lastModified: now, changeFrequency: "yearly",  priority: 0.5 },
     { url: `${BASE_URL}/faqs`,     lastModified: now, changeFrequency: "monthly", priority: 0.5 },
-    { url: `${BASE_URL}/join-us`,  lastModified: now, changeFrequency: "monthly", priority: 0.5 },
-    { url: `${BASE_URL}/opd-camp`, lastModified: now, changeFrequency: "weekly",  priority: 0.8 },
-    { url: `${BASE_URL}/blog-list-1`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+    { url: `${BASE_URL}/joinus`,  lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE_URL}/register-opd-camp`, lastModified: now, changeFrequency: "weekly",  priority: 0.8 },
+    { url: `${BASE_URL}/clinic-partnership`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE_URL}/help-center`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE_URL}/blog`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
   ];
 
   // Fetch blogs from our actual API
@@ -27,7 +29,7 @@ export default async function sitemap() {
   }
 
   const blogPages = blogs.map((b) => ({
-    url: `${BASE_URL}/blog-single/${b._id}`,
+    url: `${BASE_URL}/blog/${b.slug || b._id}`,
     lastModified: b.updatedAt || now,
     changeFrequency: "weekly",
     priority: 0.8,

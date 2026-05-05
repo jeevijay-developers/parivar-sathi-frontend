@@ -1,6 +1,4 @@
-import FooterOne from "@/components/layout/footers/FooterOne";
 import FooterThree from "@/components/layout/footers/FooterThree";
-import Header1 from "@/components/layout/header/Header1";
 import Header4 from "@/components/layout/header/Header4";
 import Activity from "@/components/pages/helpCenter/Activity";
 import Faq from "@/components/pages/helpCenter/Faq";
@@ -21,6 +19,20 @@ export default function page() {
         {/* <Activity /> */}
         <Faq />
         <FooterThree />
+      
+        {/* PARIVAR SAATHI SCHEMA */}
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    name: "Parivar Saathi",
+                    url: "https://parivarsaathi.com",
+                    logo: "https://parivarsaathi.com/img/logo.jpg"
+                })
+            }}
+        />
       </main>
     </>
   );

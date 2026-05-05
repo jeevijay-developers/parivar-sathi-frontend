@@ -1,21 +1,35 @@
-import FooterOne from "@/components/layout/footers/FooterOne";
-import Header1 from "@/components/layout/header/Header1";
+import FooterThree from "@/components/layout/footers/FooterThree";
+import Header4 from "@/components/layout/header/Header4";
 import Hero1 from "@/components/blogs/Hero1";
 import BlogList2 from "@/components/blogs/BlogList2";
 
 export const metadata = {
-  title: "Blog-list-2 || ViaTour - Travel & Tour React NextJS Template",
-  description: "ViaTour - Travel & Tour React NextJS Template",
+  title: "Blog-list-2 |",
+  description: "",
 };
 
 export default function page() {
   return (
     <>
       <main>
-        <Header1 />
+        <Header4 />
         <Hero1 />
         <BlogList2 />
-        <FooterOne />
+        <FooterThree />
+      
+        {/* PARIVAR SAATHI SCHEMA */}
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    name: "Parivar Saathi",
+                    url: "https://parivarsaathi.com",
+                    logo: "https://parivarsaathi.com/img/logo.jpg"
+                })
+            }}
+        />
       </main>
     </>
   );

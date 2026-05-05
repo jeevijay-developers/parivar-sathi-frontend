@@ -48,7 +48,7 @@ export default function FooterSix() {
 
                   <div className="y-gap-10 mt-20 text-white">
                     <span className="d-block">
-                      328 Queensberry Street, North Melbourne VIC3051,
+                      New Delhi, India
                       Australia.
                     </span>
                     <span className="d-block">
@@ -100,12 +100,12 @@ export default function FooterSix() {
           <div className="footer__bottom">
             <div className="row y-gap-5 justify-between items-center">
               <div className="col-auto text-white">
-                <div>© {new Date().getFullYear()} Parivar Saathi. All rights reserved.</div>
+                <div>Â© {new Date().getFullYear()} Parivar Saathi. All rights reserved.</div>
               </div>
 
               <div className="col-auto">
                 <div className="footer__images d-flex items-center x-gap-10">
-                  <Paymentcards />
+                  {/* <Paymentcards /> */}
                 </div>
               </div>
             </div>

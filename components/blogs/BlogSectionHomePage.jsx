@@ -82,7 +82,7 @@ const BlogSectionHomePage = () => {
                   <SwiperSlide key={blog._id} >
                     <Link
                       href={`/blog-single/${blog._id}`}
-                      className="blogCard -type-1 d-block bg-white rounded-12 shadow-3 transition-all hover:shadow-4 border-1 border-light-4 hover:border-light-3"
+                      className="blogCard -type-1 d-block bg-white rounded-12 shadow-3 transition-all hover:shadow-4 border border-light-4 hover:border-light-3"
                     >
                       <div className="blogCard__image">
                         <div className="ratio ratio-4:3 rounded-top-12 overflow-hidden">

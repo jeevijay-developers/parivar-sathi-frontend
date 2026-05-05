@@ -155,7 +155,7 @@ export default function Invoice() {
                     <div className="text-20 fw-500">Customer</div>
                     <div className="text-15 fw-500 mt-20">John Doe</div>
                     <div className="text-15 mt-10">
-                      329 Queensberry Street, North Melbourne VIC 3051,
+                      New Delhi, India
                       Australia.
                     </div>
                   </div>

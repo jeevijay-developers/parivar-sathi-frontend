@@ -1,22 +1,36 @@
-import FooterOne from "@/components/layout/footers/FooterOne";
-import Header1 from "@/components/layout/header/Header1";
+import FooterThree from "@/components/layout/footers/FooterThree";
+import Header4 from "@/components/layout/header/Header4";
 import Content from "@/components/pages/terms/Content";
 import PageHeader from "@/components/pages/terms/PageHeader";
 import React from "react";
 
 export const metadata = {
-  title: "Terms || ViaTour - Travel & Tour React NextJS Template",
-  description: "ViaTour - Travel & Tour React NextJS Template",
+  title: "Terms |",
+  description: "",
 };
 
 export default function page() {
   return (
     <>
       <main>
-        <Header1 />
+        <Header4 />
         <PageHeader />
         <Content />
-        <FooterOne />
+        <FooterThree />
+      
+        {/* PARIVAR SAATHI SCHEMA */}
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    name: "Parivar Saathi",
+                    url: "https://parivarsaathi.com",
+                    logo: "https://parivarsaathi.com/img/logo.jpg"
+                })
+            }}
+        />
       </main>
     </>
   );

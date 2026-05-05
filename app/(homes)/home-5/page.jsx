@@ -17,8 +17,8 @@ import BlogSectionHomePage from "@/components/blogs/BlogSectionHomePage";
 import HowWeHelp from "@/components/homes/Section/HowWeHelp";
 import WhyTrustParivarSathi from "@/components/homes/Section/WhyTrustParivarSathi";
 // export const metadata = {
-//   title: "Home-5 || ViaTour - Travel & Tour React NextJS Template",
-//   description: "ViaTour - Travel & Tour React NextJS Template",
+//   title: "Home-5 |",
+//   description: "",
 // };
 
 export default function page() {
@@ -40,6 +40,20 @@ export default function page() {
         {/* <ArticlesOne /> */}
         {/* <Banner9 /> */}
         <FooterThree />
+      
+        {/* PARIVAR SAATHI SCHEMA */}
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    name: "Parivar Saathi",
+                    url: "https://parivarsaathi.com",
+                    logo: "https://parivarsaathi.com/img/logo.jpg"
+                })
+            }}
+        />
       </main>
     </>
   );

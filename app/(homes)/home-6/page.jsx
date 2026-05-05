@@ -9,20 +9,20 @@ import SpacialOffer from "@/components/homes/others/SpacialOffer";
 import TestimonialsThree from "@/components/homes/testimonials/TestimonialsThree";
 import TourTypes3 from "@/components/homes/tourTypes/TourTypes3";
 import TourSlider3 from "@/components/homes/tours/TourSlider3";
-import FooterFour from "@/components/layout/footers/FooterFour";
-import Header5 from "@/components/layout/header/Header5";
+import FooterThree from "@/components/layout/footers/FooterThree";
+import Header4 from "@/components/layout/header/Header4";
 import React from "react";
 
 export const metadata = {
-  title: "Home-6 || ViaTour - Travel & Tour React NextJS Template",
-  description: "ViaTour - Travel & Tour React NextJS Template",
+  title: "Home-6 |",
+  description: "",
 };
 
 export default function page() {
   return (
     <>
       <main>
-        <Header5 />
+        <Header4 />
         <Hero6 />
         <FeaturesOne />
         <TrendingDestinations3 />
@@ -36,7 +36,21 @@ export default function page() {
         <SpacialOffer />
         <BrandsThree />
         <Banner10 />
-        <FooterFour />
+        <FooterThree />
+      
+        {/* PARIVAR SAATHI SCHEMA */}
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    name: "Parivar Saathi",
+                    url: "https://parivarsaathi.com",
+                    logo: "https://parivarsaathi.com/img/logo.jpg"
+                })
+            }}
+        />
       </main>
     </>
   );

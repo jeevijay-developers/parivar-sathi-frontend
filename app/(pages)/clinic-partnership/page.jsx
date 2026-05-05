@@ -5,8 +5,8 @@ import { useRouter } from 'next/navigation';
 import './ClinicPartnershipForm.css';
 import { axiosInstance } from '@/app/lib/axiousInstance';
 import { toast } from 'react-toastify';
-import Header4 from '@/components/layout/header/Header4';
-import FooterThree from '@/components/layout/footers/FooterThree';
+import Header4 from "@/components/layout/header/Header4";
+import FooterThree from "@/components/layout/footers/FooterThree";
 import { MdAddCall } from "react-icons/md";
 import { FaWhatsapp, FaUserCheck, FaHandshake, FaIdCard, FaChartBar, FaStar } from "react-icons/fa";
 

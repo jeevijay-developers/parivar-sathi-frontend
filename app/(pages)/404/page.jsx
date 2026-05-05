@@ -1,17 +1,17 @@
-import FooterOne from "@/components/layout/footers/FooterOne";
-import Header1 from "@/components/layout/header/Header1";
+import FooterThree from "@/components/layout/footers/FooterThree";
+import Header4 from "@/components/layout/header/Header4";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Not found || ViaTour - Travel & Tour React NextJS Template",
-  description: "ViaTour - Travel & Tour React NextJS Template",
+  title: "Not found |",
+  description: "",
 };
 
 export default function NotFound() {
   return (
     <>
       <main>
-        <Header1 />
+        <Header4 />
         <section className="nopage mt-header">
           <div className="container">
             <div className="row y-gap-30 justify-between items-center">
@@ -46,7 +46,21 @@ export default function NotFound() {
             </div>
           </div>
         </section>
-        <FooterOne />
+        <FooterThree />
+      
+        {/* PARIVAR SAATHI SCHEMA */}
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    name: "Parivar Saathi",
+                    url: "https://parivarsaathi.com",
+                    logo: "https://parivarsaathi.com/img/logo.jpg"
+                })
+            }}
+        />
       </main>
     </>
   );

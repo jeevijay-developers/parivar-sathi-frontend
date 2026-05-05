@@ -8,13 +8,13 @@ import TestimonialOne from "@/components/homes/testimonials/TestimonialOne";
 import TourTypeOne from "@/components/homes/tourTypes/TourTypeOne";
 import Tour1 from "@/components/homes/tours/Tour1";
 import TourSlderOne from "@/components/homes/tours/TourSlderOne";
-import FooterOne from "@/components/layout/footers/FooterOne";
-import Header1 from "@/components/layout/header/Header1";
+import FooterThree from "@/components/layout/footers/FooterThree";
+import Header4 from "@/components/layout/header/Header4";
 
 export default function Home() {
   return (
     <main>
-      <Header1 />
+      <Header4 />
       <Hero1 />
       <FeaturesOne />
       <DestinationsOne />
@@ -25,7 +25,21 @@ export default function Home() {
       <TestimonialOne />
       <BannerOne />
       <ArticlesThree />
-      <FooterOne />
-    </main>
+      <FooterThree />
+    
+        {/* PARIVAR SAATHI SCHEMA */}
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    name: "Parivar Saathi",
+                    url: "https://parivarsaathi.com",
+                    logo: "https://parivarsaathi.com/img/logo.jpg"
+                })
+            }}
+        />
+      </main>
   );
 }
