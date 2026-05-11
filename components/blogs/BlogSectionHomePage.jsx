@@ -81,7 +81,7 @@ const BlogSectionHomePage = () => {
                 {blogs.map((blog) => (
                   <SwiperSlide key={blog._id} >
                     <Link
-                      href={`/blog-single/${blog._id}`}
+                      href={`/blog/${blog.slug || blog._id}`}
                       className="blogCard -type-1 d-block bg-white rounded-12 shadow-3 transition-all hover:shadow-4 border border-light-4 hover:border-light-3"
                     >
                       <div className="blogCard__image">
