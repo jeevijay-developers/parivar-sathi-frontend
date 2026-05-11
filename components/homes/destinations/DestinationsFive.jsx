@@ -42,7 +42,7 @@ export default function DestinationsFive() {
 
           <div className="col-auto">
             <Link
-              href="/tour-list-1"
+              href="/all-previous-camps"
               data-aos="fade-left"
               data-aos-delay=""
               className="buttonArrow d-flex items-center"
