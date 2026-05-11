@@ -10,8 +10,17 @@ import React from "react";
 import FooterThree from "@/components/layout/footers/FooterThree";
 
 export const metadata = {
-  title: "About ",
-  description: "Parivar Saathi ",
+  title: "About Parivar Saathi - Our Mission & Team",
+  description: "Learn about Parivar Saathi's mission to provide gentle, honest fertility counseling and support. Meet our compassionate team dedicated to helping people on their fertility journey.",
+  alternates: {
+    canonical: "https://parivarsaathi.com/about",
+  },
+  openGraph: {
+    title: "About Parivar Saathi",
+    description: "Discover our mission, values, and team committed to fertility counseling and community support.",
+    url: "https://parivarsaathi.com/about",
+    type: "website",
+  },
 };
 
 export default function page() {

@@ -5,8 +5,17 @@ import ContactForm from "@/components/pages/joinus/JoinUsForm";
 import Hero from "@/components/pages/joinus/Hero";
 
 export const metadata = {
-  title: "Join US ",
-  description: "Parivar Saathi ",
+  title: "Join Parivar Saathi | Become a Counselor or Partner",
+  description: "Join our team as a fertility counselor or community partner. Help us bring compassionate fertility support to families across India.",
+  alternates: {
+    canonical: "https://parivarsaathi.com/joinus",
+  },
+  openGraph: {
+    title: "Join Parivar Saathi Team",
+    description: "Make an impact. Join us as a counselor or partner and help families on their fertility journey.",
+    url: "https://parivarsaathi.com/joinus",
+    type: "website",
+  },
 };
 
 export default function page() {

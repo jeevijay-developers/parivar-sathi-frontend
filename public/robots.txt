@@ -1,0 +1,31 @@
+# Robots.txt for Parivar Saathi
+# Last updated: May 2026
+
+User-agent: *
+Allow: /
+Allow: /_next/static/
+Allow: /_next/image/
+
+# Disallow template pages
+Disallow: /tour-list-1
+Disallow: /blog-single/
+Disallow: /blog-list-1
+
+# Sitemap
+Sitemap: https://parivarsaathi.com/sitemap.xml
+
+# Crawl-delay (optional - set to be respectful)
+Crawl-delay: 1
+
+# Block SEO-negative bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

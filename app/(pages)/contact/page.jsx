@@ -5,8 +5,17 @@ import ContactForm from "@/components/pages/contact/ContactForm";
 import React from "react";
 
 export const metadata = {
-  title: "Contact",
-  description: "Parivar Saathi Contact Page",
+  title: "Contact Us | Parivar Saathi - Get Support",
+  description: "Contact Parivar Saathi for fertility counseling, OPD camp information, or partnership inquiries. Reach out to us for support on your journey.",
+  alternates: {
+    canonical: "https://parivarsaathi.com/contact",
+  },
+  openGraph: {
+    title: "Contact Parivar Saathi",
+    description: "Get in touch with us for fertility support, counseling, or to learn about our OPD camps.",
+    url: "https://parivarsaathi.com/contact",
+    type: "website",
+  },
 };
 
 export default function page() {
