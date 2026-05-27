@@ -4,8 +4,9 @@ import Login from "@/components/pages/Login";
 import React from "react";
 
 export const metadata = {
-  title: "Login |",
-  description: "",
+  title: "Login | Parivar Saathi",
+  description: "Log in to your Parivar Saathi account.",
+  robots: { index: false, follow: false },
 };
 
 export default function page() {

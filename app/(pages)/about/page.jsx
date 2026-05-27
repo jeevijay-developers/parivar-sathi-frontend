@@ -49,10 +49,18 @@ export default function page() {
             dangerouslySetInnerHTML={{
                 __html: JSON.stringify({
                     "@context": "https://schema.org",
-                    "@type": "Organization",
+                    "@type": "MedicalOrganization",
                     name: "Parivar Saathi",
                     url: "https://parivarsaathi.com",
-                    logo: "https://parivarsaathi.com/img/logo.jpg"
+                    logo: "https://parivarsaathi.com/img/logo.jpg",
+                    description: "Gentle, honest fertility counseling and free OPD camps across India.",
+                    medicalSpecialty: "Fertility",
+                    contactPoint: {
+                        "@type": "ContactPoint",
+                        contactType: "customer support",
+                        url: "https://parivarsaathi.com/contact"
+                    },
+                    sameAs: []
                 })
             }}
         />

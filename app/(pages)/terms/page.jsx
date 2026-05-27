@@ -5,8 +5,11 @@ import PageHeader from "@/components/pages/terms/PageHeader";
 import React from "react";
 
 export const metadata = {
-  title: "Terms |",
-  description: "",
+  title: "Terms & Conditions | Parivar Saathi",
+  description: "Read the terms and conditions for using Parivar Saathi's fertility counseling and OPD camp services.",
+  alternates: {
+    canonical: "https://parivarsaathi.com/terms",
+  },
 };
 
 export default function page() {
