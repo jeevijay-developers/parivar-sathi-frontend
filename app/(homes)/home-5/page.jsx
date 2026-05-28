@@ -15,12 +15,7 @@ import Header4 from "@/components/layout/header/Header4";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import BlogSectionHomePage from "@/components/blogs/BlogSectionHomePage";
-import HowWeHelp from "@/components/homes/Section/HowWeHelp";
 import WhyTrustParivarSathi from "@/components/homes/Section/WhyTrustParivarSathi";
-// export const metadata = {
-//   title: "Home-5 |",
-//   description: "",
-// };
 
 export default function page() {
   return (
