@@ -19,11 +19,14 @@ if (typeof window !== "undefined") {
 
 export const metadata = {
   metadataBase: new URL("https://parivarsaathi.com"),
-  alternates: {
-    canonical: "/",
-  },
   title: "Parivar Saathi - Trying to conceive? We can help.",
   description: "Gentle, honest fertility counseling. Speak to a counselor or attend a free OPD camp in your city.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     type: "website",
     url: "https://parivarsaathi.com",
@@ -48,15 +51,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
-        <link rel="icon" type="image/svg+xml" href="/img/logo/logo2.svg?v=2" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-      </head>
+      <head />
       <body className={dmsans.className} style={{ backgroundColor: "#FFF9F2" }}>
         <Wrapper>{children}</Wrapper>
         {/* <ScrollToTop /> */}

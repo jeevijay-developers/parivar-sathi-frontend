@@ -4,8 +4,9 @@ import Register from "@/components/pages/Register";
 import React from "react";
 
 export const metadata = {
-  title: "Register |",
-  description: "",
+  title: "Register | Parivar Saathi",
+  description: "Create your Parivar Saathi account.",
+  robots: { index: false, follow: false },
 };
 
 export default function page() {

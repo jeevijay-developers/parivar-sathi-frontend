@@ -6,6 +6,12 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.parivarsaathi.com' }],
+        destination: 'https://parivarsaathi.com/:path*',
+        permanent: true,
+      },
+      {
         source: '/blog-single/:id',
         destination: '/blog/:id',
         permanent: true,

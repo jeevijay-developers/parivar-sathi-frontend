@@ -1,6 +1,7 @@
 import FooterOne from "@/components/layout/footers/FooterOne";
 import Header1 from "@/components/layout/header/Header1";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export const metadata = {
@@ -38,10 +39,10 @@ export default function NotFound() {
                     again or use the go to.
                   </p>
 
-                  <button className="button -md -dark-1 bg-accent-1 text-white mt-25">
+                  <Link href="/" className="button -md -dark-1 bg-accent-1 text-white mt-25">
                     Go back to homepage
                     <i className="icon-arrow-top-right ml-10"></i>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

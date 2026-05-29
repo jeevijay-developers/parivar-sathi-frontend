@@ -43,16 +43,16 @@ const BlogSectionHomePage = () => {
             </p>
           </div>
 
-          {/* <div className="col-auto">
+          <div className="col-auto">
             <Link
-              href="/blog-list-1"
+              href="/blog"
               data-aos="fade-left"
               className="button -md -blue-1 bg-green-500 text-white"
             >
               View All Articles
               <i className="icon-arrow-top-right ml-10" />
             </Link>
-          </div> */}
+          </div>
         </div>
 
         <div className="relative pt-40 sm:pt-20">

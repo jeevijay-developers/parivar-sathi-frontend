@@ -86,9 +86,23 @@ export default async function Page({ params }) {
             "image": blog.bannerImage,
             "datePublished": blog.createdAt,
             "dateModified": blog.updatedAt,
+            "url": `https://parivarsaathi.com/blog/${blog.slug}`,
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `https://parivarsaathi.com/blog/${blog.slug}`
+            },
             "author": {
               "@type": "Organization",
-              "name": "Parivar Saathi"
+              "name": "Parivar Saathi",
+              "url": "https://parivarsaathi.com"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Parivar Saathi",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://parivarsaathi.com/img/logo.jpg"
+              }
             }
           }),
         }}
