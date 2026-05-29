@@ -1,7 +1,11 @@
+import { redirect } from "next/navigation";
 import FooterThree from "@/components/layout/footers/FooterThree";
 import Header4 from "@/components/layout/header/Header4";
 import Hero1 from "@/components/blogs/Hero1";
 import BlogSingle from "@/components/blogs/BlogSingle";
+
+// 24-character lowercase hex string = MongoDB ObjectId
+const OBJECT_ID_RE = /^[0-9a-f]{24}$/i;
 
 async function getBlogData(slug) {
   const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:5000/api";
@@ -48,9 +52,17 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function Page({ params }) {
-  // In Next.js App Router params may be a Promise — await it to access values reliably
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
+
+  // 301-redirect MongoDB ObjectId URLs to their canonical slug URL
+  if (OBJECT_ID_RE.test(slug)) {
+    const blog = await getBlogData(slug);
+    if (blog?.slug) {
+      redirect(`/blog/${blog.slug}`);
+    }
+  }
+
   const blog = await getBlogData(slug);
 
   if (!blog) {
