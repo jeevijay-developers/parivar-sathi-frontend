@@ -40,25 +40,28 @@ export default function BannerEight() {
   return (
     <section className="cta -type-2" id="upcoming-opd-camp">
       <div className="cta__bg">
-        <Image src="/img/cta/7/bg.png" width={1093} height={600} alt="image" />
+        <Image src="/img/cta/7/bg.png" width={1093} height={600} alt="image" style={{ width: "auto", height: "auto" }} />
         <div className="cta__image">
           <Image
             src={opdCamp?.image || '/img/cta/7/default.jpg'}
             width={750}
             height={600}
             alt="image"
+            style={{ width: "auto", height: "auto" }}
           />
           <Image
             src="/img/cta/7/shape.svg"
-            width="40"
-            height="600"
+            width={40}
+            height={600}
             alt="image"
+            style={{ width: "auto", height: "auto" }}
           />
           <Image
             src="/img/cta/7/shape2.svg"
-            width="600"
-            height="40"
+            width={600}
+            height={40}
             alt="image"
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
       </div>

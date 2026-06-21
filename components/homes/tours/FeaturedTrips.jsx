@@ -21,7 +21,6 @@ export default function FeaturedTrips() {
         if(response.data.length <= 0){
           setNoOpdCamps(true);
         }
-        console.log("Upcoming OPD Camps: ",response.data);
       } catch (error) {
         console.error("Error fetching OPD camps:", error);
       } finally {

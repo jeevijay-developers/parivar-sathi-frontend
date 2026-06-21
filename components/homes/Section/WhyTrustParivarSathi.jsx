@@ -38,12 +38,13 @@ const WhyTrustParivarSathi = () => {
             <div key={i} className="col-xl-4 col-md-4 col-sm-6">
               <div className="featureCard -type-5 -hover-accent-2 group">
                 <div className="featureCard__icon">
-                  <Image 
-                    src={reason.icon} 
-                    width={ 60} 
-                    height={56} 
+                  <Image
+                    src={reason.icon}
+                    width={60}
+                    height={56}
                     alt={reason.title}
                     className="w-14 h-14"
+                    style={{ width: "auto", height: "auto" }}
                   />
                 </div>
                 <h4 className="text-18 fw-500 mt-20 group-hover:text-white transition-colors duration-300">

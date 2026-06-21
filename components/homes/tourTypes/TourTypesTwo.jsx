@@ -40,7 +40,7 @@ export default function TourTypesTwo() {
                 className="featureCard -type-5 -hover-accent-2"
               >
                 <div className="featureCard__icon">
-                  <Image width={i === 1 || i === 2 ? "53" : "40"} height="40" src={elm.iconSrc} alt="image" />
+                  <Image width={i === 1 || i === 2 ? 53 : 40} height={40} src={elm.iconSrc} alt="image" style={{ width: "auto", height: "auto" }} />
                 </div>
 
                 <h4 className="text-18 fw-500 mt-20">{elm.title}</h4>
